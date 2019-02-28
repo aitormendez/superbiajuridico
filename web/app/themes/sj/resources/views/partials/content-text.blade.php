@@ -1,5 +1,10 @@
-<article @php post_class() @endphp>
+<article @php post_class('infinite-scroll-item') @endphp>
   <header>
+    @if (! is_tax())
+      <div class="tipo-de-texto">
+        {!! ArchiveText::textType() !!}
+      </div>
+    @endif
     <h2 class="entry-title"><a href="{{ get_permalink() }}">{{ get_the_title() }}</a></h2>
     @include('partials/entry-meta')
   </header>
