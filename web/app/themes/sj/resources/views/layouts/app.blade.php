@@ -1,5 +1,8 @@
 <!doctype html>
-<html {!! get_language_attributes() !!}>
+@php
+  xdebug_break()
+@endphp
+<html @php language_attributes() @endphp>
   @include('partials.head')
   <body @php body_class() @endphp>
     @php do_action('get_header') @endphp
