@@ -152,3 +152,10 @@ add_action('wp_enqueue_scripts', function () {
  * image sizes
  */
 add_image_size( 'very-large', 2000 );
+
+/**
+ * localization
+ */
+add_action('after_setup_theme', function () {
+    load_theme_textdomain('sage', get_template_directory() . '/lang');
+});

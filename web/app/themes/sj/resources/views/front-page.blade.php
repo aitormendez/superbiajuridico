@@ -16,13 +16,13 @@
 
     <div class="marco texto">
       <div class="texto">
-        <p><span>En <strong>Superbia Jurídico</strong></span> <span>nos especializamos en derecho de familia</span> <span>y derecho penal.</span></p>
-        <p>Nuestra amplia trayectoria nos avala.</p>
+        <p>{{ __('En Superbia Jurídico nos especializamos en derecho de familia y derecho penal', 'sage') }}</p>
+        <p>{{ __('Nuestra amplia trayectoria nos avala', 'sage') }}</p>
       </div>
     </div>
     <div class="marco pregunta">
       <div class="pregunta">
-        <a href="contacto">Pregúntanos</a>
+        <a href="contacto">{{ __('Pregúntanos', 'sage') }}</a>
       </div>
     </div>
   </section>

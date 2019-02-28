@@ -27,22 +27,22 @@ class App extends Controller
             if ($home = get_option('page_for_posts', true)) {
                 return get_the_title($home);
             }
-            return __('Latest Posts', 'sage');
+            return __('Últimos posts', 'sage');
         }
         if (is_author()) {
-            return __('Author', 'sage') . ': ' . get_queried_object()->display_name;
+            return __('Autor', 'sage') . ': ' . get_queried_object()->display_name;
         }
         if (is_tax('news-category', 'superbia-juridico')) {
-            return __('Superbia Jurídico in the media', 'sage');
+            return __('Superbia Jurídico en los medios', 'sage');
         }
         if (is_tax('article-type', 'articulo') ) {
-            return __('Articles', 'sage');
+            return __('Artículos', 'sage');
         }
         if (is_tax('article-type', 'resumen') ) {
-            return __('Sentence Abstracts', 'sage');
+            return __('Resúmenes de sentencias', 'sage');
         }
         if (is_tax('article-type', 'comentario') ) {
-            return __('Commented Sentences', 'sage');
+            return __('Sentencias comentadas', 'sage');
         }
         if (is_tax()) {
             return get_queried_object()->name;
@@ -51,10 +51,10 @@ class App extends Controller
             return sprintf( __( '%s' ), post_type_archive_title( '', false ) );
         }
         if (is_search()) {
-            return sprintf(__('Search Results for %s', 'sage'), get_search_query());
+            return sprintf(__('Resultado de búsqueda para %s', 'sage'), get_search_query());
         }
         if (is_404()) {
-            return __('Not Found', 'sage');
+            return __('No encontrado', 'sage');
         }
         return get_the_title();
     }
