@@ -1,0 +1,141 @@
+.presentacion {
+  height: 2000px;
+
+  .wrap.container {
+    margin-top: 70px;
+
+    .content {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      max-width: none;
+
+      .entresacado {
+        position: relative;
+        display: block;
+        z-index: 200;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        color: $gray;
+        font-style: italic;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+
+        &::before {
+          position: absolute;
+          top: 15px;
+          left: -30px;
+          content: "“";
+          font-size: 4rem;
+          font-style: normal;
+        }
+      }
+
+      #slide01 {
+        height: 50vw;
+        overflow: hidden;
+
+        .bcg {
+          position: absolute;
+          top: -100px;
+          width: 100%;
+          height: 100%;
+          // transition: transform 0.1s;
+          // transition-timing-function: ease-out;
+          z-index: 100;
+        }
+
+        #escudo {
+          display: none;
+          position: fixed;
+          left: calc(50vw - 53px);
+          top: 120px;
+          z-index: 200;
+
+          @include tablet-portrait {
+            display: block;
+          }
+        }
+      }
+
+      #slide03 {
+        height: 50vw;
+        overflow: hidden;
+
+        .bcg {
+          position: absolute;
+          top: -150px;
+          width: 100%;
+          height: 100%;
+          z-index: 100;
+        }
+
+        .entresacado {
+          top: 50px;
+        }
+      }
+
+      .full-width {
+        position: relative;
+        left: 0;
+        width: 100vw;
+        z-index: -10;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .cabecera {
+        padding-left: $pad;
+        padding-right: $pad;
+
+        @include tablet-portrait {
+          padding-left: $pad-4;
+          padding-right: $pad-4;
+        }
+
+        h1 {
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+          padding-top: $pad;
+          padding-bottom: $pad;
+          border-top: 2px solid $color-principal;
+          border-bottom: 2px solid $color-principal;
+          text-align: center;
+          color: $color-principal;
+
+          span {
+            display: block;
+
+            &.sub {
+              margin-top: $pad;
+              font-size: 1.2rem;
+              font-style: italic;
+            }
+          }
+        }
+      }
+
+      .centrar {
+        padding-left: $pad;
+        padding-right: $pad;
+
+        @include tablet-portrait {
+          padding-left: $pad-4;
+          padding-right: $pad-4;
+        }
+
+        p {
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

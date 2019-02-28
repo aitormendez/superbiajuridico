@@ -1,0 +1,295 @@
+.home {
+  .content {
+    padding: 0;
+    margin: 0;
+    max-width: none;
+
+    .textos {
+      padding: $pad;
+      background-color: #fff;
+
+      @include tablet-portrait {
+        display: flex;
+        padding: $pad-3;
+        justify-content: center;
+
+        .articulos {
+          padding: $pad;
+          max-width: 400px;
+        }
+      }
+    }
+
+    section {
+      padding-bottom: $pad-3;
+      background-color: #fff;
+
+      .header {
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+
+        h1,
+        .enlace {
+          font-size: 0.7rem;
+          font-family: $ff-sans;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          margin-top: 0;
+          margin-bottom: 0;
+          line-height: 1em;
+        }
+      }
+
+      .contenido {
+        .item {
+          h2 {
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      &.noticias {
+        padding: $pad;
+        max-width: 1260px;
+        background-color: $gray-lighter;
+        margin-left: auto;
+        margin-right: auto;
+
+        > .header {
+          margin-bottom: $pad-2;
+
+          h1 {
+            margin-bottom: 5px;
+          }
+
+          a {
+            display: block;
+            margin-bottom: 5px;
+          }
+        }
+
+        .contenido {
+          display: flex;
+          flex-wrap: wrap;
+
+          article {
+            width: 100%;
+            margin-bottom: $pad;
+            background-color: #fff;
+            padding: $pad;
+            overflow: hidden;
+
+            header {
+              .marca-sj {
+                display: block;
+                position: absolute;
+                margin-bottom: 5px;
+                height: 25px;
+                width: 25px;
+                background-color: $color-allo;
+                border-radius: 50%;
+
+                svg {
+                  position: absolute;
+                  top: -9px;
+                  left: 7px;
+                  width: 10px;
+                }
+              }
+
+              h2 {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 1.1rem;
+              }
+
+              time {
+                font-size: 0.6rem;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                color: $gray-light-semi;
+              }
+            }
+
+            .entry-summary {
+              font-size: 1.1rem;
+            }
+
+            &.sj {
+              header {
+                h2,
+                time {
+                  margin-left: $pad-3;
+                }
+              }
+            }
+          }
+        }
+
+        @include tablet-portrait {
+          padding: $pad-3;
+
+          .contenido {
+            article {
+              width: calc(33.3% - 10px);
+              max-width: 400px;
+              margin-right: $pad;
+              overflow: hidden;
+
+              &:nth-child(3n) {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+
+  .bcg {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      top: -100px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .marco {
+    display: table;
+    margin: $pad-1;
+    text-align: center;
+    overflow: hidden;
+
+    &.texto {
+      background-color: rgba(#000, 0.34);
+      transition: background-color 1s;
+      padding: $pad;
+
+      p {
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @extend .dashed;
+
+      .texto {
+        display: table-cell;
+        vertical-align: middle;
+        top: 0;
+        max-width: calc(100% - #{$pad-4} * 4);
+        font-size: 1rem;
+        text-align: center;
+        color: rgba(#fff, 0.75);
+
+        span {
+          display: block;
+
+          strong {
+            font-weight: normal;
+            color: #fff;
+          }
+        }
+      }
+
+      &.claro {
+        background-color: rgba(#000, 0);
+        transition: background-color 1s;
+      }
+    }
+
+    &.pregunta {
+      display: none;
+
+      .pregunta {
+        display: table-cell;
+        vertical-align: middle;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+
+        a {
+          display: inline-block;
+          padding: $pad;
+          border-radius: 5px;
+          background-color: $color-allo;
+          font-family: $ff-sans;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          color: $color-principal;
+          font-weight: bold;
+
+          &:hover {
+            background-color: darken($color-allo, 10);
+          }
+        }
+      }
+    }
+  }
+
+  .escudo {
+    display: none;
+    position: absolute;
+    bottom: 32px;
+    right: calc(50vw - 43px);
+    z-index: 300;
+
+    @include tablet-portrait {
+      display: block;
+    }
+  }
+
+  @include tablet-portrait {
+    // .hero
+    .bcg {
+      height: 50vw;
+      max-height: 500px;
+
+      img {
+        position: absolute;
+      }
+    }
+
+    .marco {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: $pad-4;
+      width: calc(100% - #{$pad-4} * 2);
+      height: calc(50vw - #{$pad-4} * 3 + 20px);
+      max-height: 345px;
+
+      &.pregunta {
+        display: table;
+      }
+    }
+
+    .escudo {
+      bottom: 50px;
+
+      svg {
+        height: 70px;
+      }
+    }
+  }
+
+  @include desktop {
+    .bcg {
+      img {
+        top: -200px;
+      }
+    }
+  }
+}

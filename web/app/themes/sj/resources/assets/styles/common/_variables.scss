@@ -1,5 +1,283 @@
-/** Colors */
-$brand-primary:         #525ddc;
-
 /** Box Model  */
-$spacer:                2rem;
+$spacer: 2rem;
+
+// Colors
+$color-principal: #002c41;
+$color-allo: #f9ae00;
+$color-azul: #0179bd;
+$color-azul-claro: lighten($color-azul, 50%);
+$color-rojo: #e30000;
+$color-verde: #058011;
+$gray-base: #000;
+$gray-darker: lighten($gray-base, 13.5%);
+$gray-dark: lighten($gray-base, 20%);
+$gray: lighten($gray-base, 33.5%);
+$gray-light: lighten($gray-base, 46.7%);
+$gray-light-semi: lighten($gray-base, 70%);
+$gray-lighter: lighten($gray-base, 93.5%); //layout
+$pad: 15px;
+$pad-1: $pad;
+$pad-2: calc(#{$pad} * 2);
+$pad-3: calc(#{$pad} * 3);
+$pad-4: calc(#{$pad} * 4);
+$ff-serif: pt_serif, serif;
+$ff-sans: pt_sans, sans-serif;
+$ff-base: $ff-serif;
+$trans: 0.5s;
+
+// responsive breakpoints
+@mixin phone-only {
+  @media (max-width: 425px) {
+    @content;
+  }
+}
+
+@mixin phone-landscape {
+  @media (min-width: 425px) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait {
+  @media (min-width: 700px) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin big-desktop {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+@mixin radius($radius) {
+  border-radius: $radius;
+}
+
+// img
+@mixin img-responsive {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  $alto: 43px;
+  $ancho: calc(#{$alto} - #{$alto} * 14 / 100);
+  $alto_med: 100px;
+  $ancho_med: calc(#{$alto_med} - #{$alto_med} * 14 / 100);
+
+  @include tablet-portrait {
+    align-items: flex-start;
+    flex-direction: row;
+
+    .simbolo .ventana {
+      left: calc(#{$ancho} / 2 - 6px);
+    }
+
+    .nombre {
+      width: auto;
+      height: $alto;
+      margin-top: 0;
+      margin-left: $pad-1;
+      padding-left: $pad-1;
+      text-align: left;
+      border-left: 2px solid $color-principal;
+    }
+
+    &.mediano {
+      .simbolo {
+        position: relative;
+        width: $ancho_med;
+        height: $alto_med;
+
+        .escudo {
+          position: absolute;
+
+          svg {
+            display: block;
+            width: $ancho_med;
+            height: $alto_med;
+            transition: height $trans, width $trans;
+
+            path {
+              width: $ancho_med;
+              height: $alto_med;
+              transition: height $trans, width $trans;
+            }
+          }
+        }
+
+        .ventana {
+          position: absolute;
+          top: calc(#{$alto_med} * 19 / 100);
+          left: calc(#{$ancho_med} / 2 - 7px);
+          transition: left $trans, top $trans;
+
+          svg {
+            display: block;
+          }
+        }
+
+        .anagrama {
+          top: 40px;
+          left: 28px;
+          transition: left $trans, top $trans;
+
+          svg {
+            width: 27px;
+            height: 42px;
+          }
+        }
+      }
+
+      .nombre {
+        width: auto;
+        height: $alto_med;
+        margin-top: 0;
+        transition: height $trans, padding-top $trans;
+        text-align: center;
+      }
+    }
+  }
+
+  .simbolo {
+    position: relative;
+    width: $ancho;
+    height: $alto;
+    transition: width $trans;
+
+    .escudo {
+      position: absolute;
+
+      svg {
+        display: block;
+        width: $ancho;
+        height: $alto;
+        transition: height $trans, width $trans;
+      }
+    }
+
+    .ventana {
+      position: absolute;
+      top: calc(#{$alto} * 19 / 100);
+      left: calc(#{$ancho} / 2 - 7px);
+      transition: left $trans, top $trans;
+
+      svg {
+        display: block;
+      }
+    }
+
+    .anagrama {
+      position: absolute;
+      top: 25px;
+      left: 15px;
+      transition: opacity $trans, top $trans, left $trans;
+
+      &.fadein {
+        opacity: 1;
+      }
+
+      &.fadeout {
+        opacity: 0;
+      }
+
+      svg {
+        display: block;
+        width: 7px;
+        height: 10px;
+        transition: width $trans, height $trans;
+      }
+
+      &.hide {
+        display: none;
+      }
+    }
+  }
+
+  .nombre {
+    font-family: "logofont", sans-serif;
+    font-size: 22px;
+    line-height: 1em;
+    height: $alto;
+    margin-top: 0;
+    transition: height $trans, padding-top $trans;
+    color: $color-principal;
+  }
+}
+
+@keyframes flash {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes flash2 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.dashed {
+  border: 3px dashed black;
+  border-image-source: url("../images/svg/icons/dashed.svg");
+  border-image-slice: 16;
+  border-image-width: 16px;
+  border-image-repeat: round;
+}
+
+@mixin tabs($tabs) {
+  display: flex;
+
+  li {
+    font-family: $ff-sans;
+    width: calc(100% / #{$tabs});
+    border-left: 2px solid $color-principal;
+    background-color: #fff;
+
+    &:last-child {
+      border-right: 2px solid $color-principal;
+    }
+
+    span,
+    a {
+      display: block;
+      padding: $pad;
+    }
+
+    a {
+      color: $gray-light-semi;
+      background-color: $gray-lighter;
+
+      &:hover,
+      &:focus {
+        color: #000;
+        background-color: #fff;
+      }
+    }
+  }
+}

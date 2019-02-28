@@ -1,0 +1,56 @@
+.post-type-archive-sentence,
+.page-template-p-sentence-sj {
+  .main {
+    ul {
+      padding-left: 0;
+
+      li {
+        font-size: 1rem;
+        list-style-type: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $color-principal;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        strong {
+          font-family: $ff-sans;
+          letter-spacing: 0.1em;
+        }
+
+        .col-der {
+          display: inline;
+        }
+      }
+
+      &.tabs {
+        @include tabs(2);
+
+        li {
+          border-bottom: none;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    @include tablet-portrait {
+      ul {
+        li {
+          strong {
+            display: inline-block;
+            width: 180px;
+          }
+
+          .col-der {
+            display: inline-block;
+            width: calc(100% - 190px);
+            vertical-align: top;
+          }
+        }
+      }
+    }
+  }
+}
