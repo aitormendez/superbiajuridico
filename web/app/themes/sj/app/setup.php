@@ -11,6 +11,7 @@ use Roots\Sage\Template\BladeProvider;
  * Theme assets
  */
 add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_script('google-maps', 'https://maps.googleapis.com/maps/api/js?key=' . env('GOOGLE_MAPS_API'), [], null, true);
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
 
@@ -44,7 +45,9 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Menú principal', 'sage'),
+        'footer_navigation' => __('Menú pie', 'sage'),
+        'lang_navigation' => __('Menú Lenguaje', 'sage'),
     ]);
 
     /**
@@ -130,3 +133,22 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
+
+/**
+ * pasar datos a JS
+ * https://discourse.roots.io/t/wp-localize-script-not-working-in-sage-9/11282/3
+ */
+add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
+    $sj_data = array(
+        'homeUrl' => get_bloginfo( 'url' ),
+        'sjLogoMarker' => basename(\App\asset_path('images/sj-logo-marker.png')),
+    );
+
+    wp_localize_script('sage/main.js', 'sj', $sj_data);
+}, 100);
+
+/**
+ * image sizes
+ */
+add_image_size( 'very-large', 2000 );
