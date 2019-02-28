@@ -82,7 +82,7 @@
     <div class="contenido">
       @query($args_news)
       @posts
-       @include('partials.content-owl')
+       @include('partials.content-'.get_post_type())
       @endposts
     </div>
   </section>
