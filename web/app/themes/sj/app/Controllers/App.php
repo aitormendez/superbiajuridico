@@ -11,6 +11,16 @@ class App extends Controller
         return get_bloginfo('name');
     }
 
+    public function siteUrl()
+    {
+        return get_bloginfo('url');
+    }
+
+    public function links()
+    {
+        return get_terms('link-category');
+    }
+
     public static function title()
     {
         if (is_home()) {
@@ -19,8 +29,26 @@ class App extends Controller
             }
             return __('Latest Posts', 'sage');
         }
+        if (is_author()) {
+            return __('Author', 'sage') . ': ' . get_queried_object()->display_name;
+        }
+        if (is_tax('news-category', 'superbia-juridico')) {
+            return __('Superbia Jurídico in the media', 'sage');
+        }
+        if (is_tax('article-type', 'articulo') ) {
+            return __('Articles', 'sage');
+        }
+        if (is_tax('article-type', 'resumen') ) {
+            return __('Sentence Abstracts', 'sage');
+        }
+        if (is_tax('article-type', 'comentario') ) {
+            return __('Commented Sentences', 'sage');
+        }
+        if (is_tax()) {
+            return get_queried_object()->name;
+        }
         if (is_archive()) {
-            return get_the_archive_title();
+            return sprintf( __( '%s' ), post_type_archive_title( '', false ) );
         }
         if (is_search()) {
             return sprintf(__('Search Results for %s', 'sage'), get_search_query());
