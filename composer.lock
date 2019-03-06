@@ -4,14 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c0f38f02ed59d50d20c689a604c672e",
+    "content-hash": "09785aaff740ead76f5746735876d126",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "5.7.12",
+            "version": "5.7.13",
             "dist": {
                 "type": "zip",
-                "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t=5.7.12",
+                "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t=5.7.13",
                 "reference": null,
                 "shasum": null
             },
@@ -20,6 +20,41 @@
                 "ffraenz/private-composer-installer": "^2.0"
             },
             "type": "wordpress-plugin"
+        },
+        {
+            "name": "aitormendez/acfml",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:aitormendez/acfml.git",
+                "reference": "78b3f01913aa667da5a293a0f5d23aa0d768d752"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aitormendez/acfml/zipball/78b3f01913aa667da5a293a0f5d23aa0d768d752",
+                "reference": "78b3f01913aa667da5a293a0f5d23aa0d768d752",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "wpml",
+                    "homepage": "https://wpml.com"
+                }
+            ],
+            "homepage": "https://github.com/aitormendez/acfml",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/aitormendez/acfml/tree/1.1",
+                "issues": "https://github.com/aitormendez/acfml/issues"
+            },
+            "time": "2019-03-06T10:12:46+00:00"
         },
         {
             "name": "aitormendez/sitepress-multilingual-cms",
@@ -1220,15 +1255,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.3.1",
+            "version": "3.3.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.3.1"
+                "reference": "tags/3.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.3.2.zip",
                 "reference": null,
                 "shasum": null
             },

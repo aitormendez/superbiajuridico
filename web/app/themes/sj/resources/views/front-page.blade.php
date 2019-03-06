@@ -74,9 +74,9 @@
 
   <section class="noticias">
     <div class="header">
-      <h1>{{ __('News', 'sage') }}</h1>
-      <a class="enlace" href="{{ $site_url }}/news">{{ __('See All News', 'sage') }}</a>
-      <a class="enlace" href="{{ $site_url }}/new-categories/superbia-juridico/">{{ __('Superbia Jurídico in the media', 'sage') }}</a>
+      <h1>{{ __('Noticias', 'sage') }}</h1>
+      <a class="enlace" href="{{ $site_url }}/news">{{ __('Ver todas las noticias', 'sage') }}</a>
+      <a class="enlace" href="{{ $site_url }}/new-categories/superbia-juridico/">{{ __('Superbia Jurídico los medios', 'sage') }}</a>
     </div>
 
     <div class="contenido">

@@ -18,6 +18,13 @@ add_action('wp_enqueue_scripts', function () {
     if (is_single() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
     }
+
+    $sj_data = array(
+        'homeUrl' => get_bloginfo( 'url' ),
+        'sjLogoMarker' => basename(\App\asset_path('images/sj-logo-marker.png')),
+    );
+
+    wp_localize_script('sage/main.js', 'sj', $sj_data);
 }, 100);
 
 /**

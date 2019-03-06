@@ -11,11 +11,11 @@
       @endif
       <li>
         @if (sizeof($articles) == 0)
-            {{__('Esta sentencia no se enlaza desde ningún artículo', 'sage') }}
+            {{ __('Esta sentencia no se enlaza desde ningún artículo', 'sage') }}
         @elseif (sizeof($articles) == 1)
-          {{__('Esta sentencia se enlaza desde el artículo:', 'sage') }} :
+          {{ __('Esta sentencia se enlaza desde el artículo:', 'sage') }} :
         @elseif (sizeof($articles) > 1)
-          {{__('Esta sentencia se enlaza desde los artículos:', 'sage') }}
+          {{ __('Esta sentencia se enlaza desde los artículos:', 'sage') }}
         @endif
         <ul>
           @foreach ($articles as $article)

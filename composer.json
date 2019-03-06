@@ -35,7 +35,7 @@
       "type": "package",
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.7.12",
+        "version": "5.7.13",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -86,6 +86,10 @@
     {
       "type": "vcs",
       "url": "git@github.com:aitormendez/wpml-translation-management.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:aitormendez/acfml.git"
     }
   ],
   "require": {
@@ -112,11 +116,12 @@
     "wpackagist-plugin/remove-query-strings-from-static-resources": "*",
     "wpackagist-plugin/post-type-switcher": "^3.1",
     "wpackagist-plugin/query-monitor": "^3.1",
-    "advanced-custom-fields/advanced-custom-fields-pro": "^5.7.12",
+    "advanced-custom-fields/advanced-custom-fields-pro": "^5.7.13",
     "aitormendez/sitepress-multilingual-cms": "*",
     "aitormendez/wpml-media-translation": "*",
     "aitormendez/wpml-string-translation": "*",
-    "aitormendez/wpml-translation-management": "*"
+    "aitormendez/wpml-translation-management": "*",
+    "aitormendez/acfml": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
