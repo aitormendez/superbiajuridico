@@ -9,7 +9,6 @@
       @while (have_rows('locations')) @php the_row(); @endphp
         <div class="ubicacion">
           <h4>{{ the_sub_field('title') }}</h4>
-          <p class="address">{{ $location['address'] }}</p>
           <p> {{ the_sub_field('description') }}</p>
         </div>
       @endwhile

@@ -151,7 +151,7 @@ add_action('pre_get_posts', function ($query) {
  * Load Google Maps API key for ACF
  */
 add_filter('acf/fields/google_map/api', function ($api) {
-    $api['key'] = env('GOOGLE_MAPS_API');
+    $api['key'] = 'AIzaSyBsyHHL-08gdVPybnyZPPE56fk6WTIXC4c';
 
     return $api;
 });
