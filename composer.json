@@ -121,7 +121,8 @@
     "aitormendez/wpml-media-translation": "*",
     "aitormendez/wpml-string-translation": "*",
     "aitormendez/wpml-translation-management": "*",
-    "aitormendez/acfml": "*"
+    "aitormendez/acfml": "*",
+    "wpackagist-plugin/duplicator": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
