@@ -5,7 +5,7 @@
         @php
         $terms = get_the_terms($post->ID, 'article-type');
         $output = '';
-        $text_type_url = get_bloginfo('url') . '/article-types/';
+        $text_type_url = get_bloginfo('url') . '/text-types/';
         foreach ($terms as $term) {
             $output .= '<a href="' . $text_type_url . $term->slug . '">' . $term->name . '</a>';
         }
