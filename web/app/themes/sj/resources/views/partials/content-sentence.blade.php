@@ -14,7 +14,7 @@
 @endif
 @if ($nombre == '')
   @php
-    $nombre = 'Enlace';
+    $nombre = __('Link', 'sage');
   @endphp
 @endif
 
