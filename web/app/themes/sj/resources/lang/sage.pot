@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-12 15:32+0100\n"
+"POT-Creation-Date: 2019-03-12 17:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,6 +121,11 @@ msgstr ""
 msgid "La página que está intentando ver no existe."
 msgstr ""
 
+#: resources/views/archive-text.blade.php:8
+#: resources/views/partials/np-posts.blade.php:2
+msgid "No se encontraron resultados."
+msgstr ""
+
 #: resources/views/front-page.blade.php:19
 msgid "Derecho de familia, derecho penal y derecho bancario"
 msgstr ""
@@ -158,7 +163,7 @@ msgid "ver todos"
 msgstr ""
 
 #: resources/views/front-page.blade.php:77
-#: resources/views/partials/header.blade.php:53
+#: resources/views/partials/header.blade.php:54
 msgid "Noticias"
 msgstr ""
 
@@ -223,20 +228,24 @@ msgstr ""
 msgid "Navegación"
 msgstr ""
 
-#: resources/views/partials/header.blade.php:49
+#: resources/views/partials/header.blade.php:50
 msgid "Textos"
 msgstr ""
 
-#: resources/views/partials/header.blade.php:62
-#: resources/views/partials/header.blade.php:67
+#: resources/views/partials/header.blade.php:50
+msgid "Comentarios"
+msgstr ""
+
+#: resources/views/partials/header.blade.php:50
+msgid "Resúmenes"
+msgstr ""
+
+#: resources/views/partials/header.blade.php:63
+#: resources/views/partials/header.blade.php:68
 msgid "Ámbito"
 msgstr ""
 
-#: resources/views/partials/header.blade.php:64
-#: resources/views/partials/header.blade.php:69
+#: resources/views/partials/header.blade.php:65
+#: resources/views/partials/header.blade.php:70
 msgid "Temas"
-msgstr ""
-
-#: resources/views/partials/np-posts.blade.php:3
-msgid "No se encontraron resultados."
 msgstr ""

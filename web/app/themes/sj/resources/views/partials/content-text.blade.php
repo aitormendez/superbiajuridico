@@ -2,7 +2,15 @@
   <header>
     @if (! is_tax())
       <div class="tipo-de-texto">
-        {!! ArchiveText::textType() !!}
+        @php
+        $terms = get_the_terms($post->ID, 'article-type');
+        $output = '';
+        $text_type_url = get_bloginfo('url') . '/article-types/';
+        foreach ($terms as $term) {
+            $output .= '<a href="' . $text_type_url . $term->slug . '">' . $term->name . '</a>';
+        }
+        @endphp
+        {!! $output !!}
       </div>
     @endif
     <h2 class="entry-title"><a href="{{ get_permalink() }}">{{ get_the_title() }}</a></h2>

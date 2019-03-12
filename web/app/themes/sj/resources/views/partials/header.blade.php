@@ -47,7 +47,7 @@
   @endif
   @if (is_post_type_archive('text') || is_singular('text') || is_tax('article-type') )
     <nav class="epigrafe">
-      <a href="{{ get_post_type_archive_link( 'text' ) }}">{{ __( 'Textos', 'sage' ) }}</a> | <a href="{{ get_term_link( 'articulo', 'article-type' ) }}">Artículos</a> | <a href="{{ get_term_link( 'comentario', 'article-type' ) }}">Comentarios</a> | <a href="{{ get_term_link( 'resumen', 'article-type' ) }}">Resúmenes</a>
+      <a href="{{ get_post_type_archive_link( 'text' ) }}">{{ __( 'Textos', 'sage' ) }}</a> | <a href="{{ get_term_link( 'articulo', 'article-type' ) }}">{{ __('Artículos', 'sage')}}</a> | <a href="{{ get_term_link( 'comentario', 'article-type' ) }}">{{__('Comentarios', 'sage')}}</a> | <a href="{{ get_term_link( 'resumen', 'article-type' ) }}">{{__('Resúmenes', 'sage')}}</a>
     </nav>
   @elseif (is_post_type_archive('story') || is_singular('story') || is_tax('news-category', 'superbia-juridico'))
     <nav class="epigrafe">
