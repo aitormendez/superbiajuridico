@@ -4,11 +4,14 @@ export default {
   init() {
     // JavaScript to be fired on the about us page
 
+
     /* eslint-disable */
     // console.log(sj.homeUrl);
     // console.log(sj.sjLogoMarker);
     var iconBase = `${sj.homeUrl}/app/themes/sj/dist/images/`;
     var logoMarker = sj.sjLogoMarker;
+    var logoMarkerPath = sj.sjLogoMarkerPath;
+    console.log(logoMarkerPath);
     /* eslint-enable */
 
     (function($) {
@@ -86,7 +89,7 @@ export default {
 
         // create marker
         var image = {
-          url: iconBase + logoMarker,
+          url: logoMarkerPath,
           size: new google.maps.Size(30, 35),
           origin: new google.maps.Point(0, 0),
           anchor: new google.maps.Point(15, 35),

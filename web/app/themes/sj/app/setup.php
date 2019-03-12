@@ -150,6 +150,7 @@ add_action('wp_enqueue_scripts', function () {
     $sj_data = array(
         'homeUrl' => get_bloginfo( 'url' ),
         'sjLogoMarker' => basename(\App\asset_path('images/sj-logo-marker.png')),
+        'sjLogoMarkerPath' => \App\asset_path('images/sj-logo-marker.png'),
     );
 
     wp_localize_script('sage/main.js', 'sj', $sj_data);
