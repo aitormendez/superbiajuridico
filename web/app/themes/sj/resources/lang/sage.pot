@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-12 09:53+0100\n"
+"POT-Creation-Date: 2019-03-12 15:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,14 +51,14 @@ msgid "Error locating <code>%s</code> for inclusion."
 msgstr ""
 
 #: app/Controllers/App.php:30
-msgid "Últimos posts"
+msgid "Últimas entradas"
 msgstr ""
 
 #: app/Controllers/App.php:33
 msgid "Autor"
 msgstr ""
 
-#: app/Controllers/App.php:36
+#: app/Controllers/App.php:36 resources/views/front-page.blade.php:79
 msgid "Superbia Jurídico en los medios"
 msgstr ""
 
@@ -81,7 +81,7 @@ msgstr ""
 
 #: app/Controllers/App.php:54
 #, php-format
-msgid "Resultado de búsqueda para %s"
+msgid "Resultado de búsqueda para <b> %s </b>"
 msgstr ""
 
 #: app/Controllers/App.php:57
@@ -94,7 +94,7 @@ msgid "View all post filed under %s"
 msgstr ""
 
 #: app/filters.php:33
-msgid "Continued"
+msgid "Leer más"
 msgstr ""
 
 #: app/setup.php:55
@@ -106,28 +106,27 @@ msgid "Menú pie"
 msgstr ""
 
 #: app/setup.php:57
-msgid "Menú Lenguaje"
+msgid "Menu lenguaje"
 msgstr ""
 
 #: app/setup.php:96
-msgid "Primary"
+msgid "Principal"
 msgstr ""
 
 #: app/setup.php:100
-msgid "Footer"
+msgid "Pie"
 msgstr ""
 
 #: resources/views/404.blade.php:8
-msgid "Sorry, but the page you were trying to view does not exist."
+msgid "La página que está intentando ver no existe."
 msgstr ""
 
 #: resources/views/front-page.blade.php:19
-msgid ""
-"En Superbia Jurídico nos especializamos en derecho de familia y derecho penal"
+msgid "Derecho de familia, derecho penal y derecho bancario"
 msgstr ""
 
 #: resources/views/front-page.blade.php:20
-msgid "Nuestra amplia trayectoria nos avala"
+msgid "Nuestra experiencia nos avala"
 msgstr ""
 
 #: resources/views/front-page.blade.php:25
@@ -139,7 +138,6 @@ msgid "Últimos artículos"
 msgstr ""
 
 #: resources/views/front-page.blade.php:34
-#: resources/views/front-page.blade.php:62
 msgid "Ver todos"
 msgstr ""
 
@@ -155,17 +153,17 @@ msgstr ""
 msgid "Últimos resúmenes de sentencias"
 msgstr ""
 
+#: resources/views/front-page.blade.php:62
+msgid "ver todos"
+msgstr ""
+
 #: resources/views/front-page.blade.php:77
 #: resources/views/partials/header.blade.php:53
 msgid "Noticias"
 msgstr ""
 
 #: resources/views/front-page.blade.php:78
-msgid "Ver todas las noticias"
-msgstr ""
-
-#: resources/views/front-page.blade.php:79
-msgid "Superbia Jurídico los medios"
+msgid "ver todas las noticias"
 msgstr ""
 
 #: resources/views/partials/comments.blade.php:21
@@ -181,15 +179,19 @@ msgid "Comments are closed."
 msgstr ""
 
 #: resources/views/partials/content-page-contact.blade.php:6
-msgid "Dónde estamos"
+msgid "Donde estamos"
 msgstr ""
 
 #: resources/views/partials/content-page.blade.php:2
-msgid "Pages:"
+msgid "Páginas:"
+msgstr ""
+
+#: resources/views/partials/content-sentence.blade.php:17
+msgid "Enlace"
 msgstr ""
 
 #: resources/views/partials/content-sentence.blade.php:27
-msgid "Ver en Cendoj"
+msgid "Ver en CENDOJ"
 msgstr ""
 
 #: resources/views/partials/content-single-pdf.blade.php:7
@@ -198,15 +200,15 @@ msgid "En breve"
 msgstr ""
 
 #: resources/views/partials/content-single-sentence.blade.php:14
-msgid "Esta sentencia no se enlaza desde ningún artículo"
+msgid "Esta sentencia no está enlazada desde ningún artículo"
 msgstr ""
 
 #: resources/views/partials/content-single-sentence.blade.php:16
-msgid "Esta sentencia se enlaza desde el artículo:"
+msgid "Esta sentencia está enlazada desde el artículo:"
 msgstr ""
 
 #: resources/views/partials/content-single-sentence.blade.php:18
-msgid "Esta sentencia se enlaza desde los artículos:"
+msgid "Esta sentencia está enlazada desde los artículos:"
 msgstr ""
 
 #: resources/views/partials/content-single-text.blade.php:19
@@ -222,7 +224,7 @@ msgid "Navegación"
 msgstr ""
 
 #: resources/views/partials/header.blade.php:49
-msgid "texts"
+msgid "Textos"
 msgstr ""
 
 #: resources/views/partials/header.blade.php:62

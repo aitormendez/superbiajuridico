@@ -2,8 +2,6 @@
 
 @section('content')
 
-  @include('partials.no-posts')
-  
   <nav>
     <ul class="tabs">
       <li><span>Sentencias relevantes</span></li>

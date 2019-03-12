@@ -3,7 +3,7 @@
 @if ( have_rows('locations') )
   <div class="ubicaciones">
     <div class="separador">
-      <h3>{{ __('Where we are', 'sage') }}</h3>
+      <h3>{{ __('Donde estamos', 'sage') }}</h3>
     </div>
     <div class="flex">
       @while (have_rows('locations')) @php the_row(); @endphp

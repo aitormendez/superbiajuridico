@@ -7,7 +7,7 @@
   <div class="entry-content">
     @if (has_excerpt())
       <div class="excerpt">
-        <h2 class="epi-meta">{{ __('In short', 'sage') }}</h2>
+        <h2 class="epi-meta">{{ __('En breve', 'sage') }}</h2>
           @php the_excerpt() @endphp
       </div>
     @endif
@@ -16,7 +16,7 @@
     @endphp
     @if ($sentencias)
       <div class="sentencias">
-        <h2 class="epi-meta">{{ __('Related judgments', 'sage')}}</h2>
+        <h2 class="epi-meta">{{ __('Sentencias relacionadas', 'sage')}}</h2>
           <ul>
             @foreach ($sentencias as $sentencia)
               <li>

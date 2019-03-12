@@ -16,13 +16,13 @@
 
     <div class="marco texto">
       <div class="texto">
-        <p>{{ __('In Superbia Jurídico we specialize in family law and criminal law', 'sage') }}</p>
-        <p>{{ __('Our extensive experience supports us', 'sage') }}</p>
+        <p>{{ __('Derecho de familia, derecho penal y derecho bancario', 'sage') }}</p>
+        <p>{{ __('Nuestra experiencia nos avala', 'sage') }}</p>
       </div>
     </div>
     <div class="marco pregunta">
       <div class="pregunta">
-        <a href="contacto">{{ __('Ask us', 'sage') }}</a>
+        <a href="contacto">{{ __('Pregúntanos', 'sage') }}</a>
       </div>
     </div>
   </section>
@@ -30,8 +30,8 @@
   <section class="textos">
     <section class="articulos">
       <div class="header">
-        <h1>{{ __('Latest articles', 'sage') }}</h1>
-        <a class="enlace" href="{{ $site_url }}article-types/articulo/">{{ __('See all', 'sage') }}</a>
+        <h1>{{ __('Últimos artículos', 'sage') }}</h1>
+        <a class="enlace" href="{{ $site_url }}/text-type/articulo/">{{ __('Ver todos', 'sage') }}</a>
       </div>
 
       <div class="contenido">
@@ -44,8 +44,8 @@
 
     <section class="articulos">
       <div class="header">
-        <h1>{{ __('Last commented sentences', 'sage') }}</h1>
-        <a class="enlace" href="{{ $site_url }}article-types/comentario/">{{ __('Ver todas', 'sage') }}</a>
+        <h1>{{ __('Últimas sentencias comentadas', 'sage') }}</h1>
+        <a class="enlace" href="{{ $site_url }}/text-type/comentario/">{{ __('Ver todas', 'sage') }}</a>
       </div>
 
       <div class="contenido">
@@ -58,8 +58,8 @@
 
     <section class="articulos">
       <div class="header">
-        <h1>{{ __('Latest summaries of judgments', 'sage') }}</h1>
-        <a class="enlace" href="{{ $site_url }}article-types/resumen/">{{ __('Ver todos', 'sage') }}</a>
+        <h1>{{ __('Últimos resúmenes de sentencias', 'sage') }}</h1>
+        <a class="enlace" href="{{ $site_url }}/text-type/resumen/">{{ __('ver todos', 'sage') }}</a>
       </div>
 
       <div class="contenido">
@@ -74,9 +74,9 @@
 
   <section class="noticias">
     <div class="header">
-      <h1>{{ __('News', 'sage') }}</h1>
-      <a class="enlace" href="{{ $site_url }}/news">{{ __('See all the news', 'sage') }}</a>
-      <a class="enlace" href="{{ $site_url }}/new-categories/superbia-juridico/">{{ __('Superbia Jurídico in the media', 'sage') }}</a>
+      <h1>{{ __('Noticias', 'sage') }}</h1>
+      <a class="enlace" href="{{ $site_url }}/news">{{ __('ver todas las noticias', 'sage') }}</a>
+      <a class="enlace" href="{{ $site_url }}/new-categories/superbia-juridico/">{{ __('Superbia Jurídico en los medios', 'sage') }}</a>
     </div>
 
     <div class="contenido">

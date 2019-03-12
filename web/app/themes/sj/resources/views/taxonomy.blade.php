@@ -4,8 +4,6 @@
 
   @include('partials.page-header')
 
-  @include('partials.no-posts')
-
   @while (have_posts()) @php the_post() @endphp
     @include('partials.content-'.get_post_type())
   @endwhile

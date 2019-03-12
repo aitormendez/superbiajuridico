@@ -4,7 +4,7 @@
   </header>
   @if (has_excerpt())
     <div class="excerpt">
-      <h2>{{ __('In short', 'sage') }}</h2>
+      <h2>{{ __('En breve', 'sage') }}</h2>
       {{ the_excerpt() }}
     </div>
   @endif
