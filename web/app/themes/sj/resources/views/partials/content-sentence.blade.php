@@ -24,7 +24,7 @@
   <div class="col-der">
     <a href="{{ get_permalink() }}"> {{ $nombre }} </a> | <a href="{{ $pdf['url'] }}" target="_blank" alt="{{ $pdf['title'] }}">PDF</a>
   @if ($url_externa)
-  |<a href="{{ $url_externa }}" target="_blank"> {{ __('Ver en Cendoj', 'sage') }}</a>
+  |<a href="{{ $url_externa }}" target="_blank"> {{ __('See in Cendoj', 'sage') }}</a>
   @endif
   </div>
 

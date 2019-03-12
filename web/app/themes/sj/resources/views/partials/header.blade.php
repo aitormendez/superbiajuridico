@@ -50,7 +50,7 @@
     </nav>
   @elseif (is_post_type_archive('story') || is_singular('story') || is_tax('news-category', 'superbia-juridico'))
     <nav class="epigrafe">
-      <a href="{{ get_post_type_archive_link( 'story' ) }}">{{ __( 'Noticias', 'sage' ) }}</a>
+      <a href="{{ get_post_type_archive_link( 'story' ) }}">{{ __( 'News', 'sage' ) }}</a>
     </nav>
   @endif
   @if (is_post_type_archive( 'text' ) || is_singular('text'))
@@ -59,14 +59,14 @@
     </a>
     <nav id="solapa-filtro" class="closed solapa">
       @if (is_singular('text'))
-        <h1>{{ __( 'Ámbito', 'sage' ) }}</h1>
+        <h1>{{ __( 'Ambit', 'sage' ) }}</h1>
         {!! $art_cat_term_list !!}
-        <h1>{{ __( 'Temas', 'sage' ) }}</h1>
+        <h1>{{ __( 'Topics', 'sage' ) }}</h1>
         {!! $art_tag_term_list !!}
       @elseif (is_post_type_archive( 'text' ))
-        <h1>{{ __( 'Ámbito', 'sage' ) }}</h1>
+        <h1>{{ __( 'Ambit', 'sage' ) }}</h1>
         {!! $all_art_cat_term_list !!}
-        <h1>{{ __( 'Temas', 'sage' ) }}</h1>
+        <h1>{{ __( 'Topics', 'sage' ) }}</h1>
         {!! $all_art_tag_term_list !!}
       @endif
     </nav>
