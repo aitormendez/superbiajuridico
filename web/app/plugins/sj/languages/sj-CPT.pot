@@ -1,0 +1,426 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: sj-CPT\n"
+"POT-Creation-Date: 2019-03-12 11:32+0100\n"
+"PO-Revision-Date: 2019-03-12 11:31+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: sj-CPT.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: sj-CPT.php:21
+msgctxt "Post Type General Name"
+msgid "Text"
+msgstr ""
+
+#: sj-CPT.php:22
+msgctxt "Post Type Singular Name"
+msgid "Text"
+msgstr ""
+
+#: sj-CPT.php:23
+msgid "Texts"
+msgstr ""
+
+#: sj-CPT.php:24
+msgid "Text"
+msgstr ""
+
+#: sj-CPT.php:25
+msgid "Text archive"
+msgstr ""
+
+#: sj-CPT.php:26
+msgid "Text attributes"
+msgstr ""
+
+#: sj-CPT.php:27
+msgid "Parent text:"
+msgstr ""
+
+#: sj-CPT.php:28
+msgid "All texts"
+msgstr ""
+
+#: sj-CPT.php:29
+msgid "Add new text"
+msgstr ""
+
+#: sj-CPT.php:30 sj-CPT.php:132 sj-CPT.php:179 sj-CPT.php:269
+msgid "Add new"
+msgstr ""
+
+#: sj-CPT.php:31
+msgid "New text"
+msgstr ""
+
+#: sj-CPT.php:32
+msgid "Edit text"
+msgstr ""
+
+#: sj-CPT.php:33
+msgid "Update text"
+msgstr ""
+
+#: sj-CPT.php:34
+msgid "view text"
+msgstr ""
+
+#: sj-CPT.php:35
+msgid "View texts"
+msgstr ""
+
+#: sj-CPT.php:36
+msgid "Search texts"
+msgstr ""
+
+#: sj-CPT.php:37 sj-CPT.php:139 sj-CPT.php:186 sj-CPT.php:276
+msgid "Not found"
+msgstr ""
+
+#: sj-CPT.php:38 sj-CPT.php:277
+msgid "Not found in trash"
+msgstr ""
+
+#: sj-CPT.php:39 sj-CPT.php:188
+msgid "Featured image"
+msgstr ""
+
+#: sj-CPT.php:40 sj-CPT.php:189
+msgid "Set featured image"
+msgstr ""
+
+#: sj-CPT.php:41 sj-CPT.php:190
+msgid "Remove featured image"
+msgstr ""
+
+#: sj-CPT.php:42 sj-CPT.php:191
+msgid "Use featured image"
+msgstr ""
+
+#: sj-CPT.php:43
+msgid "Insert into text"
+msgstr ""
+
+#: sj-CPT.php:44
+msgid "Uploaded to this text"
+msgstr ""
+
+#: sj-CPT.php:45
+msgid "Texts list"
+msgstr ""
+
+#: sj-CPT.php:46
+msgid "Texts list navigation"
+msgstr ""
+
+#: sj-CPT.php:47
+msgid "Filter texts list"
+msgstr ""
+
+#: sj-CPT.php:84
+msgid "Text category"
+msgstr ""
+
+#: sj-CPT.php:85
+msgid "Text categories"
+msgstr ""
+
+#: sj-CPT.php:99
+msgid "Text tag"
+msgstr ""
+
+#: sj-CPT.php:100
+msgid "Texts tag"
+msgstr ""
+
+#: sj-CPT.php:114
+msgid "Text type"
+msgstr ""
+
+#: sj-CPT.php:115
+msgid "Text types"
+msgstr ""
+
+#: sj-CPT.php:123
+msgctxt "Post Type General Name"
+msgid "Judgment"
+msgstr ""
+
+#: sj-CPT.php:124
+msgctxt "Post Type Singular Name"
+msgid "Judgment"
+msgstr ""
+
+#: sj-CPT.php:125
+msgid "Judgments"
+msgstr ""
+
+#: sj-CPT.php:126
+msgid "Judgment"
+msgstr ""
+
+#: sj-CPT.php:127
+msgid "Judgments archive"
+msgstr ""
+
+#: sj-CPT.php:128
+msgid "Judgment attributes"
+msgstr ""
+
+#: sj-CPT.php:129
+msgid "Parent Judgment:"
+msgstr ""
+
+#: sj-CPT.php:130
+msgid "All Judgments"
+msgstr ""
+
+#: sj-CPT.php:131
+msgid "Add new Judgment"
+msgstr ""
+
+#: sj-CPT.php:133
+msgid "New Judgment"
+msgstr ""
+
+#: sj-CPT.php:134
+msgid "Edit Judgment"
+msgstr ""
+
+#: sj-CPT.php:135
+msgid "Update Judgment"
+msgstr ""
+
+#: sj-CPT.php:136
+msgid "View Judgment"
+msgstr ""
+
+#: sj-CPT.php:137
+msgid "View Judgments"
+msgstr ""
+
+#: sj-CPT.php:138
+msgid "search Judgments"
+msgstr ""
+
+#: sj-CPT.php:140 sj-CPT.php:187
+msgid "Not found en la papelera"
+msgstr ""
+
+#: sj-CPT.php:141
+msgid "Insert into Judgment"
+msgstr ""
+
+#: sj-CPT.php:142
+msgid "Uploaded to this Judgment"
+msgstr ""
+
+#: sj-CPT.php:143
+msgid "Judgments list"
+msgstr ""
+
+#: sj-CPT.php:144
+msgid "Judgment list navigation"
+msgstr ""
+
+#: sj-CPT.php:145
+msgid "Filter Judgments list"
+msgstr ""
+
+#: sj-CPT.php:170
+msgctxt "Post Type General Name"
+msgid "Stories"
+msgstr ""
+
+#: sj-CPT.php:171
+msgctxt "Post Type Singular Name"
+msgid "Story"
+msgstr ""
+
+#: sj-CPT.php:172
+msgid "Stories"
+msgstr ""
+
+#: sj-CPT.php:173
+msgid "Story"
+msgstr ""
+
+#: sj-CPT.php:174
+msgid "Stories archive"
+msgstr ""
+
+#: sj-CPT.php:175
+msgid "Story attribute"
+msgstr ""
+
+#: sj-CPT.php:176
+msgid "Parent Story:"
+msgstr ""
+
+#: sj-CPT.php:177
+msgid "All Stories"
+msgstr ""
+
+#: sj-CPT.php:178
+msgid "Add new Story"
+msgstr ""
+
+#: sj-CPT.php:180
+msgid "New Story"
+msgstr ""
+
+#: sj-CPT.php:181
+msgid "Edit Story"
+msgstr ""
+
+#: sj-CPT.php:182
+msgid "Update Story"
+msgstr ""
+
+#: sj-CPT.php:183
+msgid "View Story"
+msgstr ""
+
+#: sj-CPT.php:184
+msgid "View Stories"
+msgstr ""
+
+#: sj-CPT.php:185
+msgid "search Story"
+msgstr ""
+
+#: sj-CPT.php:192
+msgid "Insert into Story"
+msgstr ""
+
+#: sj-CPT.php:193
+msgid "Uploaded to this Story"
+msgstr ""
+
+#: sj-CPT.php:194
+msgid "Stories list"
+msgstr ""
+
+#: sj-CPT.php:195
+msgid "Stories list navigation"
+msgstr ""
+
+#: sj-CPT.php:196
+msgid "Filter stories list"
+msgstr ""
+
+#: sj-CPT.php:236
+msgid "Story tag"
+msgstr ""
+
+#: sj-CPT.php:237
+msgid "Story tags"
+msgstr ""
+
+#: sj-CPT.php:251
+msgid "Story category"
+msgstr ""
+
+#: sj-CPT.php:252
+msgid "Story categories"
+msgstr ""
+
+#: sj-CPT.php:260
+msgctxt "Post Type General Name"
+msgid "Links"
+msgstr ""
+
+#: sj-CPT.php:261
+msgctxt "Post Type Singular Name"
+msgid "Link"
+msgstr ""
+
+#: sj-CPT.php:262
+msgid "Links"
+msgstr ""
+
+#: sj-CPT.php:263
+msgid "Link"
+msgstr ""
+
+#: sj-CPT.php:264
+msgid "Links archive"
+msgstr ""
+
+#: sj-CPT.php:265
+msgid "Link attribute"
+msgstr ""
+
+#: sj-CPT.php:266
+msgid "Parent Link:"
+msgstr ""
+
+#: sj-CPT.php:267
+msgid "All Links"
+msgstr ""
+
+#: sj-CPT.php:268
+msgid "Add new Link"
+msgstr ""
+
+#: sj-CPT.php:270
+msgid "New Link"
+msgstr ""
+
+#: sj-CPT.php:271
+msgid "Edit Link"
+msgstr ""
+
+#: sj-CPT.php:272
+msgid "Update Link"
+msgstr ""
+
+#: sj-CPT.php:273
+msgid "View Link"
+msgstr ""
+
+#: sj-CPT.php:274
+msgid "View Links"
+msgstr ""
+
+#: sj-CPT.php:275
+msgid "Search Link"
+msgstr ""
+
+#: sj-CPT.php:308
+msgid "Link category"
+msgstr ""
+
+#: sj-CPT.php:309
+msgid "Links categories"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "sj-CPT"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "CPT para sj"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Aitor Méndez"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://e451.net"
+msgstr ""

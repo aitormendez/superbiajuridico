@@ -6,7 +6,7 @@ web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
 
-!web/app/mu-plugins/sj
+!web/app/plugins/sj
 
 # WordPress
 web/wp
