@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e11c660c45c4905c24876a06812e9a64",
+    "content-hash": "78302324793f58da27b6ec82340a7afb",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -732,16 +732,16 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "5.1",
+            "version": "5.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.1"
+                "reference": "5.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.1",
-                "reference": "5.1",
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.1.1",
+                "reference": "5.1.1",
                 "shasum": null
             },
             "require": {
@@ -756,17 +756,17 @@
             "authors": [
                 {
                     "name": "WordPress Community",
-                    "homepage": "http://wordpress.org/about/"
+                    "homepage": "https://wordpress.org/about/"
                 }
             ],
             "description": "WordPress is web software you can use to create a beautiful website or blog.",
-            "homepage": "http://wordpress.org/",
+            "homepage": "https://wordpress.org/",
             "keywords": [
                 "blog",
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-02-22T00:57:46+00:00"
+            "time": "2019-03-13T14:18:06+00:00"
         },
         {
             "name": "roots/wordpress-core-installer",
@@ -1174,6 +1174,26 @@
             "homepage": "https://wordpress.org/plugins/easy-table-of-contents/"
         },
         {
+            "name": "wpackagist-plugin/easy-wp-smtp",
+            "version": "1.3.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/easy-wp-smtp/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/easy-wp-smtp.zip?timestamp=1551622438",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/easy-wp-smtp/"
+        },
+        {
             "name": "wpackagist-plugin/gdpr",
             "version": "2.1.0",
             "source": {
@@ -1295,15 +1315,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-gdpr-compliance",
-            "version": "1.4.9",
+            "version": "1.5.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-gdpr-compliance/",
-                "reference": "tags/1.4.9"
+                "reference": "tags/1.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-gdpr-compliance.1.4.9.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-gdpr-compliance.1.5.0.zip",
                 "reference": null,
                 "shasum": null
             },
