@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: sj-CPT\n"
-"POT-Creation-Date: 2019-03-12 11:32+0100\n"
+"POT-Creation-Date: 2019-03-13 10:23+0100\n"
 "PO-Revision-Date: 2019-03-12 11:31+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,397 +16,357 @@ msgstr ""
 "X-Poedit-WPHeader: sj-CPT.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: sj-CPT.php:21
 msgctxt "Post Type General Name"
-msgid "Text"
+msgid "Texto"
 msgstr ""
 
 #: sj-CPT.php:22
 msgctxt "Post Type Singular Name"
-msgid "Text"
+msgid "Texto"
 msgstr ""
 
 #: sj-CPT.php:23
-msgid "Texts"
+msgid "Textos"
 msgstr ""
 
 #: sj-CPT.php:24
-msgid "Text"
+msgid "Texto"
 msgstr ""
 
 #: sj-CPT.php:25
-msgid "Text archive"
+msgid "Archivo de textos"
 msgstr ""
 
 #: sj-CPT.php:26
-msgid "Text attributes"
+msgid "Atributos de texto"
 msgstr ""
 
 #: sj-CPT.php:27
-msgid "Parent text:"
+msgid "Texto padre:"
 msgstr ""
 
 #: sj-CPT.php:28
-msgid "All texts"
+msgid "Todos los textos"
 msgstr ""
 
 #: sj-CPT.php:29
-msgid "Add new text"
+msgid "Añadir nuevo texto"
 msgstr ""
 
-#: sj-CPT.php:30 sj-CPT.php:132 sj-CPT.php:179 sj-CPT.php:269
-msgid "Add new"
+#: sj-CPT.php:30 sj-CPT.php:248
+msgid "Añadir nuevo"
 msgstr ""
 
 #: sj-CPT.php:31
-msgid "New text"
+msgid "Nuevo texto"
 msgstr ""
 
 #: sj-CPT.php:32
-msgid "Edit text"
+msgid "Editar texto"
 msgstr ""
 
 #: sj-CPT.php:33
-msgid "Update text"
+msgid "Actualizar texto"
 msgstr ""
 
 #: sj-CPT.php:34
-msgid "view text"
+msgid "Ver texto"
 msgstr ""
 
 #: sj-CPT.php:35
-msgid "View texts"
+msgid "Ver textos"
 msgstr ""
 
 #: sj-CPT.php:36
-msgid "Search texts"
+msgid "Buscar textos"
 msgstr ""
 
-#: sj-CPT.php:37 sj-CPT.php:139 sj-CPT.php:186 sj-CPT.php:276
-msgid "Not found"
+#: sj-CPT.php:72
+msgid "Categoría de texto"
 msgstr ""
 
-#: sj-CPT.php:38 sj-CPT.php:277
-msgid "Not found in trash"
+#: sj-CPT.php:73
+msgid "Categorias de texto"
 msgstr ""
 
-#: sj-CPT.php:39 sj-CPT.php:188
-msgid "Featured image"
+#: sj-CPT.php:87
+msgid "Etiqueta de texto"
 msgstr ""
 
-#: sj-CPT.php:40 sj-CPT.php:189
-msgid "Set featured image"
+#: sj-CPT.php:88
+msgid "Etiquetas de texto"
 msgstr ""
 
-#: sj-CPT.php:41 sj-CPT.php:190
-msgid "Remove featured image"
+#: sj-CPT.php:102
+msgid "Tipo de texto"
 msgstr ""
 
-#: sj-CPT.php:42 sj-CPT.php:191
-msgid "Use featured image"
+#: sj-CPT.php:103
+msgid "Tipos de texto"
 msgstr ""
 
-#: sj-CPT.php:43
-msgid "Insert into text"
+#: sj-CPT.php:111
+msgctxt "Post Type General Name"
+msgid "Sentencia"
 msgstr ""
 
-#: sj-CPT.php:44
-msgid "Uploaded to this text"
+#: sj-CPT.php:112
+msgctxt "Post Type Singular Name"
+msgid "Sentencia"
 msgstr ""
 
-#: sj-CPT.php:45
-msgid "Texts list"
-msgstr ""
-
-#: sj-CPT.php:46
-msgid "Texts list navigation"
-msgstr ""
-
-#: sj-CPT.php:47
-msgid "Filter texts list"
-msgstr ""
-
-#: sj-CPT.php:84
-msgid "Text category"
-msgstr ""
-
-#: sj-CPT.php:85
-msgid "Text categories"
-msgstr ""
-
-#: sj-CPT.php:99
-msgid "Text tag"
-msgstr ""
-
-#: sj-CPT.php:100
-msgid "Texts tag"
+#: sj-CPT.php:113
+msgid "Sentencias"
 msgstr ""
 
 #: sj-CPT.php:114
-msgid "Text type"
+msgid "Sentencia"
 msgstr ""
 
 #: sj-CPT.php:115
-msgid "Text types"
+msgid "Archivo de sentencias"
+msgstr ""
+
+#: sj-CPT.php:116
+msgid "Atributos de sentencia"
+msgstr ""
+
+#: sj-CPT.php:117
+msgid "Parent Sentencia:"
+msgstr ""
+
+#: sj-CPT.php:118
+msgid "Todas las sentencias"
+msgstr ""
+
+#: sj-CPT.php:119
+msgid "Añadir nuevas sentencias"
+msgstr ""
+
+#: sj-CPT.php:120 sj-CPT.php:159
+msgid "Añadir nueva"
+msgstr ""
+
+#: sj-CPT.php:121
+msgid "Nueva sentencia"
+msgstr ""
+
+#: sj-CPT.php:122
+msgid "Editar sentencia"
 msgstr ""
 
 #: sj-CPT.php:123
-msgctxt "Post Type General Name"
-msgid "Judgment"
+msgid "Actualizar sentencia"
 msgstr ""
 
 #: sj-CPT.php:124
-msgctxt "Post Type Singular Name"
-msgid "Judgment"
+msgid "Ver sentencia"
 msgstr ""
 
 #: sj-CPT.php:125
-msgid "Judgments"
+msgid "Ver sentencias"
 msgstr ""
 
 #: sj-CPT.php:126
-msgid "Judgment"
+msgid "Buscar sentencias"
 msgstr ""
 
-#: sj-CPT.php:127
-msgid "Judgments archive"
+#: sj-CPT.php:150
+msgctxt "Post Type General Name"
+msgid "Noticias"
 msgstr ""
 
-#: sj-CPT.php:128
-msgid "Judgment attributes"
+#: sj-CPT.php:151
+msgctxt "Post Type Singular Name"
+msgid "Noticia"
 msgstr ""
 
-#: sj-CPT.php:129
-msgid "Parent Judgment:"
+#: sj-CPT.php:152
+msgid "Noticias"
 msgstr ""
 
-#: sj-CPT.php:130
-msgid "All Judgments"
+#: sj-CPT.php:153
+msgid "Noticia"
 msgstr ""
 
-#: sj-CPT.php:131
-msgid "Add new Judgment"
+#: sj-CPT.php:154
+msgid "Archivo de noticias"
 msgstr ""
 
-#: sj-CPT.php:133
-msgid "New Judgment"
+#: sj-CPT.php:155
+msgid "Atributo de noticia"
 msgstr ""
 
-#: sj-CPT.php:134
-msgid "Edit Judgment"
+#: sj-CPT.php:156
+msgid "Noticia padre:"
 msgstr ""
 
-#: sj-CPT.php:135
-msgid "Update Judgment"
+#: sj-CPT.php:157
+msgid "Todas las noticias"
 msgstr ""
 
-#: sj-CPT.php:136
-msgid "View Judgment"
+#: sj-CPT.php:158
+msgid "Añadir nueva noticia"
 msgstr ""
 
-#: sj-CPT.php:137
-msgid "View Judgments"
+#: sj-CPT.php:160
+msgid "Nueva noticia"
 msgstr ""
 
-#: sj-CPT.php:138
-msgid "search Judgments"
+#: sj-CPT.php:161
+msgid "Editar noticia"
 msgstr ""
 
-#: sj-CPT.php:140 sj-CPT.php:187
-msgid "Not found en la papelera"
+#: sj-CPT.php:162
+msgid "Actualizar Noticia"
 msgstr ""
 
-#: sj-CPT.php:141
-msgid "Insert into Judgment"
+#: sj-CPT.php:163
+msgid "Ver noticia"
 msgstr ""
 
-#: sj-CPT.php:142
-msgid "Uploaded to this Judgment"
+#: sj-CPT.php:164
+msgid "Ver noticias"
 msgstr ""
 
-#: sj-CPT.php:143
-msgid "Judgments list"
+#: sj-CPT.php:165
+msgid "Buscar noticia"
 msgstr ""
 
-#: sj-CPT.php:144
-msgid "Judgment list navigation"
+#: sj-CPT.php:166
+msgid "No encontrado"
 msgstr ""
 
-#: sj-CPT.php:145
-msgid "Filter Judgments list"
+#: sj-CPT.php:167
+msgid "No encontrado en la papelera"
+msgstr ""
+
+#: sj-CPT.php:168
+msgid "Imagen destacada"
+msgstr ""
+
+#: sj-CPT.php:169
+msgid "Set featured image"
 msgstr ""
 
 #: sj-CPT.php:170
-msgctxt "Post Type General Name"
-msgid "Stories"
+msgid "Remove featured image"
 msgstr ""
 
 #: sj-CPT.php:171
-msgctxt "Post Type Singular Name"
-msgid "Story"
+msgid "Use featured image"
 msgstr ""
 
 #: sj-CPT.php:172
-msgid "Stories"
+msgid "Insert into noticia"
 msgstr ""
 
 #: sj-CPT.php:173
-msgid "Story"
+msgid "Uploaded to this noticia"
 msgstr ""
 
 #: sj-CPT.php:174
-msgid "Stories archive"
+msgid "Noticias list"
 msgstr ""
 
 #: sj-CPT.php:175
-msgid "Story attribute"
+msgid "Noticias list navigation"
 msgstr ""
 
 #: sj-CPT.php:176
-msgid "Parent Story:"
-msgstr ""
-
-#: sj-CPT.php:177
-msgid "All Stories"
-msgstr ""
-
-#: sj-CPT.php:178
-msgid "Add new Story"
-msgstr ""
-
-#: sj-CPT.php:180
-msgid "New Story"
-msgstr ""
-
-#: sj-CPT.php:181
-msgid "Edit Story"
-msgstr ""
-
-#: sj-CPT.php:182
-msgid "Update Story"
-msgstr ""
-
-#: sj-CPT.php:183
-msgid "View Story"
-msgstr ""
-
-#: sj-CPT.php:184
-msgid "View Stories"
-msgstr ""
-
-#: sj-CPT.php:185
-msgid "search Story"
-msgstr ""
-
-#: sj-CPT.php:192
-msgid "Insert into Story"
-msgstr ""
-
-#: sj-CPT.php:193
-msgid "Uploaded to this Story"
-msgstr ""
-
-#: sj-CPT.php:194
-msgid "Stories list"
-msgstr ""
-
-#: sj-CPT.php:195
-msgid "Stories list navigation"
-msgstr ""
-
-#: sj-CPT.php:196
 msgid "Filter stories list"
 msgstr ""
 
-#: sj-CPT.php:236
-msgid "Story tag"
+#: sj-CPT.php:215
+msgid "Etiqueta de noticia"
 msgstr ""
 
-#: sj-CPT.php:237
-msgid "Story tags"
+#: sj-CPT.php:216
+msgid "Etiquetas de noticia"
+msgstr ""
+
+#: sj-CPT.php:230
+msgid "Categoría de noticia"
+msgstr ""
+
+#: sj-CPT.php:231
+msgid "Categorías de noticia"
+msgstr ""
+
+#: sj-CPT.php:239
+msgctxt "Post Type General Name"
+msgid "Enlaces"
+msgstr ""
+
+#: sj-CPT.php:240
+msgctxt "Post Type Singular Name"
+msgid "Enlace"
+msgstr ""
+
+#: sj-CPT.php:241
+msgid "Enlaces"
+msgstr ""
+
+#: sj-CPT.php:242
+msgid "Enlace"
+msgstr ""
+
+#: sj-CPT.php:243
+msgid "Archivo de enlaces"
+msgstr ""
+
+#: sj-CPT.php:244
+msgid "Atributo de enlace"
+msgstr ""
+
+#: sj-CPT.php:245
+msgid "Enlace padre:"
+msgstr ""
+
+#: sj-CPT.php:246
+msgid "Todos los enlaces"
+msgstr ""
+
+#: sj-CPT.php:247
+msgid "Añadir nuevo enlace"
+msgstr ""
+
+#: sj-CPT.php:249
+msgid "Nuevo enlace"
+msgstr ""
+
+#: sj-CPT.php:250
+msgid "Editar enlace"
 msgstr ""
 
 #: sj-CPT.php:251
-msgid "Story category"
+msgid "Actualizar enlace"
 msgstr ""
 
 #: sj-CPT.php:252
-msgid "Story categories"
+msgid "Ver enlace"
 msgstr ""
 
-#: sj-CPT.php:260
-msgctxt "Post Type General Name"
-msgid "Links"
+#: sj-CPT.php:253
+msgid "Ver enlaces"
 msgstr ""
 
-#: sj-CPT.php:261
-msgctxt "Post Type Singular Name"
-msgid "Link"
+#: sj-CPT.php:254
+msgid "Buscar enlace"
 msgstr ""
 
-#: sj-CPT.php:262
-msgid "Links"
+#: sj-CPT.php:284
+msgid "Categoría de enlace"
 msgstr ""
 
-#: sj-CPT.php:263
-msgid "Link"
-msgstr ""
-
-#: sj-CPT.php:264
-msgid "Links archive"
-msgstr ""
-
-#: sj-CPT.php:265
-msgid "Link attribute"
-msgstr ""
-
-#: sj-CPT.php:266
-msgid "Parent Link:"
-msgstr ""
-
-#: sj-CPT.php:267
-msgid "All Links"
-msgstr ""
-
-#: sj-CPT.php:268
-msgid "Add new Link"
-msgstr ""
-
-#: sj-CPT.php:270
-msgid "New Link"
-msgstr ""
-
-#: sj-CPT.php:271
-msgid "Edit Link"
-msgstr ""
-
-#: sj-CPT.php:272
-msgid "Update Link"
-msgstr ""
-
-#: sj-CPT.php:273
-msgid "View Link"
-msgstr ""
-
-#: sj-CPT.php:274
-msgid "View Links"
-msgstr ""
-
-#: sj-CPT.php:275
-msgid "Search Link"
-msgstr ""
-
-#: sj-CPT.php:308
-msgid "Link category"
-msgstr ""
-
-#: sj-CPT.php:309
-msgid "Links categories"
+#: sj-CPT.php:285
+msgid "Categorías de enlace"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
