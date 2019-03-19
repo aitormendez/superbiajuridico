@@ -160,3 +160,39 @@ add_action('wp_enqueue_scripts', function () {
  * image sizes
  */
 add_image_size( 'very-large', 2000 );
+
+
+/**
+ * Cambiar títulos sentencias
+ */
+
+ function actualizar_titulo_sentencia($post_id) {
+   $post_type = get_post_type($post_id);
+   if ($post_type == 'sentence') {
+       $nombre = get_field('nombre', $post_id);
+       $sentencia_no = get_field('sentencia_no', $post_id);
+       $tribunal = get_field('tribunal', $post_id);
+       $fecha = get_field('fecha', $post_id, false);
+       $fecha_datetime = new \DateTime($fecha);
+       $anio = $fecha_datetime->format('Y');
+       $fecha_titulo =  $fecha_datetime->format('j-n-Y');
+
+       if ($sentencia_no == '') {
+           $new = $tribunal . ' ' . $fecha_titulo;
+       } else {
+           $new = $tribunal . ' ' . $sentencia_no . '/' . $anio;
+       }
+       if (!'' == $nombre) {
+           $new = $new . ' ' . $nombre;
+       }
+
+       $my_post = array(
+         'ID' => $post_id,
+         'post_title'   => $new,
+       );
+       remove_action( 'acf/save_post', 'actualizar_titulo_sentencia', 10, 1 );
+       wp_update_post( $my_post );
+       add_action( 'acf/save_post', 'actualizar_titulo_sentencia', 10, 1 );
+   }
+ }
+ add_action( 'acf/save_post', __NAMESPACE__ .'\\actualizar_titulo_sentencia', 10, 1 );
