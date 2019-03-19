@@ -1,4 +1,4 @@
-@if (is_singular('text') || is_post_type_archive('text') || is_post_type_archive('story') || is_singular('story'))
+@if (is_singular('text') || is_post_type_archive('text') || is_post_type_archive('story') || is_singular('story') || is_front_page() )
   @php
     $fecha_pub_raw = new DateTime(get_field('fecha_pub', false, false ));
     $fecha_pub_iso = $fecha_pub_raw->format('c');

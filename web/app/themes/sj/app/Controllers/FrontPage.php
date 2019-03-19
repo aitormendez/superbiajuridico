@@ -65,12 +65,12 @@ class FrontPage extends Controller
     public function argsNews()
     {
         $args_news = array(
-        	'post_type'              => ['story'],
+        	'post_type'              => 'story',
         	'post_status'            => 'publish',
 	        'posts_per_page'         => 21,
-            'meta_key'               => 'fecha_pub',
-            'orderby'	=> 'meta_value_num',
-	        'order'		=> 'DESC'
+          'meta_key'               => 'fecha_pub',
+          'orderby'	=> 'meta_value_num',
+          'order'		=> 'DESC',
         );
         return $args_news;
     }
