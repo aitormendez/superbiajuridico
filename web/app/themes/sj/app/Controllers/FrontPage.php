@@ -13,15 +13,15 @@ class FrontPage extends Controller
         $args_article = [
         	'post_type'             => ['text'],
         	'post_status'           => ['publish'],
-            'posts_per_page'        => 4,
-            'tax_query'             => [
-                [
-                    'taxonomy' => 'article-type',
-              			'field'    => 'slug',
-              			'terms'    => ['articulo'],
-                    'operator' => 'IN',
-                    ]
-                ]
+          'posts_per_page'        => 4,
+          'tax_query'             => [
+              [
+                  'taxonomy' => 'article-type',
+            			'field'    => 'slug',
+            			'terms'    => ['articulo'],
+                  'operator' => 'IN',
+                  ]
+              ]
         ];
         return $args_article;
     }
@@ -32,14 +32,14 @@ class FrontPage extends Controller
         	'post_type'             => ['text'],
         	'post_status'           => 'publish',
 	        'posts_per_page'        => 4,
-            'tax_query'             => [
-                [
-                    'taxonomy' => 'article-type',
-        			'field'    => 'slug',
-        			'terms'    => ['comentario'],
-                    'operator' => 'IN',
-                    ]
+          'tax_query'             => [
+              [
+                'taxonomy' => 'article-type',
+    			      'field'    => 'slug',
+    			      'terms'    => ['comentario'],
+                'operator' => 'IN',
                 ]
+            ]
         );
         return $args_comment;
     }
@@ -50,14 +50,14 @@ class FrontPage extends Controller
         	'post_type'              => ['text'],
         	'post_status'            => 'publish',
 	        'posts_per_page'         => 4,
-            'tax_query'             => [
-                [
-                    'taxonomy' => 'article-type',
-        			'field'    => 'slug',
-        			'terms'    => ['resumen'],
-                    'operator' => 'IN',
-                    ]
-                ]
+          'tax_query'             => [
+            [
+              'taxonomy' => 'article-type',
+  			      'field'    => 'slug',
+  			      'terms'    => ['resumen'],
+              'operator' => 'IN',
+            ]
+          ]
         );
         return $args_abstract;
     }

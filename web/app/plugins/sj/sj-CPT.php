@@ -40,7 +40,20 @@ add_action( 'init', function() {
     'post_author' => [
       'title'      => 'Post author',
       'post_field' => 'post_author',
-    ]
+    ],
+    'fecha_pub' => [
+			'title'       => 'Fecha pub',
+			'meta_key'    => 'fecha_pub',
+			'date_format' => 'd/m/Y'
+		],
+    'fecha' => [
+			'title'       => 'Fecha',
+			'post_field'    => 'post_date',
+      'date_format' => 'd/m/Y'
+		],
+    'article-type' => [
+				'taxonomy' => 'article-type'
+			],
   ];
 
   $supports_texto = [
