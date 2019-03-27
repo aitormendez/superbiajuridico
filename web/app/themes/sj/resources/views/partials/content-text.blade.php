@@ -13,7 +13,7 @@
         {!! $output !!}
       </div>
     @endif
-    <h2 class="entry-title"><a href="{{ get_permalink() }}">{{ get_the_title() }}</a></h2>
+    <h2 class="entry-title"><a href="{{ get_permalink() }}">{!! get_the_title() !!}</a></h2>
     @include('partials/entry-meta')
   </header>
   <div class="entry-summary">
