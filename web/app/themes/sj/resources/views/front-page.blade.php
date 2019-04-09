@@ -5,9 +5,7 @@
   <section id="slide01" class="hero">
 
     <div class="bcg">
-      @php
-        echo wp_get_attachment_image( $img_uno_id, 'very-large' );
-      @endphp
+      <img src="{{ $img_portada[0]['url'] }}" alt="imagen portada" srcset="{{$img_portada[1] }}" >
     </div>
 
     <div class="escudo">

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-12 17:12+0100\n"
-"PO-Revision-Date: 2019-03-12 17:14+0100\n"
+"PO-Revision-Date: 2019-04-09 08:25+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -62,7 +62,7 @@ msgstr "Автор"
 
 #: app/Controllers/App.php:36 resources/views/front-page.blade.php:79
 msgid "Superbia Jurídico en los medios"
-msgstr "Юридическая Супербиа в СМИ"
+msgstr "Супербиа в средствах массовой информации"
 
 #: app/Controllers/App.php:39
 msgid "Artículos"
@@ -70,11 +70,11 @@ msgstr "Статьи"
 
 #: app/Controllers/App.php:42
 msgid "Resúmenes de sentencias"
-msgstr "Резюме приговоров"
+msgstr "Краткое содержание судебных решений"
 
 #: app/Controllers/App.php:45
 msgid "Sentencias comentadas"
-msgstr "предложения прокомментировал"
+msgstr "Обсуждаемые судебные решения"
 
 #: app/Controllers/App.php:51
 #, php-format
@@ -84,7 +84,7 @@ msgstr ""
 #: app/Controllers/App.php:54
 #, php-format
 msgid "Resultado de búsqueda para <b> %s </b>"
-msgstr "Результат поиска для  %s "
+msgstr "Результаты поиска<b> %s </b>"
 
 #: app/Controllers/App.php:57
 msgid "No encontrado"
@@ -101,19 +101,19 @@ msgstr "Читать далее"
 
 #: app/setup.php:55
 msgid "Menú principal"
-msgstr "Главное меню"
+msgstr "Основное меню"
 
 #: app/setup.php:56
 msgid "Menú pie"
-msgstr "Ножное меню"
+msgstr ""
 
 #: app/setup.php:57
 msgid "Menu lenguaje"
-msgstr "Язык меню"
+msgstr "Языковое меню"
 
 #: app/setup.php:96
 msgid "Principal"
-msgstr "Главное меню"
+msgstr "Основное"
 
 #: app/setup.php:100
 msgid "Pie"
@@ -121,7 +121,7 @@ msgstr "Ноги"
 
 #: resources/views/404.blade.php:8
 msgid "La página que está intentando ver no existe."
-msgstr "Страница, которую вы пытаетесь увидеть, не существует."
+msgstr "Страница не найдена."
 
 #: resources/views/archive-text.blade.php:8
 #: resources/views/partials/np-posts.blade.php:2
@@ -134,11 +134,11 @@ msgstr "Семейное право, уголовное право и банко
 
 #: resources/views/front-page.blade.php:20
 msgid "Nuestra experiencia nos avala"
-msgstr "Наш опыт гарантирует нам"
+msgstr "Наш опыт говорит сам за себя"
 
 #: resources/views/front-page.blade.php:25
 msgid "Pregúntanos"
-msgstr "Спросить"
+msgstr "Задайте нам вопрос"
 
 #: resources/views/front-page.blade.php:33
 msgid "Últimos artículos"
@@ -146,19 +146,19 @@ msgstr "Последние статьи"
 
 #: resources/views/front-page.blade.php:34
 msgid "Ver todos"
-msgstr "Смотреть все"
+msgstr "Посмотреть все"
 
 #: resources/views/front-page.blade.php:47
 msgid "Últimas sentencias comentadas"
-msgstr "Последние комментарии предложений"
+msgstr "Последние обсуждаемые решения суда"
 
 #: resources/views/front-page.blade.php:48
 msgid "Ver todas"
-msgstr "Смотреть все"
+msgstr "Посмотреть все"
 
 #: resources/views/front-page.blade.php:61
 msgid "Últimos resúmenes de sentencias"
-msgstr "Последние приговоры резюме"
+msgstr "Краткое содержание последних судебных решений"
 
 #: resources/views/front-page.blade.php:62
 msgid "ver todos"
@@ -167,7 +167,7 @@ msgstr "Смотреть все"
 #: resources/views/front-page.blade.php:77
 #: resources/views/partials/header.blade.php:54
 msgid "Noticias"
-msgstr "Новости"
+msgstr "Noticias"
 
 #: resources/views/front-page.blade.php:78
 msgid "ver todas las noticias"
@@ -224,11 +224,11 @@ msgstr "Похожие предложения"
 
 #: resources/views/partials/entry-meta-BAK.blade.php:3
 msgid "Por"
-msgstr "По"
+msgstr ""
 
 #: resources/views/partials/footer.blade.php:4
 msgid "Navegación"
-msgstr "Навигации"
+msgstr "Наш сайт"
 
 #: resources/views/partials/header.blade.php:50
 msgid "Textos"
@@ -236,16 +236,16 @@ msgstr "Тексты"
 
 #: resources/views/partials/header.blade.php:50
 msgid "Comentarios"
-msgstr "Комментарии закрыты."
+msgstr "Комментарии"
 
 #: resources/views/partials/header.blade.php:50
 msgid "Resúmenes"
-msgstr "Резюме"
+msgstr "Краткое содержание"
 
 #: resources/views/partials/header.blade.php:63
 #: resources/views/partials/header.blade.php:68
 msgid "Ámbito"
-msgstr "Поле"
+msgstr "Область"
 
 #: resources/views/partials/header.blade.php:65
 #: resources/views/partials/header.blade.php:70

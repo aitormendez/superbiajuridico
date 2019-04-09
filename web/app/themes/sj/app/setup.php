@@ -6,6 +6,7 @@ use Roots\Sage\Container;
 use Roots\Sage\Assets\JsonManifest;
 use Roots\Sage\Template\Blade;
 use Roots\Sage\Template\BladeProvider;
+use StoutLogic\AcfBuilder\FieldsBuilder;
 
 /**
  * Theme assets
@@ -196,3 +197,16 @@ add_image_size( 'very-large', 2000 );
    }
  }
  add_action( 'acf/save_post', __NAMESPACE__ .'\\actualizar_titulo_sentencia', 10, 1 );
+
+ /**
+ * Initialize ACF Builder
+ */
+add_action('init', function () {
+    collect(glob(config('theme.dir').'/app/fields/*.php'))->map(function ($field) {
+        return require_once($field);
+    })->map(function ($field) {
+        if ($field instanceof FieldsBuilder) {
+            acf_add_local_field_group($field->build());
+        }
+    });
+});

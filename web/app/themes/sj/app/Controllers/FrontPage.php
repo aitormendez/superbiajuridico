@@ -75,14 +75,12 @@ class FrontPage extends Controller
         return $args_news;
     }
 
-    public function imgUnoId()
+    public function imgPortada()
     {
-        $args = [
-          'name'           => 'myles-tan-84040-unsplash',
-          'post_type'      => 'attachment',
-        ];
-        $img = get_posts( $args );
-        return $img[0]->ID;
+      $img = get_field('img_portada', 'options');
+      $srcset = wp_get_attachment_image_srcset($img['id'], 'very-large');
+
+      return [$img, $srcset ];
     }
 
 }
