@@ -83,4 +83,16 @@ class FrontPage extends Controller
       return [$img, $srcset ];
     }
 
+    public function contactLink()
+    {
+      $contacto = get_page_by_title( 'contacto' );
+      $permalink = get_permalink($contacto);
+      if (ICL_LANGUAGE_CODE == 'ru') {
+        $output = apply_filters( 'wpml_permalink', $permalink, 'ru', true );
+      } else {
+        $output = $permalink;
+      }
+      return $output;
+    }
+
 }

@@ -20,7 +20,7 @@
     </div>
     <div class="marco pregunta">
       <div class="pregunta">
-        <a href="contacto">{{ __('Pregúntanos', 'sage') }}</a>
+      <a href="{{ $contact_link }}">{{ __('Pregúntanos', 'sage') }}</a>
       </div>
     </div>
   </section>
