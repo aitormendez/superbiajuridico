@@ -3,7 +3,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "Project-Id-Version: sj-CPT\n"
 "POT-Creation-Date: 2019-03-12 11:32+0100\n"
-"PO-Revision-Date: 2019-03-12 11:53+0100\n"
+"PO-Revision-Date: 2019-04-09 16:15+0200\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,15 +39,15 @@ msgstr "Текст"
 
 #: sj-CPT.php:25
 msgid "Text archive"
-msgstr "Текстовый Архив"
+msgstr "Архивы текстов"
 
 #: sj-CPT.php:26
 msgid "Text attributes"
-msgstr "Атрибуты текста"
+msgstr "Атрибуты текстов"
 
 #: sj-CPT.php:27
 msgid "Parent text:"
-msgstr "Родительский текст:"
+msgstr "Основной текст:"
 
 #: sj-CPT.php:28
 msgid "All texts"
@@ -59,7 +59,7 @@ msgstr "Добавить новый текст"
 
 #: sj-CPT.php:30 sj-CPT.php:132 sj-CPT.php:179 sj-CPT.php:269
 msgid "Add new"
-msgstr "Добавить новый"
+msgstr "добавить новое"
 
 #: sj-CPT.php:31
 msgid "New text"
@@ -83,7 +83,7 @@ msgstr "Просмотр текстов"
 
 #: sj-CPT.php:36
 msgid "Search texts"
-msgstr "Поиск текстов"
+msgstr "Искать тексты"
 
 #: sj-CPT.php:37 sj-CPT.php:139 sj-CPT.php:186 sj-CPT.php:276
 msgid "Not found"
@@ -95,19 +95,19 @@ msgstr "Не найдено в корзине"
 
 #: sj-CPT.php:39 sj-CPT.php:188
 msgid "Featured image"
-msgstr "Популярные изображения"
+msgstr "Популярное изображение"
 
 #: sj-CPT.php:40 sj-CPT.php:189
 msgid "Set featured image"
-msgstr "Установить изображение"
+msgstr "Установить миниатюру"
 
 #: sj-CPT.php:41 sj-CPT.php:190
 msgid "Remove featured image"
-msgstr "Удалить изображение"
+msgstr "Удалить миниатюру"
 
 #: sj-CPT.php:42 sj-CPT.php:191
 msgid "Use featured image"
-msgstr "Использовать рекомендуемое изображение"
+msgstr "Использовать миниатюру"
 
 #: sj-CPT.php:43
 msgid "Insert into text"
@@ -156,32 +156,32 @@ msgstr "Типы текста"
 #: sj-CPT.php:123
 msgctxt "Post Type General Name"
 msgid "Judgment"
-msgstr "Суд"
+msgstr ""
 
 #: sj-CPT.php:124
 msgctxt "Post Type Singular Name"
 msgid "Judgment"
-msgstr "Суд"
+msgstr ""
 
 #: sj-CPT.php:125
 msgid "Judgments"
-msgstr "Суждения"
+msgstr "Решения суда"
 
 #: sj-CPT.php:126
 msgid "Judgment"
-msgstr "Суд"
+msgstr "Решение суда"
 
 #: sj-CPT.php:127
 msgid "Judgments archive"
-msgstr "Архив судебных решений"
+msgstr "Архив решений суда"
 
 #: sj-CPT.php:128
 msgid "Judgment attributes"
-msgstr "Атрибуты суждения"
+msgstr "Атрибуты решения суда"
 
 #: sj-CPT.php:129
 msgid "Parent Judgment:"
-msgstr "Родительский суд:"
+msgstr ""
 
 #: sj-CPT.php:130
 msgid "All Judgments"
@@ -189,31 +189,31 @@ msgstr "Все суждения"
 
 #: sj-CPT.php:131
 msgid "Add new Judgment"
-msgstr "Добавить новое суждение"
+msgstr "Добавить новые решения суда"
 
 #: sj-CPT.php:133
 msgid "New Judgment"
-msgstr "Новое суждение"
+msgstr "Новое решение суда"
 
 #: sj-CPT.php:134
 msgid "Edit Judgment"
-msgstr "Изменение суждения"
+msgstr "Изменить решение суда"
 
 #: sj-CPT.php:135
 msgid "Update Judgment"
-msgstr "Обновление решения"
+msgstr "Актуализировать решение суда"
 
 #: sj-CPT.php:136
 msgid "View Judgment"
-msgstr "Посмотреть суждение"
+msgstr "Открыть решение суда"
 
 #: sj-CPT.php:137
 msgid "View Judgments"
-msgstr "Посмотреть суждения"
+msgstr "Открыть решения суда"
 
 #: sj-CPT.php:138
 msgid "search Judgments"
-msgstr "Поиск суждения"
+msgstr "Искать решения суда"
 
 #: sj-CPT.php:140 sj-CPT.php:187
 msgid "Not found en la papelera"
@@ -242,80 +242,80 @@ msgstr "Список решений фильтров"
 #: sj-CPT.php:170
 msgctxt "Post Type General Name"
 msgid "Stories"
-msgstr "Истории"
+msgstr "Новости"
 
 #: sj-CPT.php:171
 msgctxt "Post Type Singular Name"
 msgid "Story"
-msgstr "История"
+msgstr "Новость"
 
 #: sj-CPT.php:172
 msgid "Stories"
-msgstr "Истории"
+msgstr "Новости"
 
 #: sj-CPT.php:173
 msgid "Story"
-msgstr "История"
+msgstr "Новость"
 
 #: sj-CPT.php:174
 msgid "Stories archive"
-msgstr "Архив историй"
+msgstr "Архив новостей"
 
 #: sj-CPT.php:175
 msgid "Story attribute"
-msgstr "Атрибут \"История\""
+msgstr "Атрибут новости"
 
 #: sj-CPT.php:176
 msgid "Parent Story:"
-msgstr "Родительская История:"
+msgstr "Основная новость"
 
 #: sj-CPT.php:177
 msgid "All Stories"
-msgstr "Все Записи"
+msgstr "Все новости"
 
 #: sj-CPT.php:178
 msgid "Add new Story"
-msgstr "Добавить новую историю"
+msgstr "Добавить новое"
 
 #: sj-CPT.php:180
 msgid "New Story"
-msgstr "Новая история"
+msgstr "Новое"
 
 #: sj-CPT.php:181
 msgid "Edit Story"
-msgstr "Редактировать История"
+msgstr "Изменить новость"
 
 #: sj-CPT.php:182
 msgid "Update Story"
-msgstr "Обновить историю"
+msgstr "Актуализировать новость"
 
 #: sj-CPT.php:183
 msgid "View Story"
-msgstr "Просмотр История"
+msgstr "Открыть новость"
 
 #: sj-CPT.php:184
 msgid "View Stories"
-msgstr "Просмотр историй"
+msgstr "Открыть новости"
 
 #: sj-CPT.php:185
 msgid "search Story"
-msgstr "История поиска"
+msgstr "Искать новость"
 
 #: sj-CPT.php:192
 msgid "Insert into Story"
-msgstr "Вставка в историю"
+msgstr "Вставить в новость"
 
 #: sj-CPT.php:193
 msgid "Uploaded to this Story"
-msgstr "Загружено в эту статью"
+msgstr "Загрузить в текст новости"
 
 #: sj-CPT.php:194
 msgid "Stories list"
-msgstr "Список историй"
+msgstr "Список новостей"
 
 #: sj-CPT.php:195
 msgid "Stories list navigation"
-msgstr "Навигация по списку историй"
+msgstr "Список новостей"
 
 #: sj-CPT.php:196
 msgid "Filter stories list"
@@ -323,19 +323,19 @@ msgstr "Список историй фильтров"
 
 #: sj-CPT.php:236
 msgid "Story tag"
-msgstr "Тег истории"
+msgstr "Ярлык новости"
 
 #: sj-CPT.php:237
 msgid "Story tags"
-msgstr "Теги истории"
+msgstr "Ярлыки новости"
 
 #: sj-CPT.php:251
 msgid "Story category"
-msgstr "Категория \"История\""
+msgstr "Категория новости"
 
 #: sj-CPT.php:252
 msgid "Story categories"
-msgstr "Категории историй"
+msgstr "Категории новости"
 
 #: sj-CPT.php:260
 msgctxt "Post Type General Name"
@@ -365,7 +365,7 @@ msgstr "Атрибут ссылки"
 
 #: sj-CPT.php:266
 msgid "Parent Link:"
-msgstr "Родительская ссылка:"
+msgstr "Основная ссылка:"
 
 #: sj-CPT.php:267
 msgid "All Links"
@@ -381,23 +381,23 @@ msgstr "Новая ссылка"
 
 #: sj-CPT.php:271
 msgid "Edit Link"
-msgstr "Изменить ссылку"
+msgstr "Редактировать ссылку"
 
 #: sj-CPT.php:272
 msgid "Update Link"
-msgstr "Обновите Ссылку"
+msgstr "Обновить ссылку"
 
 #: sj-CPT.php:273
 msgid "View Link"
-msgstr "Смотреть ссылку"
+msgstr "Открыть ссылку"
 
 #: sj-CPT.php:274
 msgid "View Links"
-msgstr "Просмотр ссылок"
+msgstr "Открыть ссылки"
 
 #: sj-CPT.php:275
 msgid "Search Link"
-msgstr "Найти ссылку"
+msgstr "Искать ссылку"
 
 #: sj-CPT.php:308
 msgid "Link category"
@@ -405,7 +405,7 @@ msgstr "Категория ссылки"
 
 #: sj-CPT.php:309
 msgid "Links categories"
-msgstr "Категории ссылок"
+msgstr "Категории ссылки"
 
 #. Plugin Name of the plugin/theme
 msgid "sj-CPT"
