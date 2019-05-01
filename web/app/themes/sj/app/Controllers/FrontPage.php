@@ -13,15 +13,15 @@ class FrontPage extends Controller
         $args_article = [
         	'post_type'             => ['text'],
         	'post_status'           => ['publish'],
-          'posts_per_page'        => 4,
-          'tax_query'             => [
-              [
-                  'taxonomy' => 'article-type',
-            			'field'    => 'slug',
-            			'terms'    => ['articulo'],
-                  'operator' => 'IN',
-                  ]
-              ]
+            'posts_per_page'        => 4,
+            'tax_query'             => [
+                [
+                    'taxonomy' => 'article-type',
+                            'field'    => 'slug',
+                            'terms'    => ['articulo'],
+                    'operator' => 'IN',
+                    ]
+                ]
         ];
         return $args_article;
     }
@@ -31,7 +31,7 @@ class FrontPage extends Controller
         $args_comment = array(
         	'post_type'             => ['text'],
         	'post_status'           => 'publish',
-	        'posts_per_page'        => 4,
+
           'tax_query'             => [
               [
                 'taxonomy' => 'article-type',
@@ -68,11 +68,23 @@ class FrontPage extends Controller
         	'post_type'              => 'story',
         	'post_status'            => 'publish',
 	        'posts_per_page'         => 21,
-          'meta_key'               => 'fecha_pub',
-          'orderby'	=> 'meta_value_num',
-          'order'		=> 'DESC',
+            'meta_key'               => 'fecha_pub',
+            'orderby'	=> 'meta_value_num',
+            'order'		=> 'DESC',
         );
         return $args_news;
+    }
+
+    public function argsGlide()
+    {
+        $args_glide = array(
+        	'post_type'              => ['story', 'text', 'sentence'],
+        	'post_status'            => 'publish',
+            'nopaging'               => true,
+            'meta_key'		         => 'go_to_slider',
+	        'meta_value'	         => true,
+        );
+        return $args_glide;
     }
 
     public function imgPortada()

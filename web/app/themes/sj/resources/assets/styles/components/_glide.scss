@@ -1,0 +1,22 @@
+.home .glide {
+  .glide__track {
+    ul {
+      li {
+        position: relative;
+        background-color: $gray-lighter;
+
+        a {
+          .img {
+            position: absolute;
+            top: 0;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -52,8 +52,12 @@ add_action( 'init', function() {
       'date_format' => 'd/m/Y'
 		],
     'article-type' => [
-				'taxonomy' => 'article-type'
-			],
+      'taxonomy' => 'article-type'
+    ],
+    'go_to_slider' => array(
+      'title'    => 'En portada',
+      'meta_key' => 'go_to_slider',
+    ),
   ];
 
   $supports_texto = [
@@ -108,7 +112,7 @@ add_action( 'init', function() {
       'text'
     ],
     [
-      'meta_box' => 'simple',
+      'meta_box' => 'radio',
       'hierarchical' => false,
      ],
      [
@@ -140,7 +144,14 @@ add_action( 'init', function() {
   ];
 
   $cols_sentence = [
-    'post_author',
+    'post_author' => [
+      'title'      => 'Post author',
+      'post_field' => 'post_author',
+    ],
+    'go_to_slider' => array(
+      'title'    => 'En portada',
+      'meta_key' => 'go_to_slider',
+    ),
   ];
 
   $supports_sentence = [
@@ -193,7 +204,11 @@ add_action( 'init', function() {
     'post_author' => [
       'title'      => 'Post author',
       'post_field' => 'post_author',
-    ]
+    ],
+    'go_to_slider' => array(
+      'title'    => 'En portada',
+      'meta_key' => 'go_to_slider',
+    ),
   ];
 
   $supports_story = [
@@ -201,6 +216,7 @@ add_action( 'init', function() {
     'title',
     'editor',
     'excerpt',
+    'thumbnail',
   ];
 
   register_extended_post_type( 'story',

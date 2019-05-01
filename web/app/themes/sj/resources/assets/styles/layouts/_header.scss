@@ -3,6 +3,10 @@
   padding-top: $pad-3;
   z-index: 1000;
 
+  .wpml-ls-menu-item .wpml-ls-flag + span {
+    margin-left: 0.3em;
+  }
+
   .brand {
     .logotipo {
       @include logo;

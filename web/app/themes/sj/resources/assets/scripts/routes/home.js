@@ -8,6 +8,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js';
 // import 'gsap/src/minified/plugins/ScrollToPlugin.min';
 import TimelineMax from 'gsap/src/minified/TimelineMax.min';
+import Glide from '@glidejs/glide';
 
 export default {
   init() {
@@ -63,33 +64,21 @@ export default {
         .addTo(controller);
 
 
-    }
+    } // ! viewport width
 
-    // OWL carousel
-    // $('.owl-carousel').owlCarousel({
-    //   loop: true,
-    //   margin: 10,
-    //   responsive: {
-    //     0: {
-    //       items: 1,
-    //     },
-    //     300: {
-    //       items: 2,
-    //     },
-    //     600: {
-    //       items: 4,
-    //     },
-    //     900: {
-    //       items: 6,
-    //     },
-    //     1200: {
-    //       items: 8,
-    //     },
-    //     1500: {
-    //       items: 10,
-    //     },
-    //   },
-    // })
+
+    var glide = new Glide('.glide', {
+      type: 'carousel',
+      gap: 15,
+      peek: {
+        before: 50,
+        after: 50,
+      },
+    })
+
+    glide.mount()
+
+
 
   },
   finalize() {
