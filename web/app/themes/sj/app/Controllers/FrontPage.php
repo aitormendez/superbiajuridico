@@ -128,7 +128,7 @@ class FrontPage extends Controller
 
                 case 'comentario':
                     $icono = '<i class="fas fa-comment"></i>';
-                    $seccion = 'Comentaio de sentencia';
+                    $seccion = 'Comentario de sentencia';
                     break;
 
                 case 'rincon':

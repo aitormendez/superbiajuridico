@@ -35,17 +35,17 @@
       </ul>
   </div>
   <div class="glide__arrows" data-glide-el="controls">
-    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+    <button class="glide__arrow glide__arrow--left left" data-glide-dir="<">
+      <i class="fas fa-arrow-left"></i>
+    </button>
+    <button class="glide__arrow glide__arrow--right right" data-glide-dir=">">
+      <i class="fas fa-arrow-right"></i>
+      </button>
   </div>
 </section>
 
-@php
-//  var_dump( $query );
-@endphp
-
 <section class="textos">
-  <i class="fas fa-arrow-alt-down"></i>
+  <div id="hola" class="fas fa-arrow-alt-down"></div>
   <section class="articulos">
     <div class="header">
       <h1>{{ __('Últimos artículos', 'sage') }}</h1>
