@@ -31,15 +31,15 @@ class FrontPage extends Controller
         $args_comment = array(
         	'post_type'             => ['text'],
         	'post_status'           => 'publish',
-
-          'tax_query'             => [
-              [
-                'taxonomy' => 'article-type',
-    			      'field'    => 'slug',
-    			      'terms'    => ['comentario'],
-                'operator' => 'IN',
+            'posts_per_page'         => 4,
+            'tax_query'             => [
+                [
+                    'taxonomy' => 'article-type',
+                        'field'    => 'slug',
+                        'terms'    => ['comentario'],
+                    'operator' => 'IN',
+                    ]
                 ]
-            ]
         );
         return $args_comment;
     }
@@ -50,14 +50,14 @@ class FrontPage extends Controller
         	'post_type'              => ['text'],
         	'post_status'            => 'publish',
 	        'posts_per_page'         => 4,
-          'tax_query'             => [
-            [
-              'taxonomy' => 'article-type',
-  			      'field'    => 'slug',
-  			      'terms'    => ['resumen'],
-              'operator' => 'IN',
+            'tax_query'             => [
+                [
+                'taxonomy' => 'article-type',
+                    'field'    => 'slug',
+                    'terms'    => ['resumen'],
+                'operator' => 'IN',
+                ]
             ]
-          ]
         );
         return $args_abstract;
     }
@@ -105,6 +105,58 @@ class FrontPage extends Controller
         $output = $permalink;
       }
       return $output;
+    }
+
+    public static function itemSlider()
+    {
+        $post_type = get_post_type();
+
+        if ($post_type == 'text' ) {
+            $term = get_the_terms( get_the_ID(), 'article-type' )[0];
+            $clase = $term->slug;
+
+            switch ($term->slug) {
+                case 'resumen':
+                    $icono = '<i class="fas fa-gavel"></i>';
+                    $seccion = 'Resumen de sentencia';
+                    break;
+
+                case 'articulo':
+                    $icono = '<i class="fas fa-pen-fancy"></i>';
+                    $seccion = 'Artículo';
+                    break;
+
+                case 'comentario':
+                    $icono = '<i class="fas fa-comment"></i>';
+                    $seccion = 'Comentaio de sentencia';
+                    break;
+
+                case 'rincon':
+                    $icono = '<i class="fas fa-graduation-cap"></i>';
+                    $seccion = 'Rincón del profesor';
+                    break;
+            }
+        } else {
+            $clase = $post_type;
+        }
+
+        if ($post_type == 'story') {
+            $icono = '<i class="fas fa-newspaper"></i>';
+            $seccion = 'Noticia';
+        }
+
+        if ($post_type == 'sentence') {
+            $icono = '<i class="fas fa-gavel"></i>';
+            $seccion = 'Sentencia';
+        }
+
+        $output = [
+            'clase'   => $clase,
+            'seccion' => $seccion,
+            'icono'   => $icono,
+        ];
+
+        return $output;
     }
 
 }

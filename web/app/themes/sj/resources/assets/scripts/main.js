@@ -9,6 +9,7 @@ import {
   faNewspaper,
   faGavel,
   faGraduationCap,
+  faPenFancy,
 } from '@fortawesome/free-solid-svg-icons'
 
 var faArrowAltDown = {
@@ -23,7 +24,7 @@ var faArrowAltDown = {
   ],
 }
 
-library.add(faComment, faNewspaper, faGavel, faGraduationCap, faArrowAltDown)
+library.add(faComment, faNewspaper, faGavel, faGraduationCap, faArrowAltDown, faPenFancy)
 dom.watch()
 
 console.log(library)

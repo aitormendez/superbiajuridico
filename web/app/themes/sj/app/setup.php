@@ -162,9 +162,9 @@ add_action('wp_enqueue_scripts', function () {
  */
 add_action('after_setup_theme', function () {
     add_image_size( 'very-large', 2000 );
-    add_image_size( 'glide-1500', 1500, 750, true );
-    add_image_size( 'glide-1000', 1000, 500, true );
-    add_image_size( 'glide-600', 600, 300, true );
+    add_image_size( 'cuadrado-1000', 1000, 1000, true );
+    add_image_size( 'cuadrado-600', 600, 600, true );
+    add_image_size( 'cuadrado-300', 300, 300, true );
 });
 
 
