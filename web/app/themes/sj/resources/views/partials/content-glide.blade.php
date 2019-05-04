@@ -16,6 +16,11 @@
         <h2 class="entry-title">
           {!! get_the_title() !!}
         </h2>
+        <div class="entry-summary">
+          @if (has_excerpt())
+            @wpautop(get_the_excerpt())
+          @endif
+        </div>
       </div>
 
     @if (has_post_thumbnail())

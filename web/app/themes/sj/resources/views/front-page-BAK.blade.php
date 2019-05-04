@@ -4,49 +4,57 @@
 
 <section id="slide01" class="hero">
 
-    <div class="bcg">
-      <img src="{{ $img_portada[0]['url'] }}" alt="imagen portada" srcset="{{$img_portada[1] }}">
-    </div>
+  <div class="bcg">
+    <img src="{{ $img_portada[0]['url'] }}" alt="imagen portada" srcset="{{$img_portada[1] }}">
+  </div>
 
-    <div class="escudo">
-      @svg('sj-escudo-blanco')
-    </div>
+  <div class="escudo">
+    @svg('sj-escudo-blanco')
+  </div>
 
-    <div class="marco texto">
-      <div class="texto">
-        <p>{{ __('Derecho de familia, derecho penal y derecho bancario', 'sage') }}</p>
-        <p>{{ __('Nuestra experiencia nos avala', 'sage') }}</p>
-      </div>
+  <div class="marco texto">
+    <div class="texto">
+      <p>{{ __('Derecho de familia, derecho penal y derecho bancario', 'sage') }}</p>
+      <p>{{ __('Nuestra experiencia nos avala', 'sage') }}</p>
     </div>
-    <div class="marco pregunta">
-      <div class="pregunta">
-        <a href="{{ $contact_link }}">{{ __('Pregúntanos', 'sage') }}</a>
-      </div>
+  </div>
+  <div class="marco pregunta">
+    <div class="pregunta">
+      <a href="{{ $contact_link }}">{{ __('Pregúntanos', 'sage') }}</a>
     </div>
-  </section>
+  </div>
+</section>
+
+<section class="slider-container">
+    <div class="owl-carousel">
+        @query($args_glide)
+        @posts
+          @include('partials.content-glide')
+        @endposts
+    </div>
+    <div class="owl-nav"></div>
+</section>
+
+
 
 <section class="slider">
     <div class="glide">
       <div class="glide__track" data-glide-el="track">
         <ul class="glide__slides">
-            @query($args_glide)
-            @posts
-              @include('partials.content-glide')
-            @endposts
+          <li class="glide__slide">0</li>
+          <li class="glide__slide">1</li>
+          <li class="glide__slide">2</li>
         </ul>
       </div>
       <div class="glide__arrows" data-glide-el="controls">
-        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-          <i class="fas fa-arrow-left">
-        </i></button>
-        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-          <i class="fas fa-arrow-right"></i>
-        </button>
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
       </div>
     </div>
 </section>
 
 <section class="textos">
+  <div id="hola" class="fas fa-arrow-alt-down"></div>
   <section class="articulos">
     <div class="header">
       <h1>{{ __('Últimos artículos', 'sage') }}</h1>
@@ -106,5 +114,4 @@
     @endposts
   </div>
 </section>
-
 @endsection

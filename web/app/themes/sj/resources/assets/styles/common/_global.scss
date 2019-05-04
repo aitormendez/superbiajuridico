@@ -6,6 +6,7 @@ body {
   font-family: $ff-base;
   font-size: 18px;
   background-color: $gray-lighter;
+  overflow-x: hidden;
 
   @include tablet-portrait {
     .wrap.container {

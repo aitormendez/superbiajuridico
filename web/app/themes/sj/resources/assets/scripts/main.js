@@ -29,8 +29,6 @@ var faArrowAltDown = {
 library.add(faComment, faNewspaper, faGavel, faGraduationCap, faArrowAltDown, faPenFancy, faArrowRight, faArrowLeft)
 dom.watch()
 
-console.log(library)
-
 // import local dependencies
 import Router from './util/Router'
 import common from './routes/common'
