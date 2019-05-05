@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 // import owlCarousel from 'owl.carousel/dist/owl.carousel.min';
-import TweenMax from 'gsap/src/minified/TweenMax.min';
 import {
+  TweenMax,
   Power0,
   Power1,
   TimelineMax,
@@ -13,7 +13,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 // import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js';
 // import 'gsap/src/minified/plugins/ScrollToPlugin.min';
 import 'gsap/src/minified/plugins/CSSPlugin.min';
-import Glide from '@glidejs/glide';
+import Glide, { Controls, Autoplay, Keyboard } from '@glidejs/glide/dist/glide.modular.esm'
 
 export default {
   init() {
@@ -40,33 +40,33 @@ export default {
 
       // Scrollmagic: Foto cabecera
 
-      //   var controller = new ScrollMagic.Controller();
+        var controller = new ScrollMagic.Controller();
 
-      //   var cabeceraTl = new TimelineMax();
-      //   cabeceraTl
-      //     .to('#slide01 .bcg img', 1, {
-      //       y: 100,
-      //       ease: Power0.easeInOut,
-      //     })
-      //     .to('#slide01 .texto .texto', 0.7, {
-      //       y: -400,
-      //       autoAlpha: 0,
-      //       ease: Power0.easeInOut,
-      //     }, 0)
-      //     .from('#slide01 .pregunta .pregunta', 0.7, {
-      //       y: 200,
-      //       autoAlpha: 0,
-      //       ease: Power0.easeInOut,
-      //     }, 0);
+        var cabeceraTl = new TimelineMax();
+        cabeceraTl
+          .to('#slide01 .bcg img', 1, {
+            y: 100,
+            ease: Power0.easeInOut,
+          })
+          .to('#slide01 .texto .texto', 0.7, {
+            y: -400,
+            autoAlpha: 0,
+            ease: Power0.easeInOut,
+          }, 0)
+          .from('#slide01 .pregunta .pregunta', 0.7, {
+            y: 200,
+            autoAlpha: 0,
+            ease: Power0.easeInOut,
+          }, 0);
 
-      //   var cabeceraScene = new ScrollMagic.Scene({
-      //       triggerElement: '#slide01',
-      //       triggerHook: 0,
-      //       offset: -190,
-      //     })
-      //     .setClassToggle('#slide01 .marco', 'claro')
-      //     .setTween(cabeceraTl)
-      //     .addTo(controller);
+        var cabeceraScene = new ScrollMagic.Scene({
+            triggerElement: '#slide01',
+            triggerHook: 0,
+            offset: -190,
+          })
+          .setClassToggle('#slide01 .marco', 'claro')
+          .setTween(cabeceraTl)
+          .addTo(controller);
 
 
     } // ! viewport width
@@ -79,7 +79,7 @@ export default {
         type: 'carousel',
         gap: 15,
       })
-      glide.mount();
+      glide.mount({ Controls, Autoplay, Keyboard });
       $(window).trigger('resize', {})
     }
 

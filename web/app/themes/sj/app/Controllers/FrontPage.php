@@ -159,4 +159,6 @@ class FrontPage extends Controller
         return $output;
     }
 
+    use Partials\Enlaceexterno;
+
 }

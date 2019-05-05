@@ -35,8 +35,6 @@
     <div class="owl-nav"></div>
 </section>
 
-
-
 <section class="slider">
     <div class="glide">
       <div class="glide__track" data-glide-el="track">
