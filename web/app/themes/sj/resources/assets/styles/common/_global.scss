@@ -48,6 +48,10 @@ h5 {
 .page-header {
   margin-bottom: $pad-3;
 
+  .icon {
+    font-size: 3rem;
+  }
+
   h1 {
     font-size: 2rem;
     color: $gray-dark;

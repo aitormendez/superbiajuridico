@@ -90,6 +90,35 @@
   </section>
 </section>
 
+<section class="rincon">
+  <div class="header">
+    <i class="fas fa-graduation-cap"></i>
+    <h1>{{ __('Rincón del profesor', 'sage') }}</h1>
+    <a class="enlace" href="{{ $site_url }}/text-type/rincon/">{{ __('ver todos', 'sage') }}</a>
+  </div>
+
+  <div class="contenido">
+    @query($args_rincon)
+    @posts
+      <div class="entry-header">
+        <h2 class="entry-title">
+          <a href="{{ get_permalink() }}">{!! get_the_title() !!}</a>
+        </h2>
+        <p class="byline author vcard">
+            <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" rel="author" class="fn">
+              {{ get_the_author() }}
+            </a>
+          </p>
+      </div>
+      @if (has_excerpt())
+      <div class="entry-summary">
+          @wpautop(get_the_excerpt())
+      </div>
+      @endif
+    @endposts
+  </div>
+</section>
+
 
 <section class="noticias">
   <div class="header">

@@ -3,7 +3,7 @@
     @if (! is_tax())
       <div class="tipo-de-texto">
         @php
-        $terms = get_the_terms($post->ID, 'article-type');
+        $terms = get_the_terms(get_the_ID(), 'article-type');
         $output = '';
         $text_type_url = get_bloginfo('url') . '/text-type/';
         foreach ($terms as $term) {
@@ -13,7 +13,9 @@
         {!! $output !!}
       </div>
     @endif
-    <h2 class="entry-title"><a href="{{ get_permalink() }}">{!! get_the_title() !!}</a></h2>
+    <h2 class="entry-title">
+      <a href="{{ get_permalink() }}">{!! get_the_title() !!}</a>
+    </h2>
     @include('partials/entry-meta')
   </header>
   <div class="entry-summary">

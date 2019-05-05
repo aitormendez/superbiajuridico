@@ -74,6 +74,23 @@ class FrontPage extends Controller
         );
         return $args_news;
     }
+    public function argsRincon()
+    {
+        $args_rincon = array(
+        	'post_type'              => ['text'],
+        	'post_status'            => 'publish',
+            'posts_per_page'         => 1,
+            'tax_query'             => [
+                [
+                'taxonomy' => 'article-type',
+                    'field'    => 'slug',
+                    'terms'    => ['rincon'],
+                'operator' => 'IN',
+                ]
+            ]
+        );
+        return $args_rincon;
+    }
 
     public function argsGlide()
     {

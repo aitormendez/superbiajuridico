@@ -47,7 +47,7 @@
       </div>
 
     @if (has_post_thumbnail())
-    <div class="img">
+    <div class="imagen">
       @thumbnail('cuadrado-1000')
     </div>
     @endif

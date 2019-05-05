@@ -328,5 +328,12 @@
         }
       }
     }
+
+    .post-type-archive-text &,
+    .single-text & {
+      .menu-lenguaje-container {
+        right: 140px;
+      }
+    }
   }
 }

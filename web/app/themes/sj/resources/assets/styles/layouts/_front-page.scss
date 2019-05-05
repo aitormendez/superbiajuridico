@@ -142,6 +142,89 @@
           }
         }
       }
+
+      &.rincon {
+        margin-bottom: $pad-2;
+        padding: $pad-2;
+        background-color: $color-verde-claro;
+
+        .header {
+          text-align: center;
+          border-bottom: none;
+          font-size: 2rem;
+
+          h1 {
+            font-size: 0.9rem;
+          }
+
+          a {
+            display: block;
+            margin-top: 5px;
+          }
+        }
+
+        .contenido {
+          max-width: 900px;
+          margin-left: auto;
+          margin-right: auto;
+
+          .entry-header {
+            h2 {
+              a {
+                font-size: 1.8rem;
+                color: #fff;
+                font-style: italic;
+
+                &:hover {
+                  color: $gray-lighter;
+                }
+              }
+            }
+
+            .byline {
+              font-family: $ff-sans;
+              font-size: 0.8rem;
+              letter-spacing: 0.2em;
+              text-transform: uppercase;
+              font-weight: bold;
+            }
+          }
+
+          .entry-summary {
+            font-size: 1.2rem;
+            color: $gray;
+          }
+        }
+
+        @include tablet-portrait { // .rincon
+          .header {
+            margin-bottom: $pad-2;
+          }
+
+          .contenido {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: $pad-2;
+
+            .entry-header {
+              width: 50%;
+              padding-right: $pad-3;
+
+              h2 {
+                margin-top: 0;
+              }
+            }
+
+            .entry-summary {
+              width: 50%;
+
+              p:first-child {
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
