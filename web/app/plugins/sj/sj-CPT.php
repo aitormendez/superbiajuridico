@@ -65,6 +65,7 @@ add_action( 'init', function() {
     'title',
     'editor',
     'excerpt',
+    'thumbnail',
   ];
 
   register_extended_post_type( 'text',
@@ -156,6 +157,7 @@ add_action( 'init', function() {
 
   $supports_sentence = [
     'title',
+    'thumbnail',
   ];
 
   register_extended_post_type( 'sentence',
@@ -289,6 +291,7 @@ $cols_links = [
 
 $supports_links = [
   'title',
+  'thumbnail',
 ];
 
 register_extended_post_type( 'links',
