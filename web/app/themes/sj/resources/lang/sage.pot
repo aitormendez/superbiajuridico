@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-12 17:12+0100\n"
+"POT-Creation-Date: 2019-05-13 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,41 +50,42 @@ msgstr ""
 msgid "Error locating <code>%s</code> for inclusion."
 msgstr ""
 
-#: app/Controllers/App.php:30
+#: app/Controllers/App.php:34
 msgid "Últimas entradas"
 msgstr ""
 
-#: app/Controllers/App.php:33
+#: app/Controllers/App.php:37
 msgid "Autor"
 msgstr ""
 
-#: app/Controllers/App.php:36 resources/views/front-page.blade.php:79
+#: app/Controllers/App.php:40 resources/views/front-page-BAK.blade.php:105
+#: resources/views/front-page.blade.php:128
 msgid "Superbia Jurídico en los medios"
 msgstr ""
 
-#: app/Controllers/App.php:39
+#: app/Controllers/App.php:43 resources/views/partials/header.blade.php:50
 msgid "Artículos"
 msgstr ""
 
-#: app/Controllers/App.php:42
+#: app/Controllers/App.php:46
 msgid "Resúmenes de sentencias"
 msgstr ""
 
-#: app/Controllers/App.php:45
+#: app/Controllers/App.php:49
 msgid "Sentencias comentadas"
 msgstr ""
 
-#: app/Controllers/App.php:51
+#: app/Controllers/App.php:55
 #, php-format
 msgid "%s"
 msgstr ""
 
-#: app/Controllers/App.php:54
+#: app/Controllers/App.php:58
 #, php-format
 msgid "Resultado de búsqueda para <b> %s </b>"
 msgstr ""
 
-#: app/Controllers/App.php:57
+#: app/Controllers/App.php:61
 msgid "No encontrado"
 msgstr ""
 
@@ -97,23 +98,23 @@ msgstr ""
 msgid "Leer más"
 msgstr ""
 
-#: app/setup.php:55
+#: app/setup.php:56
 msgid "Menú principal"
 msgstr ""
 
-#: app/setup.php:56
+#: app/setup.php:57
 msgid "Menú pie"
 msgstr ""
 
-#: app/setup.php:57
+#: app/setup.php:58
 msgid "Menu lenguaje"
 msgstr ""
 
-#: app/setup.php:96
+#: app/setup.php:97
 msgid "Principal"
 msgstr ""
 
-#: app/setup.php:100
+#: app/setup.php:101
 msgid "Pie"
 msgstr ""
 
@@ -126,49 +127,65 @@ msgstr ""
 msgid "No se encontraron resultados."
 msgstr ""
 
-#: resources/views/front-page.blade.php:19
+#: resources/views/front-page-BAK.blade.php:17
+#: resources/views/front-page.blade.php:17
 msgid "Derecho de familia, derecho penal y derecho bancario"
 msgstr ""
 
-#: resources/views/front-page.blade.php:20
+#: resources/views/front-page-BAK.blade.php:18
+#: resources/views/front-page.blade.php:18
 msgid "Nuestra experiencia nos avala"
 msgstr ""
 
-#: resources/views/front-page.blade.php:25
+#: resources/views/front-page-BAK.blade.php:23
+#: resources/views/front-page.blade.php:23
 msgid "Pregúntanos"
 msgstr ""
 
-#: resources/views/front-page.blade.php:33
+#: resources/views/front-page-BAK.blade.php:58
+#: resources/views/front-page.blade.php:52
 msgid "Últimos artículos"
 msgstr ""
 
-#: resources/views/front-page.blade.php:34
+#: resources/views/front-page-BAK.blade.php:59
+#: resources/views/front-page.blade.php:53
 msgid "Ver todos"
 msgstr ""
 
-#: resources/views/front-page.blade.php:47
+#: resources/views/front-page-BAK.blade.php:72
+#: resources/views/front-page.blade.php:66
 msgid "Últimas sentencias comentadas"
 msgstr ""
 
-#: resources/views/front-page.blade.php:48
+#: resources/views/front-page-BAK.blade.php:73
+#: resources/views/front-page.blade.php:67
 msgid "Ver todas"
 msgstr ""
 
-#: resources/views/front-page.blade.php:61
+#: resources/views/front-page-BAK.blade.php:86
+#: resources/views/front-page.blade.php:80
 msgid "Últimos resúmenes de sentencias"
 msgstr ""
 
-#: resources/views/front-page.blade.php:62
+#: resources/views/front-page-BAK.blade.php:87
+#: resources/views/front-page.blade.php:81
+#: resources/views/front-page.blade.php:97
 msgid "ver todos"
 msgstr ""
 
-#: resources/views/front-page.blade.php:77
+#: resources/views/front-page-BAK.blade.php:102
+#: resources/views/front-page.blade.php:125
 #: resources/views/partials/header.blade.php:54
 msgid "Noticias"
 msgstr ""
 
-#: resources/views/front-page.blade.php:78
+#: resources/views/front-page-BAK.blade.php:103
+#: resources/views/front-page.blade.php:126
 msgid "ver todas las noticias"
+msgstr ""
+
+#: resources/views/front-page.blade.php:96
+msgid "Rincón del profesor"
 msgstr ""
 
 #: resources/views/partials/comments.blade.php:21
