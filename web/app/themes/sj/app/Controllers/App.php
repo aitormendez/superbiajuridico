@@ -18,7 +18,11 @@ class App extends Controller
 
     public function links()
     {
-        return get_terms('link-category');
+        $terms = get_terms(array(
+            'taxonomy' => 'link-category',
+            'hide_empty' =>false,
+            ));
+        return $terms;
     }
 
     public static function title()

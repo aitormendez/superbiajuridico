@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-12 17:12+0100\n"
-"PO-Revision-Date: 2019-04-29 19:59+0200\n"
+"PO-Revision-Date: 2019-05-11 10:45+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -134,7 +134,7 @@ msgstr "Семейное право, уголовное право и банко
 
 #: resources/views/front-page.blade.php:20
 msgid "Nuestra experiencia nos avala"
-msgstr "Наш опыт говорит сам за себя"
+msgstr "Наш обширный опыт говорит сам за себя"
 
 #: resources/views/front-page.blade.php:25
 msgid "Pregúntanos"
@@ -167,7 +167,7 @@ msgstr "Смотреть все"
 #: resources/views/front-page.blade.php:77
 #: resources/views/partials/header.blade.php:54
 msgid "Noticias"
-msgstr "Noticias"
+msgstr "Новости"
 
 #: resources/views/front-page.blade.php:78
 msgid "ver todas las noticias"

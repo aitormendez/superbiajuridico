@@ -136,4 +136,8 @@
   </div>
 </section>
 
+@php
+    var_dump(get_terms('link-category'));
+@endphp
+
 @endsection
