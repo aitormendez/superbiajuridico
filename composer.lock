@@ -4,16 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "79b46e5c47dae5d9d5acddc22dd0622c",
+    "content-hash": "4e2a5d46c7d047ae803859c86de75ca9",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "5.7.13",
+            "version": "5.8.1",
             "dist": {
                 "type": "zip",
-                "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t=5.7.13",
-                "reference": null,
-                "shasum": null
+                "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t=5.8.1"
             },
             "require": {
                 "composer/installers": "^1.4",
@@ -23,16 +21,16 @@
         },
         {
             "name": "aitormendez/acfml",
-            "version": "1.2",
+            "version": "4.2.6",
             "source": {
                 "type": "git",
-                "url": "git@github.com:aitormendez/acfml.git",
-                "reference": "91af31664328909f316147cb1568f3d7aef69e30"
+                "url": "git@github.com:aitormendez/sitepress-multilingual-cms.git",
+                "reference": "927a32411e1bd282117303d939661ad3cd0de5b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aitormendez/acfml/zipball/91af31664328909f316147cb1568f3d7aef69e30",
-                "reference": "91af31664328909f316147cb1568f3d7aef69e30",
+                "url": "https://api.github.com/repos/aitormendez/sitepress-multilingual-cms/zipball/927a32411e1bd282117303d939661ad3cd0de5b4",
+                "reference": "927a32411e1bd282117303d939661ad3cd0de5b4",
                 "shasum": ""
             },
             "require": {
@@ -51,10 +49,10 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/aitormendez/acfml/tree/1.2",
-                "issues": "https://github.com/aitormendez/acfml/issues"
+                "source": "https://github.com/aitormendez/sitepress-multilingual-cms/tree/4.2.6",
+                "issues": "https://github.com/aitormendez/sitepress-multilingual-cms/issues"
             },
-            "time": "2019-04-11T09:56:37+00:00"
+            "time": "2019-05-17T16:11:24+00:00"
         },
         {
             "name": "aitormendez/sitepress-multilingual-cms",
@@ -93,16 +91,16 @@
         },
         {
             "name": "aitormendez/wpml-media-translation",
-            "version": "2.5.1",
+            "version": "2.5.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:aitormendez/wpml-media-translation.git",
-                "reference": "b026fea60121ee264f5488442c951d01d0c9d459"
+                "reference": "60bd7b305ac997d6435c9661f684baa9c157f908"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aitormendez/wpml-media-translation/zipball/b026fea60121ee264f5488442c951d01d0c9d459",
-                "reference": "b026fea60121ee264f5488442c951d01d0c9d459",
+                "url": "https://api.github.com/repos/aitormendez/wpml-media-translation/zipball/60bd7b305ac997d6435c9661f684baa9c157f908",
+                "reference": "60bd7b305ac997d6435c9661f684baa9c157f908",
                 "shasum": ""
             },
             "require": {
@@ -121,23 +119,23 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/aitormendez/wpml-media-translation/tree/2.5.0",
+                "source": "https://github.com/aitormendez/wpml-media-translation/tree/2.5.2",
                 "issues": "https://github.com/aitormendez/wpml-media-translation/issues"
             },
-            "time": "2019-04-07T13:52:57+00:00"
+            "time": "2019-05-17T16:14:54+00:00"
         },
         {
             "name": "aitormendez/wpml-string-translation",
-            "version": "2.10.3",
+            "version": "2.10.4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:aitormendez/wpml-string-translation.git",
-                "reference": "8c8e742c1f19f38c2b1dc6ecdecbfbd6f7b6f5ba"
+                "reference": "03b034cc62311c712c817b4989f217c392b337ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aitormendez/wpml-string-translation/zipball/8c8e742c1f19f38c2b1dc6ecdecbfbd6f7b6f5ba",
-                "reference": "8c8e742c1f19f38c2b1dc6ecdecbfbd6f7b6f5ba",
+                "url": "https://api.github.com/repos/aitormendez/wpml-string-translation/zipball/03b034cc62311c712c817b4989f217c392b337ea",
+                "reference": "03b034cc62311c712c817b4989f217c392b337ea",
                 "shasum": ""
             },
             "require": {
@@ -156,23 +154,23 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/aitormendez/wpml-string-translation/tree/2.10.3",
+                "source": "https://github.com/aitormendez/wpml-string-translation/tree/2.10.4",
                 "issues": "https://github.com/aitormendez/wpml-string-translation/issues"
             },
-            "time": "2019-04-07T13:55:38+00:00"
+            "time": "2019-05-17T16:17:02+00:00"
         },
         {
             "name": "aitormendez/wpml-translation-management",
-            "version": "2.8.4",
+            "version": "2.8.5",
             "source": {
                 "type": "git",
                 "url": "git@github.com:aitormendez/wpml-translation-management.git",
-                "reference": "c9ea1ababa7215b8fbd6c9435888236e6dfe76a6"
+                "reference": "04a87c24c1c8c3414ba076304c7c8e45c3311aa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aitormendez/wpml-translation-management/zipball/c9ea1ababa7215b8fbd6c9435888236e6dfe76a6",
-                "reference": "c9ea1ababa7215b8fbd6c9435888236e6dfe76a6",
+                "url": "https://api.github.com/repos/aitormendez/wpml-translation-management/zipball/04a87c24c1c8c3414ba076304c7c8e45c3311aa5",
+                "reference": "04a87c24c1c8c3414ba076304c7c8e45c3311aa5",
                 "shasum": ""
             },
             "require": {
@@ -191,19 +189,17 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/aitormendez/wpml-translation-management/tree/2.8.4",
+                "source": "https://github.com/aitormendez/wpml-translation-management/tree/2.8.5",
                 "issues": "https://github.com/aitormendez/wpml-translation-management/issues"
             },
-            "time": "2019-04-07T13:57:43+00:00"
+            "time": "2019-05-17T16:18:51+00:00"
         },
         {
             "name": "analogmemory/wp-sync-db",
             "version": "1.6",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/AnalogMemory/wp-sync-db/archive/master.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://github.com/AnalogMemory/wp-sync-db/archive/master.zip"
             },
             "type": "wordpress-plugin"
         },
@@ -854,17 +850,16 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "5.1.1",
+            "version": "5.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.1.1"
+                "reference": "5.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.1.1",
-                "reference": "5.1.1",
-                "shasum": null
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.2.1",
+                "reference": "5.2.1"
             },
             "require": {
                 "php": ">=5.3.2",
@@ -888,7 +883,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-03-13T14:18:06+00:00"
+            "time": "2019-05-21T19:53:10+00:00"
         },
         {
             "name": "roots/wordpress-core-installer",
@@ -1252,9 +1247,7 @@
             "version": "master",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip"
             },
             "type": "wordpress-plugin"
         },
@@ -1268,9 +1261,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autodescription.3.2.4.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/autodescription.3.2.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1280,17 +1271,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
-            "version": "5.1.1",
+            "version": "5.1.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/5.1.1"
+                "reference": "tags/5.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.1.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.1.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1308,9 +1297,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.46.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.46.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1328,9 +1315,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/easy-table-of-contents.1.7.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/easy-table-of-contents.1.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1348,9 +1333,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/easy-wp-smtp.zip?timestamp=1552829311",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/easy-wp-smtp.zip?timestamp=1552829311"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1368,9 +1351,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gdpr.2.1.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/gdpr.2.1.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1388,9 +1369,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.3.8.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.3.8.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1400,17 +1379,15 @@
         },
         {
             "name": "wpackagist-plugin/mammoth-docx-converter",
-            "version": "1.13.0",
+            "version": "1.14.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/mammoth-docx-converter/",
-                "reference": "tags/1.13.0"
+                "reference": "tags/1.14.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/mammoth-docx-converter.1.13.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/mammoth-docx-converter.1.14.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1428,9 +1405,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/post-type-switcher.3.1.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/post-type-switcher.3.1.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1440,17 +1415,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.3.4",
+            "version": "3.3.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.3.4"
+                "reference": "tags/3.3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.3.4.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.3.6.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1468,9 +1441,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/remove-query-strings-from-static-resources.1.4.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/remove-query-strings-from-static-resources.1.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1480,17 +1451,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-gdpr-compliance",
-            "version": "1.5.0",
+            "version": "1.5.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-gdpr-compliance/",
-                "reference": "tags/1.5.0"
+                "reference": "tags/1.5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-gdpr-compliance.1.5.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wp-gdpr-compliance.1.5.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1508,9 +1477,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.1.4.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.1.4.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1528,9 +1495,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-optimize.2.3.3.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wp-optimize.2.3.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1546,12 +1511,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "1b329f4f2d9a0a3981fd79dbfe37754bedd383e2"
+                "reference": "acc661e72817c7030b7b2af7d2f226bee9b93094"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/1b329f4f2d9a0a3981fd79dbfe37754bedd383e2",
-                "reference": "1b329f4f2d9a0a3981fd79dbfe37754bedd383e2",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/acc661e72817c7030b7b2af7d2f226bee9b93094",
+                "reference": "acc661e72817c7030b7b2af7d2f226bee9b93094",
                 "shasum": ""
             },
             "conflict": {
@@ -1569,10 +1534,10 @@
                 "cart2quote/module-quotation": ">=4.1.6,<=4.4.5|>=5,<5.4.4",
                 "cartalyst/sentry": "<=2.1.6",
                 "codeigniter/framework": "<=3.0.6",
-                "composer/composer": "<=1.0.0-alpha11",
+                "composer/composer": "<=1-alpha.11",
                 "contao-components/mediaelement": ">=2.14.2,<2.21.1",
                 "contao/core": ">=2,<3.5.39",
-                "contao/core-bundle": ">=4,<4.4.37|>=4.5,<4.7.3",
+                "contao/core-bundle": ">=4,<4.4.39|>=4.5,<4.7.5",
                 "contao/listing-bundle": ">=4,<4.4.8",
                 "contao/newsletter-bundle": ">=4,<4.1",
                 "david-garcia/phpwhois": "<=4.3.1",
@@ -1586,8 +1551,8 @@
                 "doctrine/mongodb-odm-bundle": ">=2,<3.0.1",
                 "doctrine/orm": ">=2,<2.4.8|>=2.5,<2.5.1",
                 "dompdf/dompdf": ">=0.6,<0.6.2",
-                "drupal/core": ">=7,<7.65|>=8,<8.5.14|>=8.6,<8.6.14",
-                "drupal/drupal": ">=7,<7.65|>=8,<8.5.14|>=8.6,<8.6.14",
+                "drupal/core": ">=7,<7.67|>=8,<8.6.16|>=8.7,<8.7.1",
+                "drupal/drupal": ">=7,<7.67|>=8,<8.6.16|>=8.7,<8.7.1",
                 "erusev/parsedown": "<1.7.2",
                 "ezsystems/ezpublish-kernel": ">=5.3,<5.3.12.1|>=5.4,<5.4.13.1|>=6,<6.7.9.1|>=6.8,<6.13.5.1|>=7,<7.2.4.1|>=7.3,<7.3.2.1",
                 "ezsystems/ezpublish-legacy": ">=5.3,<5.3.12.6|>=5.4,<5.4.12.3|>=2011,<2017.12.4.3|>=2018.6,<2018.6.1.4|>=2018.9,<2018.9.1.3",
@@ -1601,7 +1566,7 @@
                 "fuel/core": "<1.8.1",
                 "gree/jose": "<=2.2",
                 "gregwar/rst": "<1.0.3",
-                "guzzlehttp/guzzle": ">=6,<6.2.1|>=4.0.0-rc2,<4.2.4|>=5,<5.3.1",
+                "guzzlehttp/guzzle": ">=4-rc.2,<4.2.4|>=5,<5.3.1|>=6,<6.2.1",
                 "illuminate/auth": ">=4,<4.0.99|>=4.1,<=4.1.31|>=4.2,<=4.2.22|>=5,<=5.0.35|>=5.1,<=5.1.46|>=5.2,<=5.2.45|>=5.3,<=5.3.31|>=5.4,<=5.4.36|>=5.5,<5.5.10",
                 "illuminate/cookie": ">=4,<=4.0.11|>=4.1,<=4.1.31|>=4.2,<=4.2.22|>=5,<=5.0.35|>=5.1,<=5.1.46|>=5.2,<=5.2.45|>=5.3,<=5.3.31|>=5.4,<=5.4.36|>=5.5,<5.5.42|>=5.6,<5.6.30",
                 "illuminate/database": ">=4,<4.0.99|>=4.1,<4.1.29",
@@ -1616,9 +1581,9 @@
                 "laravel/framework": ">=4,<4.0.99|>=4.1,<=4.1.31|>=4.2,<=4.2.22|>=5,<=5.0.35|>=5.1,<=5.1.46|>=5.2,<=5.2.45|>=5.3,<=5.3.31|>=5.4,<=5.4.36|>=5.5,<5.5.42|>=5.6,<5.6.30",
                 "laravel/socialite": ">=1,<1.0.99|>=2,<2.0.10",
                 "league/commonmark": "<0.18.3",
-                "magento/magento1ce": "<1.9.4",
-                "magento/magento1ee": ">=1.9,<1.14.4",
-                "magento/product-community-edition": ">=2,<2.2.7",
+                "magento/magento1ce": "<1.9.4.1",
+                "magento/magento1ee": ">=1.9,<1.14.4.1",
+                "magento/product-community-edition": ">=2,<2.2.8|>=2.3,<2.3.1",
                 "monolog/monolog": ">=1.8,<1.12",
                 "namshi/jose": "<2.2",
                 "onelogin/php-saml": "<2.10.4",
@@ -1636,7 +1601,7 @@
                 "phpunit/phpunit": ">=4.8.19,<4.8.28|>=5.0.10,<5.6.3",
                 "phpwhois/phpwhois": "<=4.2.5",
                 "phpxmlrpc/extras": "<0.6.1",
-                "propel/propel": ">=2.0.0-alpha1,<=2.0.0-alpha7",
+                "propel/propel": ">=2-alpha.1,<=2-alpha.7",
                 "propel/propel1": ">=1,<=1.7.1",
                 "pusher/pusher-php-server": "<2.2.1",
                 "robrichards/xmlseclibs": ">=1,<3.0.2",
@@ -1646,7 +1611,10 @@
                 "shopware/shopware": "<5.3.7",
                 "silverstripe/cms": ">=3,<=3.0.11|>=3.1,<3.1.11",
                 "silverstripe/forum": "<=0.6.1|>=0.7,<=0.7.3",
-                "silverstripe/framework": ">=3,<3.6.7|>=3.7,<3.7.3|>=4,<4.0.7|>=4.1,<4.1.5|>=4.2,<4.2.4|>=4.3,<4.3.1",
+                "silverstripe/framework": ">=3,<3.6.7|>=3.7,<3.7.3|>=4,<4.4",
+                "silverstripe/graphql": ">=2,<2.0.5|>=3,<3.1.2",
+                "silverstripe/registry": ">=2.1,<2.1.2|>=2.2,<2.2.1",
+                "silverstripe/restfulserver": ">=1,<1.0.9|>=2,<2.0.4",
                 "silverstripe/userforms": "<3",
                 "simple-updates/phpwhois": "<=1",
                 "simplesamlphp/saml2": "<1.10.6|>=2,<2.3.8|>=3,<3.1.4",
@@ -1660,7 +1628,9 @@
                 "stormpath/sdk": ">=0,<9.9.99",
                 "swiftmailer/swiftmailer": ">=4,<5.4.5",
                 "sylius/admin-bundle": ">=1,<1.0.17|>=1.1,<1.1.9|>=1.2,<1.2.2",
-                "sylius/sylius": ">=1,<1.0.17|>=1.1,<1.1.9|>=1.2,<1.2.2",
+                "sylius/grid": ">=1,<1.1.19|>=1.2,<1.2.18|>=1.3,<1.3.13|>=1.4,<1.4.5|>=1.5,<1.5.1",
+                "sylius/grid-bundle": ">=1,<1.1.19|>=1.2,<1.2.18|>=1.3,<1.3.13|>=1.4,<1.4.5|>=1.5,<1.5.1",
+                "sylius/sylius": ">=1,<1.1.18|>=1.2,<1.2.17|>=1.3,<1.3.12|>=1.4,<1.4.4",
                 "symfony/cache": ">=3.2,<3.4.26|>=4,<4.1.12|>=4.2,<4.2.7",
                 "symfony/dependency-injection": ">=2,<2.0.17|>=2.7,<2.7.51|>=2.8,<2.8.50|>=3,<3.4.26|>=4,<4.1.12|>=4.2,<4.2.7",
                 "symfony/form": ">=2.3,<2.3.35|>=2.4,<2.6.12|>=2.7,<2.7.50|>=2.8,<2.8.49|>=3,<3.4.20|>=4,<4.0.15|>=4.1,<4.1.9|>=4.2,<4.2.1",
@@ -1687,15 +1657,16 @@
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
                 "tecnickcom/tcpdf": "<6.2.22",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
-                "thelia/thelia": ">=2.1,<2.1.2|>=2.1.0-beta1,<2.1.3",
+                "thelia/thelia": ">=2.1-beta.1,<2.1.3",
                 "theonedemon/phpwhois": "<=4.2.5",
                 "titon/framework": ">=0,<9.9.99",
                 "truckersmp/phpwhois": "<=4.3.1",
                 "twig/twig": "<1.38|>=2,<2.7",
-                "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.32|>=8,<8.7.23|>=9,<9.5.4",
-                "typo3/cms-core": ">=8,<8.7.23|>=9,<9.5.4",
+                "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.32|>=8,<8.7.25|>=9,<9.5.6",
+                "typo3/cms-core": ">=8,<8.7.25|>=9,<9.5.6",
                 "typo3/flow": ">=1,<1.0.4|>=1.1,<1.1.1|>=2,<2.0.1|>=2.3,<2.3.16|>=3,<3.0.10|>=3.1,<3.1.7|>=3.2,<3.2.7|>=3.3,<3.3.5",
                 "typo3/neos": ">=1.1,<1.1.3|>=1.2,<1.2.13|>=2,<2.0.4",
+                "typo3/phar-stream-wrapper": ">=1,<2.1.1|>=3,<3.1.1",
                 "ua-parser/uap-php": "<3.8",
                 "wallabag/tcpdf": "<6.2.22",
                 "willdurand/js-translation-bundle": "<2.1.1",
@@ -1746,7 +1717,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2019-04-24T06:22:37+00:00"
+            "time": "2019-06-11T05:51:05+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
