@@ -52,10 +52,10 @@ class App extends Controller
             return get_queried_object()->name;
         }
         if (is_post_type_archive('text')) {
-            return __('Noticias', 'sage');
+            return __('Textos', 'sage');
         }
         if (is_post_type_archive('story')) {
-            return __('Textos', 'sage');
+            return __('Noticias', 'sage');
         }
         if (is_archive()) {
             return sprintf( __( '%s' ), post_type_archive_title( '', false ) );
