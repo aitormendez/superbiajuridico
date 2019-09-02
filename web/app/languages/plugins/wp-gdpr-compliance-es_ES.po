@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WP GDPR Compliance - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-13 20:40:29+0000\n"
+"PO-Revision-Date: 2019-05-21 16:08:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,14 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - WP GDPR Compliance - Stable (latest release)\n"
+
+#: Includes/Extensions/WPRegistration.php:86
+msgid "user has given consent when registering"
+msgstr "el usuario ha dado el consentimiento al registrarse"
+
+#: Includes/Action.php:157
+msgid "More information"
+msgstr "Más información"
 
 #: Includes/Shortcode.php:165
 msgid "You need to make sure you have added atleast one (1) active consent."
@@ -47,11 +55,11 @@ msgstr "Color de texto de la barra"
 msgid "Bar Color"
 msgstr "Color de la barra"
 
-#: Includes/Integration.php:378
+#: Includes/Integration.php:385
 msgid "When activated the GDPR checkbox will be added automatically just above the register button."
 msgstr "Cuando se activa la casilla de RGPD se añadirá automáticamente justo por encima del botón de registro."
 
-#: Includes/Integration.php:377
+#: Includes/Integration.php:384
 msgid "Wordpress Registration"
 msgstr "Registro de WordPress"
 
@@ -75,7 +83,7 @@ msgstr "Desconocido"
 msgid "Once a month"
 msgstr "Una vez al mes"
 
-#: Includes/Integration.php:303
+#: Includes/Integration.php:310
 msgid "http://www.example.com"
 msgstr "https://www.ejemplo.com"
 
@@ -131,11 +139,11 @@ msgstr "¿Sabes de dónde obtienes tu base de datos de correos electrónicos? ¿
 msgid "We think you might have a mail plugin installed."
 msgstr "Creemos que podrías tener un plugin de correo instalado."
 
-#: Includes/Integration.php:284
+#: Includes/Integration.php:291
 msgid "You need to accept this checkbox."
 msgstr "Tienes que aceptar esta casilla."
 
-#: Includes/Integration.php:190 Includes/Integration.php:225
+#: Includes/Integration.php:197 Includes/Integration.php:232
 msgid "Required message"
 msgstr "Mensaje obligatorio"
 
@@ -143,7 +151,7 @@ msgstr "Mensaje obligatorio"
 msgid "Remove"
 msgstr "Eliminar"
 
-#: Includes/Action.php:193 Includes/Page.php:755
+#: Includes/Action.php:230 Includes/Page.php:755
 msgid "(no title)"
 msgstr "(sin título)"
 
@@ -155,15 +163,15 @@ msgstr "Envolver código"
 msgid "Consent has been removed successfully."
 msgstr "El consentimiento se ha eliminado con éxito."
 
-#: Includes/Consent.php:279
+#: Includes/Consent.php:297
 msgid "Do not wrap my code snippet"
 msgstr "No envolver mi fragmento de código"
 
-#: Includes/Consent.php:278
+#: Includes/Consent.php:296
 msgid "Wrap my code snippet with <script> tags"
 msgstr "Envolver mi fragmento de código con las etiquetas <script>"
 
-#: Includes/Action.php:232
+#: Includes/Action.php:269
 msgid "Enable"
 msgstr "Activar"
 
@@ -260,15 +268,15 @@ msgstr "Barra: Explicación"
 msgid "Consents"
 msgstr "Consentimientos"
 
-#: Includes/Page.php:679 Includes/Consent.php:290
+#: Includes/Page.php:679 Includes/Consent.php:308
 msgid "Footer"
 msgstr "Footer"
 
-#: Includes/Page.php:674 Includes/Consent.php:289
+#: Includes/Page.php:674 Includes/Consent.php:307
 msgid "Body"
 msgstr "Cuerpo"
 
-#: Includes/Page.php:669 Includes/Consent.php:288
+#: Includes/Page.php:669 Includes/Consent.php:306
 msgid "Head"
 msgstr "Head"
 
@@ -284,23 +292,23 @@ msgstr "Este sitio utiliza cookies funcionales y scripts externos para mejorar t
 msgid "Privacy Settings"
 msgstr "Ajustes de privacidad"
 
-#: Includes/Action.php:248
+#: Includes/Action.php:293
 msgid "Close modal"
 msgstr "Cerrar ventana emergente"
 
-#: Includes/Action.php:241
+#: Includes/Action.php:214
 msgid "Save my settings"
 msgstr "Guardar mis ajustes"
 
-#: Includes/Action.php:207
+#: Includes/Action.php:244
 msgid "These settings will only apply to the browser and device you are currently using."
 msgstr "Estos ajustes solo se aplicarán al navegador y dispositivo que estés usando actualmente."
 
-#: Includes/Action.php:162
+#: Includes/Action.php:182 Includes/Action.php:214
 msgid "Accept"
 msgstr "Acepto"
 
-#: Includes/Action.php:156 Includes/Page.php:492 Includes/Shortcode.php:169
+#: Includes/Action.php:157 Includes/Page.php:492 Includes/Shortcode.php:169
 msgid "My settings"
 msgstr "Mis ajustes"
 
@@ -372,12 +380,12 @@ msgstr "Anonimizar los %s(s) seleccionados "
 msgid "Anonymise request explanation"
 msgstr "Anonimizar la explicación de la solicitud"
 
-#: wp-gdpr-compliance.php:366 wp-gdpr-compliance.php:403 Includes/Page.php:759
+#: wp-gdpr-compliance.php:379 wp-gdpr-compliance.php:415 Includes/Page.php:759
 #: Includes/Page.php:779
 msgid "No"
 msgstr "No"
 
-#: wp-gdpr-compliance.php:365 wp-gdpr-compliance.php:402 Includes/Page.php:597
+#: wp-gdpr-compliance.php:378 wp-gdpr-compliance.php:414 Includes/Page.php:597
 #: Includes/Page.php:690 Includes/Page.php:759 Includes/Page.php:779
 msgid "Yes"
 msgstr "Sí"
@@ -574,7 +582,7 @@ msgstr "Este plugin ayuda a propietarios de webs y tiendas a cumplir con las reg
 msgid "Requests"
 msgstr "Solicitudes"
 
-#: Includes/Integration.php:329
+#: Includes/Integration.php:336
 msgid "Below we show you all of the data stored by %s on %s. Select the data you wish the site owner to anonymise so it cannot be linked to your email address any longer. It is the site's owner responsibility to act upon your request. When your data is anonymised you will receive an email confirmation."
 msgstr "Abajo te mostramos todos los datos almacenados por %s el %s Elige los datos que deseas que anonimice el propietario para que no se pueda volver a enlazar a tu dirección de correo nunca más. Es responsabilidad del propietario del sitio actuar a la llegada de tu solicitud. Cuando se anonimicen tus datos recibirás una confirmación por correo electrónico."
 
@@ -743,7 +751,7 @@ msgstr "Elige una opción"
 msgid "Enable:"
 msgstr "Activar:"
 
-#: Includes/Page.php:342 Includes/Page.php:394 Includes/Integration.php:295
+#: Includes/Page.php:342 Includes/Page.php:394 Includes/Integration.php:302
 msgid "Privacy Policy"
 msgstr "Política de privacidad"
 
@@ -751,7 +759,7 @@ msgstr "Política de privacidad"
 msgid "No HTML allowed due to plugin limitations."
 msgstr "No se permite HTML debido a las limitaciones del plugin."
 
-#: Includes/Action.php:206 Includes/Page.php:260 Includes/Page.php:355
+#: Includes/Action.php:243 Includes/Page.php:260 Includes/Page.php:355
 #: Includes/Page.php:370 Includes/Page.php:431 Includes/Page.php:487
 #: Includes/Page.php:841 Includes/Page.php:947 Includes/Helper.php:116
 #: Includes/Helper.php:174 Includes/Shortcode.php:164
@@ -777,11 +785,11 @@ msgstr "RGPD aceptado el:"
 msgid "Not accepted."
 msgstr "No aceptada."
 
-#: wp-gdpr-compliance.php:355 Includes/Page.php:98
+#: wp-gdpr-compliance.php:368 Includes/Page.php:98
 msgid "Settings"
 msgstr "Ajustes"
 
-#: wp-gdpr-compliance.php:355
+#: wp-gdpr-compliance.php:368
 msgid "View WP GDPR Compliance settings"
 msgstr "Ver ajustes de WP GDPR Compliance"
 
@@ -801,19 +809,19 @@ msgstr "Este plugin está sin actualizar. %s es compatible con la versión %s y 
 msgid "Checklist"
 msgstr "Lista de comprobación"
 
-#: Includes/Integration.php:399
+#: Includes/Integration.php:406
 msgid "Gravity Forms"
 msgstr "Gravity Forms"
 
-#: Includes/Integration.php:373
+#: Includes/Integration.php:380
 msgid "When activated the GDPR checkbox will be added automatically just above the submit button."
 msgstr "Cuando se activa se añade automáticamente la casilla de GDPR justo encima del botón de enviar."
 
-#: Includes/Integration.php:150 Includes/Integration.php:200
+#: Includes/Integration.php:157 Includes/Integration.php:207
 msgid "No forms found."
 msgstr "No se han encontrado formularios."
 
-#: Includes/Integration.php:130 Includes/Integration.php:174
+#: Includes/Integration.php:137 Includes/Integration.php:181
 msgid "Form: %s"
 msgstr "Formulario: %s"
 
@@ -831,7 +839,7 @@ msgstr "<strong>ERROR</strong>: %s"
 msgid "Privacy"
 msgstr "Privacidad"
 
-#: Includes/Integration.php:268
+#: Includes/Integration.php:275
 msgid "Please accept the privacy checkbox."
 msgstr "Por favor, acepta la casilla de la política de privacidad."
 
@@ -839,8 +847,8 @@ msgstr "Por favor, acepta la casilla de la política de privacidad."
 msgid "Do you provide a forum or message board?"
 msgstr "¿Ofreces un foro o un tablero de mensajes?"
 
-#: Includes/Integration.php:140 Includes/Integration.php:184
-#: Includes/Integration.php:219
+#: Includes/Integration.php:147 Includes/Integration.php:191
+#: Includes/Integration.php:226
 msgid "Error message"
 msgstr "Mensaje de error"
 
@@ -864,36 +872,36 @@ msgstr "Abajo te preguntamos qué datos privados recopilas actualmente y te ofre
 msgid "Integrations"
 msgstr "Integraciones"
 
-#: Includes/Integration.php:407
+#: Includes/Integration.php:414
 msgid "The GDPR checkbox will be added automatically at the end of your checkout page."
 msgstr "La casilla del RGPD se añadirá automáticamente al final de tu página de finalizar compra."
 
-#: Includes/Page.php:836 Includes/Integration.php:406
+#: Includes/Page.php:836 Includes/Integration.php:413
 msgid "WooCommerce"
 msgstr "WooCommerce"
 
-#: Includes/Integration.php:393 Includes/Integration.php:400
+#: Includes/Integration.php:400 Includes/Integration.php:407
 msgid "A GDPR form tag will be automatically added to every form you activate."
 msgstr "Se añadirá automáticamente una etiqueta de formulario RGPD a todo formulario para el que la actives."
 
-#: Includes/Integration.php:392
+#: Includes/Integration.php:399
 msgid "Contact Form 7"
 msgstr "Contact Form 7"
 
-#: Includes/Page.php:834 Includes/Integration.php:372
+#: Includes/Page.php:834 Includes/Integration.php:379
 msgid "WordPress Comments"
 msgstr "Comentarios de WordPress"
 
-#: Includes/Page.php:462 Includes/Integration.php:134
-#: Includes/Integration.php:178 Includes/Integration.php:213
+#: Includes/Page.php:462 Includes/Integration.php:141
+#: Includes/Integration.php:185 Includes/Integration.php:220
 msgid "Checkbox text"
 msgstr "Texto de la casilla de selección"
 
-#: Includes/Integration.php:131 Includes/Integration.php:175
+#: Includes/Integration.php:138 Includes/Integration.php:182
 msgid "Activate for this form:"
 msgstr "Activar para este formulario:"
 
-#: Includes/Integration.php:251 Includes/Integration.php:315
+#: Includes/Integration.php:258 Includes/Integration.php:322
 msgid "By using this form you agree with the storage and handling of your data by this website."
 msgstr "Al usar este formulario accedes al almacenamiento y gestión de tus datos por parte de esta web."
 

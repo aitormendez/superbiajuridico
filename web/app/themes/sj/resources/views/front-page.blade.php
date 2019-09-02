@@ -14,7 +14,7 @@
 
     <div class="marco texto">
       <div class="texto">
-        <p>{{ __('Derecho de familia, derecho penal y derecho bancario', 'sage') }}</p>
+        <p>{{ __('Derecho de familia y derecho penal', 'sage') }}</p>
         <p>{{ __('Nuestra experiencia nos avala', 'sage') }}</p>
       </div>
     </div>
