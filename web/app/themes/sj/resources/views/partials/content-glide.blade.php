@@ -5,6 +5,7 @@
   }
 @endphp
 
+
 @if ($datos['clase'] == 'story')
   @if (ArchiveStory::getEnlaceExterno())
     @php $enlace = ArchiveStory::getEnlaceExterno()['url'] @endphp
@@ -18,8 +19,6 @@
 @if ($datos['clase'] == 'sentence')
   @php $referencia = get_field('tribunal') . '' . get_field('sentencia_no') . ' ' . get_field('fecha')  @endphp
 @endif
-
-
 
 
 <li class="glide__slide">

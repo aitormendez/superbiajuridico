@@ -7,6 +7,7 @@ web/app/uploads/*
 !web/app/uploads/.gitkeep
 
 !web/app/plugins/sj
+.DS_Store
 
 # WordPress
 web/wp
@@ -22,3 +23,4 @@ web/.htaccess
 
 # WP-CLI
 wp-cli.local.yml
+

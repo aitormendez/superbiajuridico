@@ -77,7 +77,7 @@ export default {
     if (viewportWidth >= 700) {
       var glide = new Glide('.glide', {
         type: 'carousel',
-        autoplay: 5000,
+        autoplay: 500000,
         gap: 15,
       })
       glide.mount({ Controls, Autoplay, Keyboard });
