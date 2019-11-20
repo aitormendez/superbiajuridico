@@ -121,7 +121,7 @@
     "aitormendez/wpml-media-translation": "*",
     "aitormendez/wpml-string-translation": "*",
     "aitormendez/wpml-translation-management": "*",
-    "aitormendez/acfml": "*",
+    "aitormendez/acfml": "1.4.0",
     "wpackagist-plugin/wp-optimize": "*",
     "wpackagist-plugin/easy-wp-smtp": "*",
     "stoutlogic/acf-builder": "^1.8"

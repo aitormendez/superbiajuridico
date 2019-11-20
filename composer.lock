@@ -21,16 +21,16 @@
         },
         {
             "name": "aitormendez/acfml",
-            "version": "4.2.6",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:aitormendez/sitepress-multilingual-cms.git",
-                "reference": "927a32411e1bd282117303d939661ad3cd0de5b4"
+                "url": "git@github.com:aitormendez/acfml.git",
+                "reference": "2c678e9fb0aeaef337b903e77b9b1b8022c4b482"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aitormendez/sitepress-multilingual-cms/zipball/927a32411e1bd282117303d939661ad3cd0de5b4",
-                "reference": "927a32411e1bd282117303d939661ad3cd0de5b4",
+                "url": "https://api.github.com/repos/aitormendez/acfml/zipball/2c678e9fb0aeaef337b903e77b9b1b8022c4b482",
+                "reference": "2c678e9fb0aeaef337b903e77b9b1b8022c4b482",
                 "shasum": ""
             },
             "require": {
@@ -49,10 +49,10 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/aitormendez/sitepress-multilingual-cms/tree/4.2.6",
-                "issues": "https://github.com/aitormendez/sitepress-multilingual-cms/issues"
+                "source": "https://github.com/aitormendez/acfml/tree/1.4.0",
+                "issues": "https://github.com/aitormendez/acfml/issues"
             },
-            "time": "2019-05-17T16:11:24+00:00"
+            "time": "2019-10-10T10:43:07+00:00"
         },
         {
             "name": "aitormendez/sitepress-multilingual-cms",
@@ -1530,12 +1530,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "b04afa5560ac7f34fe6a24c620ccb199d61624a0"
+                "reference": "40fb2c205dd261ab6bb42ec29545934f0db7026f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/b04afa5560ac7f34fe6a24c620ccb199d61624a0",
-                "reference": "b04afa5560ac7f34fe6a24c620ccb199d61624a0",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/40fb2c205dd261ab6bb42ec29545934f0db7026f",
+                "reference": "40fb2c205dd261ab6bb42ec29545934f0db7026f",
                 "shasum": ""
             },
             "conflict": {
@@ -1603,7 +1603,7 @@
                 "league/commonmark": "<0.18.3",
                 "magento/magento1ce": "<1.9.4.3",
                 "magento/magento1ee": ">=1,<1.14.4.3",
-                "magento/product-community-edition": ">=2,<2.2.10|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2|>=2.3,<2.3.3,<2.3.2-p2",
+                "magento/product-community-edition": ">=2,<2.2.10|>=2.3,<2.3.2",
                 "monolog/monolog": ">=1.8,<1.12",
                 "namshi/jose": "<2.2",
                 "onelogin/php-saml": "<2.10.4",
@@ -1740,7 +1740,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2019-11-19T10:33:37+00:00"
+            "time": "2019-11-19T14:18:57+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
