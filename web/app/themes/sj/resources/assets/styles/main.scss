@@ -10,37 +10,16 @@
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
 // @import "~some-node-module";
-@import "~normalize.css/normalize.css";
-// @import "~owl.carousel/dist/assets/owl.carousel.css";
-// @import "~owl.carousel/dist/assets/owl.theme.default.css";
-// @import "~@glidejs/glide/dist/css/glide.core.min.css";
-// @import "~@glidejs/glide/dist/css/glide.theme.min.css";
 
 /** Import theme styles */
 @import "common/global";
-@import "fonts/pt_serif";
-@import "fonts/pt-sans";
-@import "fonts/asap";
-@import "fonts/logofont";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
-@import "components/popper";
 @import "components/wp-classes";
-@import "components/slider-home";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
-@import "layouts/archive-article";
-@import "layouts/archive-story";
-@import "layouts/archive-new-js";
-@import "layouts/archive-sentence";
-@import "layouts/single-text";
-@import "layouts/contact";
-@import "layouts/presentacion";
-@import "layouts/front-page";
-@import "layouts/single-sentence";
-@import "layouts/single-story";

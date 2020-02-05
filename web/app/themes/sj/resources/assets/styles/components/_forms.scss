@@ -1,121 +1,19 @@
 /** Search form */
-// TODO: .search-form {}
-// TODO: .search-form label {}
-// TODO: .search-form .search-field {}
-// TODO: .search-form .search-submit {}
+.search-form {
+  @extend .form-inline;
+}
 
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-textarea,
-.uneditable-input {
-  background-color: white;
-  width: 100%;
-  border: none;
-  box-shadow: none;
-  outline: 0 none;
-  font-family: $ff-base;
-  font-size: 1rem;
+.search-form label {
+  @extend .form-group;
+
   font-weight: normal;
-  padding: 1em;
-
-  &:focus {
-    border: none;
-    box-shadow: none;
-    outline: 0 none;
-    background-color: black;
-    color: white;
-  }
 }
 
-// Contact form 7
-
-div.wpcf7 {
-  margin-bottom: $pad-2;
-
-  input {
-    margin-top: 5px;
-  }
-
-  label {
-    font-family: $ff-sans;
-    font-size: 0.8rem;
-    font-weight: bold;
-  }
-
-  input[type="submit"] {
-    padding: 1em;
-    border: none;
-    font-family: $ff-sans;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    background-color: $color-verde;
-    color: white;
-    transition: background-color $trans;
-
-    &:hover {
-      background-color: $color-principal;
-      transition: background-color $trans;
-    }
-  }
+.search-form .search-field {
+  @extend .form-control;
 }
 
-div.wpcf7-response-output {
-  border: none;
-  background-color: $color-allo;
-  padding: $pad;
-  text-align: center;
-  font-weight: 500;
-  margin: 0 !important;
-  font-size: 16px !important;
-
-  &.wpcf7-display-none {
-    display: none;
-  }
-}
-
-.wpcf7-form .wpcf7-not-valid-tip {
-  background-color: $color-allo;
-  color: $color-rojo;
-  margin-top: 5px;
-}
-
-div.wpcf7-validation-errors {
-  background-color: $color-rojo;
-  color: white;
-}
-
-.wpcf7-list-item {
-  display: block !important;
-}
-
-[role="alert"] {
-  padding: 5px 10px 3px;
-  font-family: $ff-sans;
-  font-size: 12px !important;
-  text-transform: none;
-}
-
-.wpcf7-acceptance {
-  background-color: #fff;
-
-  .wpcf7-list-item {
-    margin-left: 0;
-  }
-}
-
-.pp {
-  font-family: $ff-sans;
-  font-size: 0.8rem;
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-secondary;
 }

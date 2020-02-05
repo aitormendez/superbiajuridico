@@ -6,26 +6,17 @@ use Roots\Sage\Container;
 use Roots\Sage\Assets\JsonManifest;
 use Roots\Sage\Template\Blade;
 use Roots\Sage\Template\BladeProvider;
-use StoutLogic\AcfBuilder\FieldsBuilder;
 
 /**
  * Theme assets
  */
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_script('google-maps', 'https://maps.googleapis.com/maps/api/js?key=' . 'AIzaSyBsyHHL-08gdVPybnyZPPE56fk6WTIXC4c', [], null, true);
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
 
     if (is_single() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
     }
-
-    $sj_data = array(
-        'homeUrl' => get_bloginfo( 'url' ),
-        'sjLogoMarker' => basename(\App\asset_path('images/sj-logo-marker.png')),
-    );
-
-    wp_localize_script('sage/main.js', 'sj', $sj_data);
 }, 100);
 
 /**
@@ -53,9 +44,7 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Menú principal', 'sage'),
-        'footer_navigation' => __('Menú pie', 'sage'),
-        'lang_navigation' => __('Menu lenguaje', 'sage'),
+        'primary_navigation' => __('Primary Navigation', 'sage')
     ]);
 
     /**
@@ -94,11 +83,11 @@ add_action('widgets_init', function () {
         'after_title'   => '</h3>'
     ];
     register_sidebar([
-        'name'          => __('Principal', 'sage'),
+        'name'          => __('Primary', 'sage'),
         'id'            => 'sidebar-primary'
     ] + $config);
     register_sidebar([
-        'name'          => __('Pie', 'sage'),
+        'name'          => __('Footer', 'sage'),
         'id'            => 'sidebar-footer'
     ] + $config);
 });
@@ -140,87 +129,4 @@ add_action('after_setup_theme', function () {
     sage('blade')->compiler()->directive('asset', function ($asset) {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
-});
-
-/**
- * pasar datos a JS
- * https://discourse.roots.io/t/wp-localize-script-not-working-in-sage-9/11282/3
- */
-add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
-    $sj_data = array(
-        'homeUrl' => get_bloginfo( 'url' ),
-        'sjLogoMarker' => basename(\App\asset_path('images/sj-logo-marker.png')),
-        'sjLogoMarkerPath' => \App\asset_path('images/sj-logo-marker.png'),
-    );
-
-    wp_localize_script('sage/main.js', 'sj', $sj_data);
-}, 100);
-
-/**
- * image sizes
- */
-add_action('after_setup_theme', function () {
-    add_image_size( 'very-large', 2000 );
-    add_image_size( 'cuadrado-1000', 1000, 1000, true );
-    add_image_size( 'cuadrado-600', 600, 600, true );
-    add_image_size( 'cuadrado-300', 300, 300, true );
-});
-
-
-
-
-/**
- * Cambiar títulos sentencias
- */
-
- function actualizar_titulo_sentencia($post_id) {
-   $post_type = get_post_type($post_id);
-   if ($post_type == 'sentence') {
-       $nombre = get_field('nombre', $post_id);
-       $sentencia_no = get_field('sentencia_no', $post_id);
-       $tribunal = get_field('tribunal', $post_id);
-       $fecha = get_field('fecha', $post_id, false);
-       $fecha_datetime = new \DateTime($fecha);
-       $anio = $fecha_datetime->format('Y');
-       $fecha_titulo =  $fecha_datetime->format('j-n-Y');
-
-       if ($sentencia_no == '') {
-           $new = $tribunal . ' ' . $fecha_titulo;
-       } else {
-           $new = $tribunal . ' ' . $sentencia_no . '/' . $anio;
-       }
-       if (!'' == $nombre) {
-           $new = $new . ' ' . $nombre;
-       }
-
-       $my_post = array(
-         'ID' => $post_id,
-         'post_title'   => $new,
-       );
-       remove_action( 'acf/save_post', 'actualizar_titulo_sentencia', 10, 1 );
-       wp_update_post( $my_post );
-       add_action( 'acf/save_post', 'actualizar_titulo_sentencia', 10, 1 );
-   }
- }
- add_action( 'acf/save_post', __NAMESPACE__ .'\\actualizar_titulo_sentencia', 10, 1 );
-
- /**
- * Initialize ACF Builder
- */
-add_action('init', function () {
-    collect(glob(config('theme.dir').'/app/fields/*.php'))->map(function ($field) {
-        return require_once($field);
-    })->map(function ($field) {
-        if ($field instanceof FieldsBuilder) {
-            acf_add_local_field_group($field->build());
-        }
-    });
-});
-
-/**
- * cargar texdomain
- */
-add_action('after_setup_theme', function () {
-    load_theme_textdomain('sage', get_template_directory() . '/lang');
 });
