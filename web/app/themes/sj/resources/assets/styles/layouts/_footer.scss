@@ -1,3 +1,18 @@
 .content-info {
   font-family: $ff-sans;
+
+  h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: theme-color("crudo");
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    > li {
+      width: 100%;
+    }
+  }
 }

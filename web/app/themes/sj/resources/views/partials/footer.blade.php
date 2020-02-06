@@ -1,7 +1,7 @@
-<footer class="content-info bg-principal">
+<footer class="content-info bg-principal py-4">
   <div class="container">
     <div class="row d-flex">
-      <div class="col-sm-6 bloque">
+      <div class="col-sm-6 col-lg-3 bloque py-3">
         <h3>{{ __('Navegación', 'sage') }}</h3>
         @if (has_nav_menu('footer_navigation'))
           {!! wp_nav_menu(['theme_location' => 'footer_navigation', 'menu_class' => 'nav']) !!}
@@ -9,7 +9,7 @@
       </div>
         @if (!empty($links))
           @foreach ($links as $link)
-            <div class="bloque col-sm-6">
+            <div class="bloque col-sm-6 col-lg-3 py-3">
             @php
             $args = [
               'post_type'              => ['links'],
