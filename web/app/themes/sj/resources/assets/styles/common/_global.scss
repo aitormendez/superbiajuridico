@@ -1,0 +1,16 @@
+html {
+  font-size: 1rem;
+
+  @include media-breakpoint-up(sm) {
+    font-size: calc(0.5vw + 0.7rem);
+  }
+}
+
+a {
+  transition: color $trans, background-color $trans;
+
+  &:hover {
+    color: $gray-300;
+    text-decoration: none;
+  }
+}

@@ -89,3 +89,12 @@ add_filter('comments_template', function ($comments_template) {
 
     return $comments_template;
 }, 100);
+
+/**
+* recopilar textos en página de autor
+*/
+add_action('pre_get_posts', function ($query) {
+    if ( ! is_admin() && is_author() && $query->is_main_query() ) {
+         $query->set( 'post_type', 'text' );
+    }
+  });

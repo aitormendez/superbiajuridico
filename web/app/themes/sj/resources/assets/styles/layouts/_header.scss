@@ -1,7 +1,420 @@
-.banner .nav li {
-  @extend .nav-item;
-}
+/* stylelint-disable no-descending-specificity */
 
-.banner .nav a {
-  @extend .nav-link;
+.banner {
+  position: absolute;
+  top: 0;
+  width: calc(100vw - (100vw - 100%)); // https://stackoverflow.com/a/34884924/2986401
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: theme-color("principal");
+  font-family: $ff-sans;
+
+  .brand {
+    display: flex;
+    justify-content: center;
+    padding: $pad-4;
+
+    .logohoriz {
+      display: none;
+    }
+
+    .logovert {
+      max-width: 150px;
+
+      svg {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .hamburger {
+    position: absolute;
+    right: $pad-2;
+    top: $pad-2;
+    z-index: 5001;
+  }
+
+  .boton-solapa-buscar {
+    display: none;
+  }
+
+  #buscar {
+    display: flex;
+
+    .fa-cruz {
+      display: none;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+    }
+
+    label {
+      position: relative;
+      display: block;
+      width: calc(100% - 55px);
+    }
+
+    input[type="search"] {
+      background-color: transparent;
+      border: 1px solid theme-color("blanco-alfa");
+      width: 100%;
+
+      &::placeholder {
+        color: $color-blanco-alfa;
+      }
+
+      &:focus {
+        background-color: theme-color("principal");
+      }
+    }
+
+    button[type="submit"] {
+      position: relative;
+      display: block;
+      width: 55px;
+      height: 100%;
+      border-top: 1px solid $color-blanco-alfa;
+      border-right: 1px solid $color-blanco-alfa;
+      border-bottom: 1px solid $color-blanco-alfa;
+      background-color: transparent;
+      overflow: hidden;
+      font-size: 24px;
+
+      &:hover {
+        background-color: theme-color("principal");
+        color: $color-blanco-alfa;
+      }
+    }
+  }
+
+  .solapa {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: -105vw;
+    width: 100vw;
+    height: 100vh;
+    padding: $pad $pad-4 $pad-4;
+    background-color: theme-color("secundario");
+    color: theme-color("principal");
+    transition: left $trans;
+    z-index: 5000;
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        a {
+          font-size: 0.8rem;
+          color: theme-color("principal");
+          letter-spacing: 0.02em;
+        }
+      }
+
+      &.menu-lenguaje {
+        a {
+          display: inline-block;
+          padding: 0.8rem 1rem;
+          border: 1px solid $color-blanco-alfa;
+        }
+      }
+
+      &.menu-institucional {
+        li {
+          padding: 0.5rem 0;
+          border-top: 1px solid $color-blanco-alfa;
+
+          &:first-child {
+            border-top: none;
+          }
+        }
+      }
+
+      &.menu-principal {
+        li {
+          padding: 0.5rem 0;
+          border-top: 1px solid $color-blanco-alfa;
+
+          &:first-child {
+            border-top: none;
+          }
+
+          a {
+            svg {
+              display: none;
+            }
+          }
+
+          .description {
+            display: none;
+          }
+        }
+
+        a {
+          font-weight: 700;
+        }
+      }
+    }
+
+    &.abierto {
+      left: 0;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    position: fixed;
+    transition: top $trans;
+    z-index: 2000;
+
+    .brand {
+      width: 15%;
+      padding: $pad;
+      border-right: 1px solid $color-blanco-alfa;
+
+      .logohoriz {
+        display: block;
+        max-width: 150px;
+
+        svg {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .logovert {
+        display: none;
+      }
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    .solapa {
+      position: static;
+      width: 85%;
+      height: auto;
+      padding: 0;
+      background-color: transparent;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .menu-lenguaje-container,
+      .menu-lenguaje-ruso-container {
+        order: 1;
+        border-right: 1px solid $color-blanco-alfa;
+        flex-shrink: 1;
+        flex-grow: 1;
+      }
+
+      .menu-institucional-container,
+      .menu-institucional-ruso-container {
+        order: 0;
+        width: calc(100% - 245px);
+        border-right: 1px solid $color-blanco-alfa;
+        flex-shrink: 1;
+        flex-grow: 1;
+      }
+
+      .menu-principal-container,
+      .menu-principal-ruso-container {
+        width: 100%;
+        order: 3;
+        border-top: 1px solid $color-blanco-alfa;
+      }
+
+      .boton-solapa-buscar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        order: 2;
+        width: 50px;
+        color: #fff;
+        flex-shrink: 0;
+        flex-grow: 0;
+      }
+
+      #buscar {
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -105vw;
+        width: calc(100vw - (100vw - 100%));
+        height: 100vh;
+        background-color: theme-color("secundario");
+        z-index: 600;
+        transition: left 0.5s;
+
+        .cruz {
+          display: block;
+          width: 40px;
+          height: 49px;
+          position: absolute;
+          top: 2rem;
+          right: 2rem;
+
+          .fa-cruz {
+            display: block;
+            color: #fff;
+            font-size: 2rem;
+          }
+        }
+
+        form {
+          width: 60%;
+          height: 54px;
+
+          button {
+            height: auto;
+          }
+        }
+
+        &.abierto {
+          left: 0;
+        }
+      }
+
+      ul {
+        padding: 0.5rem 0.8rem;
+        margin: 0;
+
+        li {
+          display: inline-block;
+
+          a {
+            color: $color-blanco-alfa;
+          }
+        }
+
+        &.menu-lenguaje {
+          a {
+            padding: 0;
+            border: none;
+          }
+        }
+
+        &.menu-institucional {
+          li {
+            padding: 0;
+            border-top: none;
+            margin-right: 1rem;
+
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+        }
+
+        &.menu-principal {
+          li {
+            padding: 0;
+            margin-right: 1rem;
+            border-top: none;
+
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+
+          a {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    &.offcanvas {
+      top: -200px;
+    }
+
+    body.home &.full {
+      background-color: transparent;
+      border-bottom: 1px solid $color-blanco-alfa;
+
+      .brand {
+        .logohoriz {
+          display: none;
+        }
+
+        .logovert {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem;
+          width: 100%;
+          max-width: 100%;
+          background-color: $color-principal-alfa;
+
+          svg {
+            max-width: 100px;
+          }
+        }
+      }
+
+      .solapa {
+        ul {
+          &.menu-principal {
+            display: flex;
+            padding: 2rem;
+
+            li {
+              a {
+                display: block;
+                color: $color-principal-alfa;
+
+                svg {
+                  font-size: 1.7rem;
+                  display: block;
+                  color: $color-blanco-alfa;
+                  margin-bottom: 0.5rem;
+                }
+
+                .description {
+                  display: block;
+                  margin-top: 0.8rem;
+                  color: $color-blanco-alfa;
+                  font-family: $ff-serif;
+                  font-size: 1rem;
+                  font-weight: normal;
+                  font-style: italic;
+                }
+              }
+
+              &:last-child {
+                margin-right: 0;
+
+                a {
+                  padding: 1rem;
+                  background-color: #00000023;
+                  border: 1px solid $color-blanco-alfa;
+
+                  svg {
+                    font-size: 5rem;
+                  }
+
+                  .epi {
+                    display: none;
+                  }
+
+                  .description {
+                    font-family: $ff-sans;
+                    font-size: 0.8rem;
+                    font-style: normal;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

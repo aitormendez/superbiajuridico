@@ -6,6 +6,7 @@ use Roots\Sage\Container;
 use Roots\Sage\Assets\JsonManifest;
 use Roots\Sage\Template\Blade;
 use Roots\Sage\Template\BladeProvider;
+use StoutLogic\AcfBuilder\FieldsBuilder;
 
 /**
  * Theme assets
@@ -44,7 +45,11 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Menú principal', 'sage'),
+        'footer_navigation' => __('Menú pie', 'sage'),
+        'lang_navigation' => __('Menu lenguaje', 'sage'),
+        'insti_navigation' => __('Menu institucional', 'sage'),
+        'texts_navigation' => __('Menu textos', 'sage'),
     ]);
 
     /**
@@ -130,3 +135,34 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
+
+
+ /**
+ * Initialize ACF Builder
+ */
+add_action('init', function () {
+    collect(glob(config('theme.dir').'/app/fields/*.php'))->map(function ($field) {
+        return require_once($field);
+    })->map(function ($field) {
+        if ($field instanceof FieldsBuilder) {
+            acf_add_local_field_group($field->build());
+        }
+    });
+});
+
+/**
+ * cargar texdomain
+ */
+add_action('after_setup_theme', function () {
+    load_theme_textdomain('sage', get_template_directory() . '/lang');
+});
+
+/**
+ * responsive-embeds
+ */
+add_theme_support('responsive-embeds');
+
+
+add_filter('get_search_form', function () {
+    return \App\template( 'partials.searchform' );
+  });

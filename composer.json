@@ -120,7 +120,7 @@
     "aitormendez/acfml": "1.4.0",
     "wpackagist-plugin/wp-optimize": "*",
     "wpackagist-plugin/easy-wp-smtp": "*",
-    "stoutlogic/acf-builder": "^1.8",
+    "stoutlogic/acf-builder": "^1.9",
     "wpackagist-plugin/google-sitemap-generator": "*",
     "wpackagist-plugin/mailchimp-for-wp": "*"
   },
