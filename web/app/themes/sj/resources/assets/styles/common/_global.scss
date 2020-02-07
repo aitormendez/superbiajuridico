@@ -6,6 +6,14 @@ html {
   }
 }
 
+body {
+  &:not(.home) {
+    main {
+      margin-top: 85px;
+    }
+  }
+}
+
 a {
   transition: color $trans, background-color $trans;
 

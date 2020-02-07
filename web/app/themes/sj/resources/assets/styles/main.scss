@@ -10,18 +10,23 @@
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
 // @import "~some-node-module";
+// @import "~hamburgers/_sass/hamburgers/hamburgers";
+// @import "~@glidejs/glide/dist/css/glide.core.min.css";
+// @import "~@glidejs/glide/dist/css/glide.theme.min.css";
 
 /** Import theme styles */
 @import "common/global";
+@import "fonts/crimson-text";
+@import "fonts/rubik";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
 @import "components/wp-classes";
+@import "components/slider-home";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
-@import "fonts/crimson-text";
-@import "fonts/rubik";
+@import "layouts/front-page";
