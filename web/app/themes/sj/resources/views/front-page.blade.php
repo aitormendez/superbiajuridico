@@ -30,7 +30,7 @@
             </ul>
           </div>
 
-          <div class="glide__arrows" data-glide-el="controls">
+          <div class="glide__arrows d-none d-sm-block" data-glide-el="controls">
             <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
               <i class="fas fa-arrow-left">
             </i></button>
@@ -39,7 +39,7 @@
             </button>
           </div>
 
-          <div class="glide__bullets" data-glide-el="controls[nav]">
+          <div class="glide__bullets d-none d-sm-block" data-glide-el="controls[nav]">
             @for ($i = 0; $i < $count; $i++)
           <button class="glide__bullet" data-glide-dir="={{ $i }}"></button>
             @endfor

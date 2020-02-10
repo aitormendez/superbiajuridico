@@ -22,7 +22,7 @@
 
 
 <li class="glide__slide">
-    <a href="{{ $enlace }}" class="{{ $datos['clase'] }} {{ $class_img ?? '' }} d-flex">
+    <a href="{{ $enlace }}" class="{{ $datos['clase'] }} {{ $class_img ?? '' }} d-sm-flex">
       <div class="col-izq">
         <div class="seccion">
           {!! $datos['icono'] !!}
@@ -30,14 +30,14 @@
         </div>
 
         <div class="contenidos">
-            @if ($datos['clase'] == 'sentence')
+          @if ($datos['clase'] == 'sentence')
             <p class="referencia">{{ $referencia }}</p>
-            <h2 class="entry-title">{{ get_field('nombre') }}</h2>
+            <h2 class="entry-title text-principal my-4">{{ get_field('nombre') }}</h2>
           @else
-           <h2 class="entry-title">{!! get_the_title() !!}</h2>
+           <h2 class="entry-title text-principal my-4">{!! get_the_title() !!}</h2>
           @endif
 
-        <div class="entry-summary">
+        <div class="entry-summary text-principal mb-4">
           @if (has_excerpt())
             @wpautop(get_the_excerpt())
           @endif

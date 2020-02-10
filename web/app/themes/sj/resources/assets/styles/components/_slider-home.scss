@@ -1,17 +1,57 @@
 @import "~@glidejs/glide/src/assets/sass/variables";
 $sm: $glide-modifier-separator;
+$se: $glide-element-separator;
 
 .home .slider {
   background-color: $gray-200;
 
-  .glide_ {
-    &_slide {
+  .glide {
+    &#{$se}slides {
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    &#{$se}slide {
       background-color: #fff;
+      margin-bottom: 2rem;
+      padding: 2rem;
+
+      .col-izq {
+        .seccion {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 1rem 1rem 0.5rem;
+          background-color: $gray-200;
+          color: theme-color("principal");
+          font-family: $ff-sans;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          font-weight: 700;
+          font-size: 0.8rem;
+          border-radius: 4px;
+
+          svg {
+            font-size: 32px;
+          }
+
+          p {
+            margin-top: 3px;
+            margin-bottom: 0;
+          }
+        }
+      }
 
       .col-der {
         img {
           max-width: 100%;
           height: auto;
+        }
+      }
+
+      .entry-summary {
+        *:last-child {
+          margin-bottom: 0;
         }
       }
     }
@@ -21,9 +61,6 @@ $sm: $glide-modifier-separator;
     // pongo aquí el CSS de glide porque si lo importo no puedo desactivarlo en móvil
     .#{$glide-class} {
       $this: &;
-
-      $se: $glide-element-separator;
-      $sm: $glide-modifier-separator;
 
       position: relative;
       width: 100%;
