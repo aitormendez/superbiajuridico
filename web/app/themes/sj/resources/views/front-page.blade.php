@@ -115,7 +115,7 @@
           </p>
       </div>
       @if (has_excerpt())
-      <div class="entry-summary">
+      <div class="entry-summary text-principal">
           @wpautop(get_the_excerpt())
       </div>
       @endif
