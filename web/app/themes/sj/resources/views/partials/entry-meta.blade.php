@@ -26,7 +26,7 @@
     <time class="updated" datetime="{{ $fecha_pub_iso }}">{{ $fecha_pub }}</time>
   </div>
   @if (is_singular('text'))
-    <div class="col col2">
+    <div>
       <form method="post"><input class="pdf" type="submit" formtarget="_blank" value=""/></form>
     </div>
   @endif

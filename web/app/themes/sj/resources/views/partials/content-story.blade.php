@@ -2,9 +2,10 @@
   <header>
 
     @if (ArchiveStory::setClassNews() == 'infinite-scroll-item sj')
-      <a href="{{ get_bloginfo( 'url' ) . '/new-categories/superbia-juridico/'}}" data-toggle="tooltip" class="marca-sj">
+      <a href="{{ get_bloginfo( 'url' ) . '/new-categories/superbia-juridico/'}}" data-toggle="tooltip" title="Noticia de Superbia Jurídico" class="marca-sj">
         @svg('sj-sj')
       </a>
+
     @endif
 
     @if (ArchiveStory::getEnlaceExterno())

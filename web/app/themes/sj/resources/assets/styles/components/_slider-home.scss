@@ -42,6 +42,10 @@ $se: $glide-element-separator;
         }
       }
 
+      & .rincon .seccion {
+        background-color: theme-color("rincon");
+      }
+
       .col-der {
         img {
           max-width: 100%;
