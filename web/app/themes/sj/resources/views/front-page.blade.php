@@ -123,7 +123,6 @@
   </div>
 </section>
 
-
 <section class="noticias">
   <div class="header">
     <h1>{{ __('Noticias', 'sage') }}</h1>

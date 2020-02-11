@@ -19,7 +19,9 @@ export default {
       $(window).trigger('resize', {})
     }
 
-
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
 
 
   },
