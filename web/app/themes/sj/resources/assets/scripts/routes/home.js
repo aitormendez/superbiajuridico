@@ -1,5 +1,8 @@
 /* eslint-disable no-unused-vars */
-import Glide, { Controls, Autoplay, Keyboard } from '@glidejs/glide/dist/glide.modular.esm'
+import Glide, { Controls, Autoplay, Keyboard } from '@glidejs/glide/dist/glide.modular.esm';
+import { createPopper } from '@popperjs/core/lib/popper-lite.js';
+import flip from '@popperjs/core/lib/modifiers/flip';
+import preventOverflow from '@popperjs/core/lib/modifiers/preventOverflow';
 
 export default {
   init() {
@@ -19,9 +22,12 @@ export default {
       $(window).trigger('resize', {})
     }
 
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
+    const button = document.querySelector('.marca-js');
+    const tooltip = document.querySelector('#tooltip');
+
+    createPopper(button, tooltip, {
+      modifiers: [preventOverflow, flip],
+    });
 
 
   },

@@ -12,12 +12,20 @@ use StoutLogic\AcfBuilder\FieldsBuilder;
  * Theme assets
  */
 add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_script('google-maps', 'https://maps.googleapis.com/maps/api/js?key=' . 'AIzaSyBsyHHL-08gdVPybnyZPPE56fk6WTIXC4c', [], null, true);
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
 
     if (is_single() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
     }
+
+    $sj_data = array(
+        'homeUrl' => get_bloginfo( 'url' ),
+        'sjLogoMarker' => basename(\App\asset_path('images/sj-logo-marker.png')),
+    );
+
+    wp_localize_script('sage/main.js', 'sj', $sj_data);
 }, 100);
 
 /**
@@ -163,6 +171,9 @@ add_action('after_setup_theme', function () {
 add_theme_support('responsive-embeds');
 
 
+/**
+ * cargar mi plantilla searchform
+ */
 add_filter('get_search_form', function () {
     return \App\template( 'partials.searchform' );
-  });
+});
