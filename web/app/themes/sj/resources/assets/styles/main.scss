@@ -14,6 +14,8 @@
 // @import "~@glidejs/glide/dist/css/glide.core.min.css";
 // @import "~@glidejs/glide/dist/css/glide.theme.min.css";
 @import "~hamburgers/_sass/hamburgers/hamburgers";
+@import "~tippy.js/dist/tippy.css";
+@import "~tippy.js/animations/scale.css";
 
 /** Import theme styles */
 @import "common/global";
@@ -32,3 +34,4 @@
 @import "layouts/tinymce";
 @import "layouts/front-page";
 @import "layouts/contact";
+@import "layouts/archive-story";
