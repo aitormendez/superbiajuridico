@@ -1,8 +1,6 @@
 /* stylelint-disable no-descending-specificity */
 
 .banner {
-  position: absolute;
-  top: 0;
   width: calc(100vw - (100vw - 100%)); // https://stackoverflow.com/a/34884924/2986401
   display: flex;
   flex-wrap: wrap;
@@ -168,6 +166,7 @@
   }
 
   @include media-breakpoint-up(md) {
+    top: 0;
     position: fixed;
     transition: top $trans;
     z-index: 2000;

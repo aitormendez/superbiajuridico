@@ -17,3 +17,46 @@
   @extend .btn;
   @extend .btn-secondary;
 }
+
+.btn {
+  border: none;
+  transition: background-color $trans, color $trans;
+  font-family: $ff-sans;
+}
+
+.btn-primary {
+  background-color: theme-color("principal");
+
+  &:hover {
+    background-color: theme-color("azul");
+  }
+}
+
+// Contacto WP form
+
+.wpforms-field:not(.wpforms-field-phone) {
+  overflow-x: unset !important;
+}
+
+.wpforms-container {
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  .wpforms-field-row,
+  .wpforms-field-medium {
+    max-width: 100% !important;
+  }
+
+  input[type="email"],
+  input[type="text"],
+  textarea {
+    padding: 0.8rem 1.2rem;
+    border: none;
+  }
+
+  @include media-breakpoint-up("sm") {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

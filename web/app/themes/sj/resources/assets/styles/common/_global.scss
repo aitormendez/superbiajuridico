@@ -9,8 +9,11 @@ html {
 body {
   &:not(.home) {
     main {
-      margin-top: 85px;
       background-color: theme-color("crudo");
+
+      @include media-breakpoint-up("sm") {
+        margin-top: 85px;
+      }
     }
   }
 }

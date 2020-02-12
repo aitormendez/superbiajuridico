@@ -7,15 +7,18 @@
 
   .gm-style-iw {
     font-family: $ff-sans;
+    max-width: 300px !important;
 
     h4 {
       margin-top: 0.5em;
       font-weight: bold;
+      font-size: 0.8rem;
     }
 
     p {
       margin-bottom: 0;
       margin-top: 0;
+      font-size: 0.8rem;
     }
   }
 
@@ -77,6 +80,10 @@
           margin-top: 0;
         }
       }
+    }
+
+    .acf-map {
+      height: 400px;
     }
   }
 }

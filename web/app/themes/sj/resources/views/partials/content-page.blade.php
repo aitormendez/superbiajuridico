@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row py-5">
+  <div class="row pt-5">
     @php the_content() @endphp
   </div>
 </div>
