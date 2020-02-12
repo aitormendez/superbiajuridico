@@ -174,6 +174,6 @@ add_theme_support('responsive-embeds');
 /**
  * cargar mi plantilla searchform
  */
-add_filter('get_search_form', function () {
-    return \App\template( 'partials.searchform' );
-});
+// add_filter('get_search_form', function () {
+//     return \App\template( 'partials.searchform' );
+// });
