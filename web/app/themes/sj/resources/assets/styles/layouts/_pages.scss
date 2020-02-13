@@ -27,6 +27,10 @@
         letter-spacing: 0.05em;
         border-radius: 3px;
       }
+
+      &.current-menu-item a {
+        background-color: theme-color("principal");
+      }
     }
   }
 
