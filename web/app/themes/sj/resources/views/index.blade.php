@@ -19,6 +19,5 @@
     </div>
     @include('partials.loader')
   @endif
-
   {!! get_the_posts_navigation() !!}
 @endsection
