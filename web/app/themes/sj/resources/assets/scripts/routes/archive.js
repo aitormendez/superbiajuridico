@@ -9,11 +9,15 @@ export default {
 
     const tps = document.querySelectorAll('.marca-sj');
     const template = document.getElementById('template');
+    console.log(tps);
+    console.log(template);
+    if (tps.length != 0) {
+      tippy(tps, {
+        content: template.innerHTML,
+        animation: 'scale',
+      });
+    }
 
-    tippy(tps, {
-      content: template.innerHTML,
-      animation: 'scale',
-    });
 
     // infinite-scroll
     // -----------------------------------------------
@@ -49,10 +53,12 @@ export default {
 
     main.on('append', function() {
       const tps = document.querySelectorAll('.marca-sj');
-      tippy(tps, {
-        content: template.innerHTML,
-        animation: 'scale',
-      });
+      if (tps.length != 0) {
+        tippy(tps, {
+          content: template.innerHTML,
+          animation: 'scale',
+        });
+      }
     });
 
   },

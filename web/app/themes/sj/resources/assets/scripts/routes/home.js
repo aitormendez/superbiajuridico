@@ -8,7 +8,6 @@ export default {
 
     // TOOLTIPS
     // ------------------
-
     const tps = document.querySelectorAll('.marca-sj');
     const template = document.getElementById('template');
 
@@ -29,8 +28,6 @@ export default {
       glide.mount({ Controls, Autoplay, Keyboard });
       $(window).trigger('resize', {})
     }
-
-
 
   },
   finalize() {
