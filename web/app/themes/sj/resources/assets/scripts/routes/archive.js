@@ -1,7 +1,5 @@
-/* eslint-disable no-unused-vars */
 var InfiniteScroll = require('infinite-scroll');
-// import Tooltip from 'tooltip.js/dist/umd/tooltip.js';
-// import { createPopper } from '@popperjs/core';
+import tippy from 'tippy.js';
 
 export default {
   init() {
@@ -9,44 +7,53 @@ export default {
     // TOOLTIPS
     // ------------------
 
-    // let sjNews = $('.marca-sj');
+    const tps = document.querySelectorAll('.marca-sj');
+    const template = document.getElementById('template');
 
-    // sjNews.each(function() {
-    //   new Tooltip(this, {
-    //     title: 'Superbia Jurídico en los medios',
-    //     trigger: 'hover',
-    //   });
-    // })
+    tippy(tps, {
+      content: template.innerHTML,
+    });
 
-    // Infinite scroll
-    // https://infinite-scroll.com/#getting-started
+    console.log(tps);
 
+    // infinite-scroll
+    // -----------------------------------------------
 
-    var inf = $('.infinite-scroll-container').infiniteScroll({
-      // options
+    let buttonCont = $('.button-container');
+
+    let main = new InfiniteScroll( '.infinite-scroll-container', {
       path: '.nav-previous a',
       append: '.infinite-scroll-item',
       history: false,
-      hideNav: '.posts-navigation',
-      loadOnScroll: true,
-      scrollThreshold: 1500,
+      hideNav: '.nav-links',
+      button: '.view-more-button',
+      status: '.page-load-status',
     });
 
-    // inf.on('append.infiniteScroll', function(event, response, path, items) {
-    //     let sjNews = $('.marca-sj');
-    //     sjNews.each(function() {
-    //       new Tooltip(this, {
-    //         title: 'Superbia Jurídico en los medios',
-    //         trigger: 'hover',
-    //       });
-    //     })
-    //   });
+    function onPageLoad() {
+      console.log(main.loadCount);
+      console.log('main.loadCount');
+      if ( main.loadCount == 1 ) {
+        main.option({
+          loadOnScroll: false,
+        });
+        buttonCont.removeClass('d-none');
+        main.off( 'load', onPageLoad );
+      }
+    }
 
+    main.on( 'load', onPageLoad );
 
+    main.on( 'last', function() {
+      buttonCont.hide();
+    });
 
-
-
+    main.on('append', function() {
+      const tps = document.querySelectorAll('.marca-sj');
+      tippy(tps, {
+        content: template.innerHTML,
+      });
+    });
 
   },
 };
-/* eslint-enable */

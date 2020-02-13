@@ -1,0 +1,77 @@
+// CSS loader
+.infinite-scroll-request {
+  display: flex;
+  justify-content: center;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid theme-color("principal");
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+.page-load-status {
+  width: 100%;
+
+  p {
+    display: inline-block;
+    background-color: $gray-300;
+    border-radius: 0.3em;
+    padding: 0.5em 0.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+.button-container {
+  button {
+    border: 3px solid theme-color("secundario");
+    background-color: #fff;
+    box-shadow: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: theme-color("secundario");
+    border-radius: 1.2em;
+    padding: 0.3em 0.5em 0.2em;
+    transition: background-color $trans;
+
+    &:hover {
+      background-color: theme-color("principal");
+    }
+  }
+}

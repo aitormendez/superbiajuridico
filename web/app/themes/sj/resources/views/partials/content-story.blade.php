@@ -2,10 +2,9 @@
   <header>
 
     @if (ArchiveStory::setClassNews() == 'infinite-scroll-item sj')
-      <a href="{{ get_bloginfo( 'url' ) . '/new-categories/superbia-juridico/'}}" data-tippy-content="Superbia Jurídico en los medios" class="marca-sj">
+      <a href="{{ get_bloginfo( 'url' ) . '/new-categories/superbia-juridico/'}}" class="marca-sj">
         @svg('sj-sj')
       </a>
-
     @endif
 
     @if (ArchiveStory::getEnlaceExterno())

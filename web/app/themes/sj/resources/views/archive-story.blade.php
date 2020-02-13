@@ -18,4 +18,14 @@
 </div>
 
   {!! get_the_posts_navigation() !!}
+
+  <div class="container">
+    <div class="row">
+      @include('partials.loader')
+    </div>
+  </div>
+
+  <div id="template" style="display: none;">
+    <strong>{{ __('Superbia Jurídico en los medios', 'sage') }}</strong>
+  </div>
 @endsection
