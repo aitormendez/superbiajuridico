@@ -15,8 +15,6 @@ export default {
       animation: 'scale',
     });
 
-    console.log(tps);
-
     // infinite-scroll
     // -----------------------------------------------
 

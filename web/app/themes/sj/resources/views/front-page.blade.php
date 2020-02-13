@@ -138,5 +138,8 @@
     @endposts
   </div>
 </section>
+<div id="template" style="display: none;">
+  <strong>{{ __('Superbia Jurídico en los medios', 'sage') }}</strong>
+</div>
 
 @endsection

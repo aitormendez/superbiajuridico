@@ -9,14 +9,13 @@ export default {
     // TOOLTIPS
     // ------------------
 
-    let sjNews = $('.marca-sj');
+    const tps = document.querySelectorAll('.marca-sj');
+    const template = document.getElementById('template');
 
-    sjNews.each(function() {
-      tippy('[data-tippy-content]', {
-        animation: 'scale',
-        inertia: true,
-      });
-    })
+    tippy(tps, {
+      content: template.innerHTML,
+      animation: 'scale',
+    });
 
     // slider portada
     // -------------------------------

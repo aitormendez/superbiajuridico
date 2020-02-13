@@ -171,7 +171,7 @@
                 margin-bottom: 5px;
                 height: 25px;
                 width: 25px;
-                background-color: theme-color("allo");
+                background-color: theme-color("secundario");
                 border-radius: 50%;
 
                 svg {
@@ -179,6 +179,10 @@
                   top: 4px;
                   left: 7px;
                   width: 10px;
+                }
+
+                &:hover {
+                  background-color: $gray-300;
                 }
               }
 
