@@ -5,7 +5,8 @@
   }
 
   article {
-    margin-bottom: $pad;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
 
     header {
       position: relative;
@@ -33,58 +34,48 @@
       }
     }
 
-    &:first-of-type {
-      margin-top: $pad-4;
-    }
-
     &.sj {
       margin-top: $pad-2;
-      padding-top: $pad-1;
-      border-top: 2px solid white;
+      background-color: $gray-300;
+      padding: 1rem;
+      border-radius: 4px;
 
       header {
         .marca-sj {
           display: block;
-          position: absolute;
           width: 40px;
           height: 40px;
-          top: -53px;
-          left: 10px;
           padding-left: 10px;
-          background-color: theme-color("allo");
+          margin-bottom: 0.7rem;
+          background-color: theme-color("secundario");
           border-radius: 50%;
           border: 2px solid white;
 
           svg {
             position: absolute;
-            top: -3px;
+            top: 7px;
             width: 15px;
           }
 
           &:hover {
-            background-color: theme-color("azul");
+            background-color: $gray-400;
           }
         }
+      }
+    }
+  }
 
-        .meta {
-          background-color: $gray-400;
-        }
+  @include media-breakpoint-up("md") {
+    article {
+      display: flex;
+
+      header {
+        width: 50%;
+        padding-right: 2rem;
       }
 
-      .entry-title {
-        margin-top: $pad-1;
-      }
-
-      @include media-breakpoint-up("md") {
-        border-top: none;
-
-        header {
-          .marca-sj {
-            border-color: $gray-900;
-            top: 20px;
-            left: -22px;
-          }
-        }
+      .entry-summary {
+        width: 50%;
       }
     }
   }

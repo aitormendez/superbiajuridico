@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row d-flex justify-content-center">
+  <div class="row d-flex justify-content-center mb-5">
     <div class="page-load-status px-sm-4">
       <div class="infinite-scroll-request">
         <div class="lds-ripple"><div></div><div></div></div>

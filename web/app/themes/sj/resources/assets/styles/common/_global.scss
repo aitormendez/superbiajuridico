@@ -22,7 +22,7 @@ a {
   transition: color $trans, background-color $trans;
 
   &:hover {
-    color: $gray-300;
+    color: theme-color("principal");
     text-decoration: none;
   }
 }

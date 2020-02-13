@@ -12,6 +12,7 @@ export default {
 
     tippy(tps, {
       content: template.innerHTML,
+      animation: 'scale',
     });
 
     console.log(tps);
@@ -52,6 +53,7 @@ export default {
       const tps = document.querySelectorAll('.marca-sj');
       tippy(tps, {
         content: template.innerHTML,
+        animation: 'scale',
       });
     });
 

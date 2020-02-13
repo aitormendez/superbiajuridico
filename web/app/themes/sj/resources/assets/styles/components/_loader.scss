@@ -51,7 +51,8 @@
     padding: 0.5em 0.8rem;
     text-transform: uppercase;
     color: #fff;
-    font-weight: 700;
+    font-family: $ff-sans;
+    font-weight: 400;
     font-size: 0.8rem;
     text-align: center;
   }
@@ -59,19 +60,21 @@
 
 .button-container {
   button {
-    border: 3px solid theme-color("secundario");
-    background-color: #fff;
+    background-color: theme-color("secundario");
     box-shadow: none;
     text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: theme-color("secundario");
-    border-radius: 1.2em;
-    padding: 0.3em 0.5em 0.2em;
-    transition: background-color $trans;
+    font-family: $ff-sans;
+    font-size: 1rem;
+    font-weight: 400;
+    color: theme-color("principal");
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0.2em;
+    transition: background-color $trans, border-color $trans;
+    border: 2px solid transparent;
 
     &:hover {
-      background-color: theme-color("principal");
+      background-color: $gray-300;
+      border-color: theme-color("principal");
     }
   }
 }
