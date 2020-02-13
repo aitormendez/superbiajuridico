@@ -1,9 +1,15 @@
 <div class="page-header p-4 mt-md-4 text-center w-100">
 
   @if (is_tax('article-type') || is_post_type_archive('text'))
-    <div class="icon">
-      <i class="fas fa-pen-fancy"></i>
-    </div>
+    @if (is_tax('article-type', 'rincon'))
+      <div class="icon">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+    @else
+      <div class="icon">
+        <i class="fas fa-pen-fancy"></i>
+      </div>
+    @endif
     <h1>{!! App::title() !!}</h1>
     <nav class="menu-textos-wrap">
       @if (has_nav_menu('texts_navigation'))
