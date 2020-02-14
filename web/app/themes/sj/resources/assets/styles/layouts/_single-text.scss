@@ -1,15 +1,4 @@
 .single-text {
-  header {
-    .meta {
-      p {
-        // font-family: $ff-sans;
-        // font-size: 0.8rem;
-        // margin-top: 0;
-        // margin-bottom: 0;
-      }
-    }
-  }
-
   .epi-meta {
     font-family: $ff-sans;
     font-size: 1rem;
@@ -49,9 +38,13 @@
     }
   }
 
-  .entry-content h2 {
+  .entry-content {
     margin-top: 1.5em;
-    margin-bottom: 1em;
+
+    h2 {
+      margin-top: 1.5em;
+      margin-bottom: 1em;
+    }
   }
 
   @include media-breakpoint-up("md") {
