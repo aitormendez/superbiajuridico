@@ -1,0 +1,13 @@
+.term-qj,
+.term-quercus-juridico,
+.term-quercus {
+  main {
+    background-color: theme-color("quercus-2");
+
+    .page-header {
+      .icon {
+        color: theme-color("quercus-1");
+      }
+    }
+  }
+}
