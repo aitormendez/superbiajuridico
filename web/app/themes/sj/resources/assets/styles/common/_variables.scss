@@ -9,12 +9,14 @@ $navbar-light-toggler-icon-bg: none;
 $spacer: 1rem;
 
 $theme-colors: (
-  principal: #2e2e2e,
-  secundario: #d6ae72,
-  crudo: #ecf0ee,
-  azul: #0179bd,
-  allo: #f9ae00,
-  rincon: #81e3c2,
+  principal: rgb(46, 46, 46),
+  secundario: rgb(214, 173, 113),
+  crudo: rgb(235, 239, 237),
+  azul: rgb(1, 119, 188),
+  allo: rgb(250, 175, 0),
+  rincon: rgb(130, 227, 195),
+  quercus-1: rgb(17, 16, 71),
+  quercus-2: rgb(228, 232, 255),
 );
 
 // Generate `.bg-*` color utilities

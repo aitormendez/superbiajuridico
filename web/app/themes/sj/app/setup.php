@@ -59,6 +59,7 @@ add_action('after_setup_theme', function () {
         'insti_navigation' => __('Menu institucional', 'sage'),
         'texts_navigation' => __('Menu textos', 'sage'),
         'sentence_navigation' => __('Menu sentencias', 'sage'),
+        'quercus_navigation' => __('Menu Quercus', 'sage'),
     ]);
 
     /**

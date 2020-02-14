@@ -1,6 +1,11 @@
 .page-header {
   svg {
     font-size: 32px;
+    margin: 1rem;
+
+    &.fa-quercus {
+      font-size: 128px;
+    }
   }
 
   h1 {
