@@ -19,10 +19,17 @@
   @elseif (is_post_type_archive('story'))
     <i class="fas fa-newspaper"></i>
     <h1>{!! App::title() !!}</h1>
+  @elseif (is_post_type_archive('sentence') || is_tax('sentence-category'))
+    <i class="fas fa-gavel"></i>
+    <h1>{!! App::title() !!}</h1>
+    <nav class="menu-textos-wrap">
+      @if (has_nav_menu('sentence_navigation'))
+      {!! wp_nav_menu(['theme_location' => 'sentence_navigation', 'menu_class' => 'menu-sentencias']) !!}
+      @endif
+    </nav>
+    </nav>
   @else
     <h1>{!! App::title() !!}</h1>
   @endif
-
-
 
 </div>

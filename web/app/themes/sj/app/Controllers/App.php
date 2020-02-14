@@ -48,6 +48,9 @@ class App extends Controller
         if (is_tax('article-type', 'comentario') ) {
             return __('Sentencias comentadas', 'sage');
         }
+        if (is_post_type_archive('sentence') || is_tax('sentence-category')) {
+            return __('Jurisprudencia', 'sage');
+        }
         if (is_tax()) {
             return get_queried_object()->name;
         }

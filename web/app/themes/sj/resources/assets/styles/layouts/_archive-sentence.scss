@@ -1,0 +1,47 @@
+.post-type-archive-sentence,
+.tax-sentence-category {
+  .infinite-scroll-container {
+    padding-left: 0;
+
+    li {
+      font-size: 1.1rem;
+      list-style-type: none;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid theme-color("principal");
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      strong {
+        display: block;
+        font-size: 0.9rem;
+        font-family: $ff-sans;
+        letter-spacing: 0.1em;
+      }
+
+      .col-der {
+        display: inline;
+      }
+    }
+  }
+
+  @include media-breakpoint-up("md") {
+    ul {
+      li {
+        strong {
+          padding-top: 0.3em;
+          display: inline-block;
+          width: 200px;
+        }
+
+        .col-der {
+          display: inline-block;
+          width: calc(100% - 190px);
+          vertical-align: top;
+        }
+      }
+    }
+  }
+}

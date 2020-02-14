@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row d-flex justify-content-center pb-5">
-    {{-- ojo, .page-load-status tiene d-none y no se verá nunca. Es porque, en las páginas con pocas entradas, la navegación (previous-link) no se muestra y, en consecuencia, infinite-scroll no lo encuentra y no oculta el loader. Conviene eliminar el d-none cuando haya más entradas en los archivos de terms de texto--}}
+    {{-- ojo, .page-load-status tiene d-none y no se verá nunca. Es porque, en las páginas con pocas entradas, la navegación (previous-link) no se muestra y, en consecuencia, infinite-scroll no lo encuentra y no oculta el loader. Conviene eliminar el d-none cuando haya más entradas en los archivos de terms de texto --}}
     <div class="page-load-status px-sm-4 d-none">
       <div class="infinite-scroll-request">
         <div class="lds-ripple"><div></div><div></div></div>

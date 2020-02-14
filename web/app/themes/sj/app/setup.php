@@ -58,6 +58,7 @@ add_action('after_setup_theme', function () {
         'lang_navigation' => __('Menu lenguaje', 'sage'),
         'insti_navigation' => __('Menu institucional', 'sage'),
         'texts_navigation' => __('Menu textos', 'sage'),
+        'sentence_navigation' => __('Menu sentencias', 'sage'),
     ]);
 
     /**

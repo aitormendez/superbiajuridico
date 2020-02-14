@@ -157,7 +157,6 @@ add_action( 'init', function() {
 
   $supports_sentence = [
     'title',
-    'thumbnail',
   ];
 
   register_extended_post_type( 'sentence',
@@ -169,6 +168,21 @@ add_action( 'init', function() {
       'supports'     => $supports_sentence,
     ]
   );
+
+  register_extended_taxonomy( 'sentence-category',
+  [
+    'sentence',
+  ],
+  [
+    'meta_box' => 'simple',
+    'hierarchical' => false,
+  ],
+  [
+    'singular' => __( 'Categoría de sentencia', 'sj-CPT' ),
+    'plural'   => __( 'Categorías de sentencia', 'sj-CPT' ),
+    'slug'     => 'sentence-category'
+  ]
+);
 
   // Noticia cpt (story)
 
