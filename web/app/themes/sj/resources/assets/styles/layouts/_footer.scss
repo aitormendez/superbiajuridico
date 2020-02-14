@@ -4,6 +4,7 @@
   h3 {
     font-size: 1rem;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
     color: theme-color("crudo");
   }
 
@@ -15,9 +16,15 @@
       width: 100%;
       border-bottom: 1px solid theme-color("crudo");
       line-height: 1.2em;
+      padding-top: 0.3em;
+      padding-bottom: 0.3em;
 
       &:last-child {
         border-bottom: none;
+      }
+
+      a:hover {
+        color: theme-color("crudo");
       }
     }
   }
