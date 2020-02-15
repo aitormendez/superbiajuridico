@@ -1,6 +1,4 @@
-import 'infinite-scroll/dist/infinite-scroll.pkgd';
-// eslint-disable-next-line no-unused-vars
-import InfiniteScroll from 'infinite-scroll/dist/infinite-scroll.pkgd';
+var InfiniteScroll = require('infinite-scroll');
 
 export default {
   init() {
@@ -8,14 +6,36 @@ export default {
     // Infinite scroll
     // https://infinite-scroll.com/#getting-started
 
-    $('.main').infiniteScroll({
-      // options
+    // infinite-scroll
+    // -----------------------------------------------
+
+    let buttonCont = $('.button-container');
+
+    let main = new InfiniteScroll( '.infinite-scroll-container', {
       path: '.nav-previous a',
-      append: 'article',
+      append: '.infinite-scroll-item',
       history: false,
-      loadOnScroll: true,
-      scrollThreshold: 1500,
       hideNav: '.nav-links',
+      button: '.view-more-button',
+      status: '.page-load-status',
+    });
+
+    function onPageLoad() {
+      console.log(main.loadCount);
+      console.log('main.loadCount');
+      if ( main.loadCount == 1 ) {
+        main.option({
+          loadOnScroll: false,
+        });
+        buttonCont.removeClass('d-none');
+        main.off( 'load', onPageLoad );
+      }
+    }
+
+    main.on( 'load', onPageLoad );
+
+    main.on( 'last', function() {
+      buttonCont.hide();
     });
 
 
