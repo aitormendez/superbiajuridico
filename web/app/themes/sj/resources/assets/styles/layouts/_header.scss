@@ -39,53 +39,18 @@
   }
 
   #buscar {
-    display: flex;
-
-    .fa-cruz {
-      display: none;
-    }
-
-    form {
-      width: 100%;
-      display: flex;
-    }
-
-    label {
-      position: relative;
-      display: block;
-      width: calc(100% - 55px);
-    }
-
     input[type="search"] {
-      background-color: transparent;
-      border: 1px solid theme-color("blanco-alfa");
-      width: 100%;
+      border: 1px solid theme-color("crudo");
 
       &::placeholder {
-        color: $color-blanco-alfa;
-      }
-
-      &:focus {
-        background-color: theme-color("principal");
+        color: theme-color("crudo");
       }
     }
 
-    button[type="submit"] {
-      position: relative;
-      display: block;
-      width: 55px;
-      height: 100%;
-      border-top: 1px solid $color-blanco-alfa;
-      border-right: 1px solid $color-blanco-alfa;
-      border-bottom: 1px solid $color-blanco-alfa;
-      background-color: transparent;
-      overflow: hidden;
-      font-size: 24px;
-
-      &:hover {
-        background-color: theme-color("principal");
-        color: $color-blanco-alfa;
-      }
+    input[type="submit"] {
+      border-top: 1px solid theme-color("crudo");
+      border-right: 1px solid theme-color("crudo");
+      border-bottom: 1px solid theme-color("crudo");
     }
   }
 

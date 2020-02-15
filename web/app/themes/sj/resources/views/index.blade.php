@@ -3,10 +3,15 @@
 @section('content')
   @include('partials.page-header')
   @if (!have_posts())
-    <div class="alert alert-warning">
-      {{ __('No se encontraron resultados.', 'sage') }}
+    <div class="buscar container justify-content-center">
+      <div class="row mx-4 mx-md-0 d-flex justify-content-center">
+        <div class="alert alert-warning">
+          {{ __('No se encontraron resultados.', 'sage') }}
+        </div>
+        {!! get_search_form(false) !!}
+      </div>
     </div>
-    {!! get_search_form(false) !!}
+
   @else
     <div class="container">
       <div class="row">
