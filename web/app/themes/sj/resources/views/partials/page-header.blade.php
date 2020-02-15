@@ -1,5 +1,5 @@
 <div class="page-header p-4 mt-md-4 text-center w-100">
-  @if (is_tax('article-category', 'quercus') || is_tax('news-category', 'quercus-juridico') || is_tax('sentence-category', 'qj'))
+  @if (is_tax('article-category', 'quercus') || is_tax('news-category', 'quercus-juridico') || is_tax('sentence-category', 'qj') || is_tax('news-category', 'quercus-juridico-ru'))
     <div class="icon">
       <i class="fas fa-quercus"></i>
     </div>

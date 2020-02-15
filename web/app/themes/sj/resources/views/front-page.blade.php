@@ -4,8 +4,7 @@
 
 <section id="hero">
   <div class="texto">
-    <p>{{ __('El Derecho de Familia y proteger a los niños que sufren la ruptura de sus padres, nuestra razón de ser.', 'sage') }}</p>
-    <p>{{ __('Nuestra experiencia nos avala', 'sage') }}</p>
+    {!! $hero_txt !!}
   </div>
 
   <a href="{{ $contact_link }}" class="preguntanos">{{ __('Pregúntanos', 'sage') }}</a>

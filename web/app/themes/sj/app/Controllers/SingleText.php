@@ -10,15 +10,18 @@ class SingleText extends Controller
     {
         return get_field('autor');
     }
+
     public function fechaPub()
     {
         return get_field('fecha_pub');
     }
+
     public function artCatTermList()
     {
         global $post;
         return get_the_term_list( $post->ID, 'article-category', '<ul class="terms art-cats"><li>', '</li><li>', '</li></ul>' );
     }
+
     public function artTagTermList()
     {
         global $post;

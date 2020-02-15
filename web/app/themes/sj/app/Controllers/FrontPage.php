@@ -7,6 +7,11 @@ use Sober\Controller\Controller;
 
 class FrontPage extends Controller
 {
+
+    public function heroTxt() {
+        return wpautop(get_field('hero_txt', 'option'), false) ;
+    }
+
     public function imgPortada()
     {
         $img_portada = get_field('img_portada', 'option');
