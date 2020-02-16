@@ -333,4 +333,20 @@ register_extended_taxonomy( 'link-category',
   ]
 );
 
+register_extended_taxonomy( 'newsletter-category',
+  [
+    'story',
+    'text',
+  ],
+  [
+    'meta_box' => 'radio',
+    'hierarchical' => false,
+  ],
+  [
+    'singular' => __( 'Categoría de newsletter', 'sj-CPT' ),
+    'plural'   => __( 'Categorías de newsletter', 'sj-CPT' ),
+    'slug'     => 'newsletter-category'
+  ]
+);
+
 }, 0 );

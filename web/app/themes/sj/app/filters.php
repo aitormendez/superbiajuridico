@@ -97,4 +97,27 @@ add_action('pre_get_posts', function ($query) {
     if ( ! is_admin() && is_author() && $query->is_main_query() ) {
          $query->set( 'post_type', 'text' );
     }
-  });
+});
+
+
+/**
+ * Feed RSS para campaña Mailchimp
+ */
+// add_action('init', function () {
+//     add_feed('campaign', 'campaignCallback');
+// });
+
+// function campaignCallback() {
+//     header( 'Content-Type: application/rss+xml' );
+//     echo 'aye!';
+// }
+
+function featuredtoRSS($content) {
+    global $post;
+    if ( has_post_thumbnail( $post->ID ) ){
+        $content = '<div>' . get_the_post_thumbnail( $post->ID, 'medium', array( 'style' => 'margin-bottom: 15px;' ) ) . '</div>' . $content;
+    }
+    return $content;
+}
+add_filter('the_excerpt_rss', __NAMESPACE__ . '\\featuredtoRSS');
+add_filter('the_excerpt_feed', __NAMESPACE__ . '\\featuredtoRSS');

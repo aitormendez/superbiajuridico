@@ -122,7 +122,8 @@
     "wpackagist-plugin/easy-wp-smtp": "*",
     "stoutlogic/acf-builder": "^1.9",
     "wpackagist-plugin/google-sitemap-generator": "*",
-    "wpackagist-plugin/mailchimp-for-wp": "*"
+    "wpackagist-plugin/mailchimp-for-wp": "*",
+    "wpackagist-plugin/featured-images-for-rss-feeds": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
