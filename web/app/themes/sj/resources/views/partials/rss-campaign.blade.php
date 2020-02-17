@@ -97,10 +97,6 @@ do_action( 'rss_tag_pre', 'rss2' );
     @endif
     <?php the_category_rss( 'rss2' ); ?>
 
-    @if (has_post_thumbnail())
-    <media:content url="{{ get_the_post_thumbnail_url(get_the_ID(),'large') }}" medium="image">
-    <media:content url="{{ get_the_post_thumbnail_url(get_the_ID(),'large') }}" type="image/jpg">
-    @endif
 
 		<guid isPermaLink="false"><?php the_guid(); ?></guid>
 		<?php if ( get_option( 'rss_use_excerpt' ) ) : ?>
