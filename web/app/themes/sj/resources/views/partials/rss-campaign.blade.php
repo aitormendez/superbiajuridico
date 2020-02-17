@@ -98,7 +98,9 @@ do_action( 'rss_tag_pre', 'rss2' );
     <?php the_category_rss( 'rss2' ); ?>
 
     @if (has_post_thumbnail())
-    <media:content url="{{ get_the_post_thumbnail_url(get_the_ID(),'large') }}" medium="image" type="image/jpg" />
+    <media:content url="{{ get_the_post_thumbnail_url(get_the_ID(),'large') }}" medium="image" type="image/jpg">
+    {!! get_the_post_thumbnail(get_the_ID(),'large') !!}}
+    </media:content>
 
     @endif
 
