@@ -95,7 +95,12 @@ do_action( 'rss_tag_pre', 'rss2' );
     @if ('text' === get_post_type())
         <dc:creator><![CDATA[ {{ get_the_author() }}]]></dc:creator>
     @endif
-		<?php the_category_rss( 'rss2' ); ?>
+    <?php the_category_rss( 'rss2' ); ?>
+
+    @if (has_post_thumbnail())
+    <media:content url="{{ get_the_post_thumbnail_url() }}" medium="image">
+    <media:content url="{{ get_the_post_thumbnail_url() }}" type="image/jpg>
+    @endif
 
 		<guid isPermaLink="false"><?php the_guid(); ?></guid>
 		<?php if ( get_option( 'rss_use_excerpt' ) ) : ?>
