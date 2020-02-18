@@ -37,7 +37,7 @@
 
   <nav id="solapa" class="solapa">
     @if (has_nav_menu('lang_navigation'))
-    {!! wp_nav_menu(['theme_location' => 'lang_navigation', 'menu_class' => 'menu-lenguaje']) !!}
+    {!! wp_nav_menu(['theme_location' => 'lang_navigation', 'menu_class' => 'menu-lenguaje text-center']) !!}
     @endif
 
     @if (has_nav_menu('insti_navigation'))
