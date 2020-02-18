@@ -20,7 +20,7 @@ class App extends Controller
     {
         $terms = get_terms(array(
             'taxonomy' => 'link-category',
-            'hide_empty' =>false,
+            'hide_empty' =>true,
             ));
         return $terms;
     }
