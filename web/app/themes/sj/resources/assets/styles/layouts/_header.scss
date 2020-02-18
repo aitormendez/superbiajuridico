@@ -121,6 +121,10 @@
           .description {
             display: none;
           }
+
+          &:last-child {
+            border-bottom: 1px solid $color-blanco-alfa;
+          }
         }
 
         a {
@@ -131,6 +135,17 @@
 
     &.abierto {
       left: 0;
+    }
+
+    .social {
+      padding-bottom: 1rem;
+
+      a {
+        display: inline-block;
+        margin-right: 1rem;
+        font-size: 24px;
+        color: theme-color("principal");
+      }
     }
   }
 
@@ -184,7 +199,7 @@
       .menu-institucional-container,
       .menu-institucional-ruso-container {
         order: 0;
-        width: calc(100% - 245px);
+        width: calc(100% - 280px);
         border-right: 1px solid $color-blanco-alfa;
         flex-shrink: 1;
         flex-grow: 1;
@@ -295,6 +310,18 @@
           a {
             font-weight: 700;
           }
+        }
+      }
+
+      .social {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        border-right: 1px solid theme-color("crudo");
+
+        a {
+          font-size: 18px;
+          color: theme-color("crudo");
         }
       }
     }

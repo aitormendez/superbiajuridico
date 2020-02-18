@@ -2,8 +2,15 @@
 import 'jquery'
 
 // Import everything from autoload
-import './autoload/**/*'
-import { library, dom } from '@fortawesome/fontawesome-svg-core'
+import './autoload/**/*';
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+
+import {
+  faTwitter,
+  faInstagram,
+  faFacebook,
+} from '@fortawesome/free-brands-svg-icons';
+
 import {
   faComment,
   faNewspaper,
@@ -13,7 +20,7 @@ import {
   faArrowRight,
   faArrowLeft,
   faArrowCircleDown,
-} from '@fortawesome/free-solid-svg-icons'
+} from '@fortawesome/free-solid-svg-icons';
 
 var faArrowAltDown = {
   prefix: 'fas',
@@ -63,7 +70,7 @@ var faCruz = {
   ],
 }
 
-library.add(faComment, faNewspaper, faGavel, faGraduationCap, faArrowAltDown, faPenFancy, faArrowRight, faArrowLeft, faBuscar, faQuercus, faCruz, faArrowCircleDown);
+library.add(faComment, faNewspaper, faGavel, faGraduationCap, faArrowAltDown, faPenFancy, faArrowRight, faArrowLeft, faBuscar, faQuercus, faCruz, faArrowCircleDown, faTwitter, faInstagram, faFacebook);
 
 dom.watch();
 

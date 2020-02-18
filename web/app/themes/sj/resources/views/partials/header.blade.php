@@ -48,6 +48,15 @@
     {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu-principal', 'walker' => new \App\Walkers\sj_navwalker()]) !!}
     @endif
 
+    <nav class="social">
+      <a href="https://twitter.com/Superbiajur" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.facebook.com/superbiajur/" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </nav>
+
     <div id="buscar">
       <a role="button" class="cruz">
         <i class="fas fa-cruz"></i>
