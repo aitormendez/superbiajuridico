@@ -51,7 +51,7 @@
         height: 100vh;
         width: 100%;
         overflow: hidden;
-        padding-top: 280px;
+        padding-top: 30px;
         background-image: url("../images/fondo-cielo.jpg");
         background-size: cover;
         text-align: center;
@@ -108,6 +108,7 @@
 
         @include media-breakpoint-up(sm) {
           text-align: left;
+          padding-top: 23rem;
 
           .texto {
             padding-right: 0;
@@ -124,6 +125,10 @@
           .preguntanos {
             margin-left: 6rem;
           }
+        }
+
+        @include media-breakpoint-up(md) {
+          padding-top: 20rem;
         }
 
         @include media-breakpoint-up(lg) {
