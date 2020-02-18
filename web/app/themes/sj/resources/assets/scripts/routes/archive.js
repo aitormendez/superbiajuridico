@@ -9,8 +9,6 @@ export default {
 
     const tps = document.querySelectorAll('.marca-sj');
     const template = document.getElementById('template');
-    console.log(tps);
-    console.log(template);
     if (tps.length != 0) {
       tippy(tps, {
         content: template.innerHTML,

@@ -25,4 +25,9 @@
     @include('partials.loader')
   @endif
   {!! get_the_posts_navigation() !!}
+
+  <div id="template" style="display: none;">
+    <strong>{{ __('Superbia Jurídico en los medios', 'sage') }}</strong>
+  </div>
 @endsection
+
