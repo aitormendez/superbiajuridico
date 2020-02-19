@@ -36,6 +36,9 @@
       @endif
     </nav>
     </nav>
+  @elseif ($pag_newsletter)
+    <i class="fas fa-envelope-open-text"></i>
+    <h1>{!! App::title() !!}</h1>
   @else
     <h1>{!! App::title() !!}</h1>
   @endif

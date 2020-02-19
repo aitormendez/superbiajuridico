@@ -28,7 +28,7 @@
   }
 
   .hamburger {
-    position: absolute;
+    position: fixed;
     right: $pad-2;
     top: $pad-2;
     z-index: 5001;
