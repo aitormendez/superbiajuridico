@@ -94,14 +94,12 @@ do_action( 'rss_tag_pre', 'rss2' );
     <pubDate><?php echo mysql2date( 'D, d M Y H:i:s +0000', get_post_time( 'Y-m-d H:i:s', true ), false ); ?></pubDate>
     @if ('text' === get_post_type())
         <dc:creator><![CDATA[ {{ get_the_author() }}]]></dc:creator>
-    @else
-        <dc:creator><![CDATA['Noticia']]></dc:creator>
     @endif
     <?php the_category_rss( 'rss2' ); ?>
 
     @if (has_post_thumbnail())
-    <media:content url="{{ get_the_post_thumbnail_url(get_the_ID(),'large') }}" type="image/jpg">
-    <media:content url="{{ get_the_post_thumbnail_url(get_the_ID(),'large') }}" medium="image">
+    <media:content url="{{ get_the_post_thumbnail_url(get_the_ID(),'large') }}" type="image/jpg" />
+    <media:content url="{{ get_the_post_thumbnail_url(get_the_ID(),'large') }}" medium="image" />
 
     @endif
 
