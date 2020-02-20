@@ -68,12 +68,25 @@ add_action( 'init', function() {
     'thumbnail',
   ];
 
+  $filters_texto = [
+    'publicar' => [
+			'title'    => 'Feed RSS',
+			'taxonomy' => 'newsletter-category',
+    ],
+
+    'portada' => [
+      'title'    => 'Slider portada',
+      'meta_key' => 'go_to_slider',
+    ]
+  ];
+
   register_extended_post_type( 'text',
     [
       'show_in_rest' => true,
       'show_in_feed' => true,
       'labels'       => $labels_texto,
       'admin_cols'   => $cols_texto,
+      'admin_filters'=> $filters_texto,
       'supports'     => $supports_texto,
     ]
   );
@@ -241,6 +254,7 @@ add_action( 'init', function() {
       'show_in_feed' => true,
       'labels'       => $labels_story,
       'admin_cols'   => $cols_story,
+      'admin_filters'=> $filters_texto,
       'supports'     => $supports_story,
     ],
     [
