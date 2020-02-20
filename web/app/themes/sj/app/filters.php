@@ -103,21 +103,21 @@ add_action('pre_get_posts', function ($query) {
 /**
  * Feed RSS para campaña Mailchimp
  */
-add_action('init', function () {
-    add_feed('campaign', __NAMESPACE__ . '\\campaignCallback');
-});
+// add_action('init', function () {
+//     add_feed('campaign', __NAMESPACE__ . '\\campaignCallback');
+// });
 
-function campaignCallback() {
-    // header( 'Content-Type: application/rss+xml' );
-    echo \App\template('partials/rss-campaign');
-}
+// function campaignCallback() {
+//     // header( 'Content-Type: application/rss+xml' );
+//     echo \App\template('partials/rss-campaign');
+// }
 
-function featuredtoRSS($content) {
-    global $post;
-    if ( has_post_thumbnail( $post->ID ) ){
-        $content = '<div style="margin-bottom: 15px">' . get_the_post_thumbnail( $post->ID, 'large' ) . '</div>' . $content;
-    }
-    return $content;
-}
-add_filter('the_excerpt_rss', __NAMESPACE__ . '\\featuredtoRSS');
-add_filter('the_excerpt_feed', __NAMESPACE__ . '\\featuredtoRSS');
+// function featuredtoRSS($content) {
+//     global $post;
+//     if ( has_post_thumbnail( $post->ID ) ){
+//         $content = '<div style="margin-bottom: 15px">' . get_the_post_thumbnail( $post->ID, 'large' ) . '</div>' . $content;
+//     }
+//     return $content;
+// }
+// add_filter('the_excerpt_rss', __NAMESPACE__ . '\\featuredtoRSS');
+// add_filter('the_excerpt_feed', __NAMESPACE__ . '\\featuredtoRSS');

@@ -5,4 +5,19 @@
   .main {
     background-color: transparent;
   }
+
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mc4wp-form {
+    width: 100%;
+
+    .mc4wp-form-fields {
+      padding: 2rem;
+      border: 18px solid white;
+      border-image: url("../images/dashed.png") 25 repeat;
+    }
+  }
 }
