@@ -103,12 +103,11 @@ add_action('pre_get_posts', function ($query) {
 /**
  * Feed RSS para campaña Mailchimp
  */
-// add_action('init', function () {
-//     add_feed('campaign', __NAMESPACE__ . '\\campaignCallback');
-// });
+add_action('init', function () {
+    add_feed('campaign', __NAMESPACE__ . '\\campaignCallback');
+});
 
 function campaignCallback() {
-    // header( 'Content-Type: application/rss+xml' );
     echo \App\template('partials/rss-campaign');
 }
 
