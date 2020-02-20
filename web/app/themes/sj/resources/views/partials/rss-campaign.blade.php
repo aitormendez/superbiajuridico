@@ -95,7 +95,7 @@ do_action( 'rss_tag_pre', 'rss2' );
     @if ('text' === get_post_type())
         <dc:creator><![CDATA[ {{ get_the_author() }}]]></dc:creator>
     @else
-        <dc:creator><![CDATA['']]></dc:creator>
+        <dc:creator><![CDATA['Noticia']]></dc:creator>
     @endif
     <?php the_category_rss( 'rss2' ); ?>
 
