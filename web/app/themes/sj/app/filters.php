@@ -107,10 +107,10 @@ add_action('pre_get_posts', function ($query) {
 //     add_feed('campaign', __NAMESPACE__ . '\\campaignCallback');
 // });
 
-// function campaignCallback() {
-//     // header( 'Content-Type: application/rss+xml' );
-//     echo \App\template('partials/rss-campaign');
-// }
+function campaignCallback() {
+    // header( 'Content-Type: application/rss+xml' );
+    echo \App\template('partials/rss-campaign');
+}
 
 // function featuredtoRSS($content) {
 //     global $post;
