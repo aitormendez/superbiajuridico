@@ -1,5 +1,6 @@
 .p-newsletter {
   background-image: url("../images/fondo-cielo.jpg");
+  background-size: cover;
   z-index: -100;
 
   .main {
@@ -13,11 +14,51 @@
 
   .mc4wp-form {
     width: 100%;
+    font-family: $ff-sans;
 
     .mc4wp-form-fields {
       padding: 2rem;
       border: 18px solid white;
       border-image: url("../images/dashed.png") 25 repeat;
+
+      label {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      input {
+        padding: 0.5rem;
+        border: none;
+
+        &:focus {
+          background-color: theme-color("principal");
+          color: theme-color("crudo");
+        }
+
+        &[type="submit"] {
+          background-color: theme-color("success");
+          border-radius: 4px;
+          font-size: 1rem;
+          font-weight: 400;
+
+          &:hover {
+            background-color: theme-color("principal");
+            color: theme-color("crudo");
+          }
+        }
+      }
+    }
+
+    .mc4wp-response {
+      margin-top: 2rem;
+
+      .mc4wp-alert {
+        padding: 1rem;
+        background-color: theme-color("crudo");
+        color: theme-color("principal");
+        border-radius: 4px;
+      }
     }
   }
 }

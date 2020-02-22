@@ -111,12 +111,12 @@ function campaignCallback() {
     echo \App\template('partials/rss-campaign');
 }
 
-// function featuredtoRSS($content) {
-//     global $post;
-//     if ( has_post_thumbnail( $post->ID ) ){
-//         $content = '<div style="margin-bottom: 15px">' . get_the_post_thumbnail( $post->ID, 'large' ) . '</div>' . $content;
-//     }
-//     return $content;
-// }
-// add_filter('the_excerpt_rss', __NAMESPACE__ . '\\featuredtoRSS');
-// add_filter('the_excerpt_feed', __NAMESPACE__ . '\\featuredtoRSS');
+function featuredtoRSS($content) {
+    global $post;
+    if ( has_post_thumbnail( $post->ID ) ){
+        $content = '<div style="margin-bottom: 15px">' . get_the_post_thumbnail( $post->ID, 'large' ) . '</div>' . $content;
+    }
+    return $content;
+}
+add_filter('the_excerpt_rss', __NAMESPACE__ . '\\featuredtoRSS');
+add_filter('the_excerpt_feed', __NAMESPACE__ . '\\featuredtoRSS');

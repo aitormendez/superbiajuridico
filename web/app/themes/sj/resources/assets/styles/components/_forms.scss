@@ -40,27 +40,27 @@
       background-color: theme-color("principal");
     }
   }
+}
 
-  input[type="submit"] {
-    position: relative;
-    display: block;
-    padding-left: 1em;
-    padding-right: 1em;
-    border-top: 1px solid theme-color("principal");
-    border-right: 1px solid theme-color("principal");
-    border-bottom: 1px solid theme-color("principal");
-    border-left: none;
-    background-color: transparent;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 0.7rem;
-    font-weight: 700;
-    font-family: $ff-sans;
+input[type="submit"] {
+  position: relative;
+  display: block;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-top: 1px solid theme-color("principal");
+  border-right: 1px solid theme-color("principal");
+  border-bottom: 1px solid theme-color("principal");
+  border-left: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-family: $ff-sans;
 
-    &:hover {
-      background-color: theme-color("principal");
-      color: theme-color("crudo");
-    }
+  &:hover {
+    background-color: theme-color("principal");
+    color: theme-color("crudo");
   }
 }
 
