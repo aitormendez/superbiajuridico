@@ -11,12 +11,10 @@
 
       @include media-breakpoint-up(sm) {
         display: flex;
-        padding: $pad-3;
-        justify-content: center;
 
         .articulos {
           padding: $pad;
-          max-width: 400px;
+          max-width: 33%;
         }
       }
     }
@@ -140,10 +138,6 @@
 
       &.noticias {
         padding: $pad;
-        max-width: 1260px;
-        background-color: $gray-200;
-        margin-left: auto;
-        margin-right: auto;
 
         > .header {
           margin-bottom: $pad-2;
@@ -222,17 +216,14 @@
         }
 
         @include media-breakpoint-up(sm) {
-          padding: $pad-3;
-
           .contenido {
             article {
-              width: calc(33.3% - 0.7rem);
-              max-width: 400px;
-              margin-right: 1rem;
-              overflow: hidden;
+              width: 33.3%;
+              padding: 0;
+              padding-right: 2rem;
 
               &:nth-child(3n) {
-                margin-right: 0;
+                padding-right: 0;
               }
             }
           }
@@ -245,6 +236,7 @@
         background-color: theme-color("rincon");
 
         .header {
+          width: 100%;
           text-align: center;
           border-bottom: none;
           font-size: 2rem;
@@ -260,10 +252,6 @@
         }
 
         .contenido {
-          max-width: 900px;
-          margin-left: auto;
-          margin-right: auto;
-
           .entry-header {
             h2 {
               a {

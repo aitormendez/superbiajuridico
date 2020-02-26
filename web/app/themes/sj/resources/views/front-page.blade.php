@@ -50,91 +50,103 @@
 </section>
 
 <section class="textos">
-  <section class="articulos">
-    <div class="header">
-      <h1>{{ __('Últimos artículos', 'sage') }}</h1>
-      <a class="enlace" href="{{ $site_url }}/text-type/articulo/">{{ __('Ver todos', 'sage') }}</a>
-    </div>
+  <div class="container">
+    <div class="row">
+      <section class="articulos">
+        <div class="header">
+          <h1>{{ __('Últimos artículos', 'sage') }}</h1>
+          <a class="enlace" href="{{ $site_url }}/text-type/articulo/">{{ __('Ver todos', 'sage') }}</a>
+        </div>
 
-    <div class="contenido">
-      @query($args_article)
-      @posts
-        @include('partials.content-owl')
-      @endposts
-    </div>
-  </section>
+        <div class="contenido">
+          @query($args_article)
+          @posts
+            @include('partials.content-owl')
+          @endposts
+        </div>
+      </section>
 
-  <section class="articulos">
-    <div class="header">
-      <h1>{{ __('Últimas sentencias comentadas', 'sage') }}</h1>
-      <a class="enlace" href="{{ $site_url }}/text-type/comentario/">{{ __('Ver todas', 'sage') }}</a>
-    </div>
+      <section class="articulos">
+        <div class="header">
+          <h1>{{ __('Últimas sentencias comentadas', 'sage') }}</h1>
+          <a class="enlace" href="{{ $site_url }}/text-type/comentario/">{{ __('Ver todas', 'sage') }}</a>
+        </div>
 
-    <div class="contenido">
-      @query($args_comment)
-      @posts
-        @include('partials.content-owl')
-      @endposts
-    </div>
-  </section>
+        <div class="contenido">
+          @query($args_comment)
+          @posts
+            @include('partials.content-owl')
+          @endposts
+        </div>
+      </section>
 
-  <section class="articulos">
-    <div class="header">
-      <h1>{{ __('Últimos resúmenes de sentencias', 'sage') }}</h1>
-      <a class="enlace" href="{{ $site_url }}/text-type/resumen/">{{ __('ver todos', 'sage') }}</a>
-    </div>
+      <section class="articulos">
+        <div class="header">
+          <h1>{{ __('Últimos resúmenes de sentencias', 'sage') }}</h1>
+          <a class="enlace" href="{{ $site_url }}/text-type/resumen/">{{ __('ver todos', 'sage') }}</a>
+        </div>
 
-    <div class="contenido">
-      @query($args_abstract)
-      @posts
-        @include('partials.content-owl')
-      @endposts
+        <div class="contenido">
+          @query($args_abstract)
+          @posts
+            @include('partials.content-owl')
+          @endposts
+        </div>
+      </section>
     </div>
-  </section>
+  </div>
 </section>
 
 <section class="rincon">
-  <div class="header">
-    <i class="fas fa-graduation-cap"></i>
-    <h1>{{ __('Rincón del profesor', 'sage') }}</h1>
-    <a class="enlace" href="{{ $site_url }}/text-type/rincon/">{{ __('ver todos', 'sage') }}</a>
-  </div>
+  <div class="container">
+    <div class="row">
+      <div class="header">
+        <i class="fas fa-graduation-cap"></i>
+        <h1>{{ __('Rincón del profesor', 'sage') }}</h1>
+        <a class="enlace" href="{{ $site_url }}/text-type/rincon/">{{ __('ver todos', 'sage') }}</a>
+      </div>
 
-  <div class="contenido">
-    @query($args_rincon)
-    @posts
-      <div class="entry-header">
-        <h2 class="entry-title">
-          <a href="{{ get_permalink() }}">{!! get_the_title() !!}</a>
-        </h2>
-        <p class="byline author vcard">
-            <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" rel="author" class="fn">
-              {{ get_the_author() }}
-            </a>
-          </p>
+      <div class="contenido">
+        @query($args_rincon)
+        @posts
+          <div class="entry-header">
+            <h2 class="entry-title">
+              <a href="{{ get_permalink() }}">{!! get_the_title() !!}</a>
+            </h2>
+            <p class="byline author vcard">
+                <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" rel="author" class="fn">
+                  {{ get_the_author() }}
+                </a>
+              </p>
+          </div>
+          @if (has_excerpt())
+          <div class="entry-summary text-principal">
+              @wpautop(get_the_excerpt())
+          </div>
+          @endif
+        @endposts
       </div>
-      @if (has_excerpt())
-      <div class="entry-summary text-principal">
-          @wpautop(get_the_excerpt())
-      </div>
-      @endif
-    @endposts
+    </div>
   </div>
 </section>
 
 <section class="noticias">
-  <div class="header">
-    <h1>{{ __('Noticias', 'sage') }}</h1>
-    <a class="enlace" href="{{ $site_url }}/news">{{ __('ver todas las noticias', 'sage') }}</a>
-    <a class="enlace"
-      href="{{ $site_url }}/new-categories/superbia-juridico/">{{ __('Superbia Jurídico en los medios', 'sage') }}</a>
-  </div>
+  <div class="container">
+    <div class="row">
+      <div class="header">
+        <h1>{{ __('Noticias', 'sage') }}</h1>
+        <a class="enlace" href="{{ $site_url }}/news">{{ __('ver todas las noticias', 'sage') }}</a>
+        <a class="enlace"
+          href="{{ $site_url }}/new-categories/superbia-juridico/">{{ __('Superbia Jurídico en los medios', 'sage') }}</a>
+      </div>
 
-  <div class="contenido">
-    @query($args_news)
-    @posts
-      @include('partials.content-'.get_post_type())
-    @endposts
+      <div class="contenido">
+        @query($args_news)
+        @posts
+          @include('partials.content-'.get_post_type())
+        @endposts
+      </div>
+    </div>
   </div>
 </section>
 <div id="template" style="display: none;">
