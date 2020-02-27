@@ -58,6 +58,12 @@ add_action( 'init', function() {
       'title'    => 'En portada',
       'meta_key' => 'go_to_slider',
     ),
+    'despacho' => [
+      'taxonomy' => 'despacho'
+    ],
+    'cat_texto' => [
+      'taxonomy' => 'article-category'
+    ],
   ];
 
   $supports_texto = [
@@ -73,11 +79,18 @@ add_action( 'init', function() {
 			'title'    => 'Feed RSS',
 			'taxonomy' => 'newsletter-category',
     ],
-
     'portada' => [
       'title'    => 'Slider portada',
       'meta_key' => 'go_to_slider',
-    ]
+    ],
+    'despacho' => [
+      'title'    => 'despacho',
+      'taxonomy' => 'despacho'
+    ],
+    'cat-texto' => [
+      'title'    => 'Cat texto',
+      'taxonomy' => 'article-category',
+    ],
   ];
 
   register_extended_post_type( 'text',
@@ -104,21 +117,6 @@ add_action( 'init', function() {
       'plural'   => __( 'Categorias de texto', 'sj-CPT' ),
       'slug'     => 'text-category'
     ]
-  );
-
-  register_extended_taxonomy( 'article-tag',
-    [
-      'text'
-    ],
-    [
-      'meta_box' => 'simple',
-      'hierarchical' => false,
-     ],
-     [
-      'singular' => __( 'Etiqueta de texto', 'sj-CPT' ),
-      'plural'   => __( 'Etiquetas de texto', 'sj-CPT' ),
-      'slug'     => 'text-tag'
-     ]
   );
 
   register_extended_taxonomy( 'article-type',
@@ -295,72 +293,90 @@ add_action( 'init', function() {
   // links cpt
 
   $labels_links = [
-  'name'                  => _x( 'Enlaces', 'Post Type General Name', 'sj-CPT' ),
-	'singular_name'         => _x( 'Enlace', 'Post Type Singular Name', 'sj-CPT' ),
-	'menu_name'             => __( 'Enlaces', 'sj-CPT' ),
-	'name_admin_bar'        => __( 'Enlace', 'sj-CPT' ),
-	'archives'              => __( 'Archivo de enlaces', 'sj-CPT' ),
-	'attributes'            => __( 'Atributo de enlace', 'sj-CPT' ),
-	'parent_item_colon'     => __( 'Enlace padre:', 'sj-CPT' ),
-	'all_items'             => __( 'Todos los enlaces', 'sj-CPT' ),
-	'add_new_item'          => __( 'Añadir nuevo enlace', 'sj-CPT' ),
-	'add_new'               => __( 'Añadir nuevo', 'sj-CPT' ),
-	'new_item'              => __( 'Nuevo enlace', 'sj-CPT' ),
-	'edit_item'             => __( 'Editar enlace', 'sj-CPT' ),
-	'update_item'           => __( 'Actualizar enlace', 'sj-CPT' ),
-	'view_item'             => __( 'Ver enlace', 'sj-CPT' ),
-	'view_items'            => __( 'Ver enlaces', 'sj-CPT' ),
-	'Buscar_items'          => __( 'Buscar enlace', 'sj-CPT' ),
-];
+    'name'                  => _x( 'Enlaces', 'Post Type General Name', 'sj-CPT' ),
+    'singular_name'         => _x( 'Enlace', 'Post Type Singular Name', 'sj-CPT' ),
+    'menu_name'             => __( 'Enlaces', 'sj-CPT' ),
+    'name_admin_bar'        => __( 'Enlace', 'sj-CPT' ),
+    'archives'              => __( 'Archivo de enlaces', 'sj-CPT' ),
+    'attributes'            => __( 'Atributo de enlace', 'sj-CPT' ),
+    'parent_item_colon'     => __( 'Enlace padre:', 'sj-CPT' ),
+    'all_items'             => __( 'Todos los enlaces', 'sj-CPT' ),
+    'add_new_item'          => __( 'Añadir nuevo enlace', 'sj-CPT' ),
+    'add_new'               => __( 'Añadir nuevo', 'sj-CPT' ),
+    'new_item'              => __( 'Nuevo enlace', 'sj-CPT' ),
+    'edit_item'             => __( 'Editar enlace', 'sj-CPT' ),
+    'update_item'           => __( 'Actualizar enlace', 'sj-CPT' ),
+    'view_item'             => __( 'Ver enlace', 'sj-CPT' ),
+    'view_items'            => __( 'Ver enlaces', 'sj-CPT' ),
+    'Buscar_items'          => __( 'Buscar enlace', 'sj-CPT' ),
+  ];
 
-$cols_links = [
-  'post_author',
-];
+  $cols_links = [
+    'post_author',
+  ];
 
-$supports_links = [
-  'title',
-  'thumbnail',
-];
+  $supports_links = [
+    'title',
+    'thumbnail',
+  ];
 
-register_extended_post_type( 'links',
-  [
-    'show_in_rest' => true,
-    'show_in_feed' => true,
-    'labels'       => $labels_links,
-    'admin_cols'   => $cols_links,
-    'supports'     => $supports_links,
-  ]
-);
+  register_extended_post_type( 'links',
+    [
+      'show_in_rest' => true,
+      'show_in_feed' => true,
+      'labels'       => $labels_links,
+      'admin_cols'   => $cols_links,
+      'supports'     => $supports_links,
+    ]
+  );
 
-register_extended_taxonomy( 'link-category',
-  [
-    'links',
-  ],
-  [
-    'meta_box' => 'simple',
-    'hierarchical' => false,
-  ],
-  [
-    'singular' => __( 'Categoría de enlace', 'sj-CPT' ),
-    'plural'   => __( 'Categorías de enlace', 'sj-CPT' ),
-    'slug'     => 'link-category'
-  ]
-);
+  register_extended_taxonomy( 'link-category',
+    [
+      'links',
+    ],
+    [
+      'meta_box' => 'simple',
+      'hierarchical' => false,
+    ],
+    [
+      'singular' => __( 'Categoría de enlace', 'sj-CPT' ),
+      'plural'   => __( 'Categorías de enlace', 'sj-CPT' ),
+      'slug'     => 'link-category',
+    ]
+  );
 
-register_extended_taxonomy( 'newsletter-category',
-  [
-    'story',
-    'text',
-  ],
-  [
-    'meta_box' => 'radio',
-    'hierarchical' => false,
-  ],
-  [
-    'singular' => __( 'Categoría de newsletter', 'sj-CPT' ),
-    'plural'   => __( 'Categorías de newsletter', 'sj-CPT' ),
-    'slug'     => 'newsletter-category'
-  ]
-);
+  register_extended_taxonomy( 'newsletter-category',
+    [
+      'story',
+      'text',
+    ],
+    [
+      'meta_box' => 'radio',
+      'hierarchical' => false,
+    ],
+    [
+      'singular' => __( 'Categoría de newsletter', 'sj-CPT' ),
+      'plural'   => __( 'Categorías de newsletter', 'sj-CPT' ),
+      'slug'     => 'newsletter-category'
+    ]
+  );
+
+  register_extended_taxonomy( 'despacho',
+    [
+      'story',
+      'text',
+      'sentence',
+      'links',
+    ],
+    [
+      'meta_box' => 'simple',
+      'hierarchical' => false,
+    ],
+    [
+      'singular' => __( 'Despacho', 'sj-CPT' ),
+      'plural'   => __( 'Despachos', 'sj-CPT' ),
+      'slug'     => 'despacho',
+    ]
+  );
 
 }, 0 );
