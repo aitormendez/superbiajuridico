@@ -27,7 +27,6 @@
               ],
             ];
             $link_posts = new WP_Query($args);
-            var_dump($link_posts);
             @endphp
             @if ($link_posts->have_posts())
               <h3>{{ $link->name }}</h3>
