@@ -164,6 +164,28 @@ add_action( 'init', function() {
       'title'    => 'En portada',
       'meta_key' => 'go_to_slider',
     ),
+    'despacho' => [
+      'taxonomy' => 'despacho'
+    ],
+    'cat-sentence' => [
+      'title'    => 'Cat sentencia',
+      'taxonomy' => 'sentence-category',
+    ],
+  ];
+
+  $filters_sentence = [
+    'portada' => [
+      'title'    => 'Slider portada',
+      'meta_key' => 'go_to_slider',
+    ],
+    'despacho' => [
+      'title'    => 'despacho',
+      'taxonomy' => 'despacho'
+    ],
+    'cat-sentence' => [
+      'title'    => 'Cat sentencia',
+      'taxonomy' => 'sentence-category',
+    ],
   ];
 
   $supports_sentence = [
@@ -176,24 +198,25 @@ add_action( 'init', function() {
       'show_in_feed' => true,
       'labels'       => $labels_sentence,
       'admin_cols'   => $cols_sentence,
+      'admin_filters'=> $filters_sentence,
       'supports'     => $supports_sentence,
     ]
   );
 
   register_extended_taxonomy( 'sentence-category',
-  [
-    'sentence',
-  ],
-  [
-    'meta_box' => 'simple',
-    'hierarchical' => false,
-  ],
-  [
-    'singular' => __( 'Categoría de sentencia', 'sj-CPT' ),
-    'plural'   => __( 'Categorías de sentencia', 'sj-CPT' ),
-    'slug'     => 'sentence-category'
-  ]
-);
+    [
+      'sentence',
+    ],
+    [
+      'meta_box' => 'simple',
+      'hierarchical' => false,
+    ],
+    [
+      'singular' => __( 'Categoría de sentencia', 'sj-CPT' ),
+      'plural'   => __( 'Categorías de sentencia', 'sj-CPT' ),
+      'slug'     => 'sentence-category'
+    ]
+  );
 
   // Noticia cpt (story)
 
@@ -236,6 +259,33 @@ add_action( 'init', function() {
       'title'    => 'En portada',
       'meta_key' => 'go_to_slider',
     ),
+    'cat_noticia' => [
+      'title'    => 'Cat noticia',
+      'taxonomy' => 'news-category',
+    ],
+    'despacho' => [
+      'title'    => 'despacho',
+      'taxonomy' => 'despacho'
+    ],
+  ];
+
+  $filters_story = [
+    'publicar' => [
+			'title'    => 'Feed RSS',
+			'taxonomy' => 'newsletter-category',
+    ],
+    'portada' => [
+      'title'    => 'Slider portada',
+      'meta_key' => 'go_to_slider',
+    ],
+    'despacho' => [
+      'title'    => 'despacho',
+      'taxonomy' => 'despacho'
+    ],
+    'cat_noticia' => [
+      'title'    => 'Cat noticia',
+      'taxonomy' => 'news-category',
+    ],
   ];
 
   $supports_story = [
@@ -252,7 +302,7 @@ add_action( 'init', function() {
       'show_in_feed' => true,
       'labels'       => $labels_story,
       'admin_cols'   => $cols_story,
-      'admin_filters'=> $filters_texto,
+      'admin_filters'=> $filters_story,
       'supports'     => $supports_story,
     ],
     [
@@ -313,6 +363,17 @@ add_action( 'init', function() {
 
   $cols_links = [
     'post_author',
+    'despacho' => [
+      'title'    => 'despacho',
+      'taxonomy' => 'despacho'
+    ],
+  ];
+
+  $filters_links = [
+    'despacho' => [
+      'title'    => 'despacho',
+      'taxonomy' => 'despacho'
+    ],
   ];
 
   $supports_links = [
@@ -326,6 +387,7 @@ add_action( 'init', function() {
       'show_in_feed' => true,
       'labels'       => $labels_links,
       'admin_cols'   => $cols_links,
+      'admin_filters'=> $filters_links,
       'supports'     => $supports_links,
     ]
   );

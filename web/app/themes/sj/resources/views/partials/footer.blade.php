@@ -15,13 +15,19 @@
               'post_type'              => ['links'],
               'post_status'            => 'publish',
               'tax_query'              => [
-                  [
-                    'taxonomy'         => 'link-category',
-                    'terms'            => $link,
-                  ],
+                'relation' => 'AND',
+                [
+                  'taxonomy'         => 'link-category',
+                  'terms'            => $link,
                 ],
+                [
+                  'taxonomy'         => 'despacho',
+                  'terms'            => $despacho,
+                ],
+              ],
             ];
             $link_posts = new WP_Query($args);
+            var_dump($link_posts);
             @endphp
             @if ($link_posts->have_posts())
               <h3>{{ $link->name }}</h3>

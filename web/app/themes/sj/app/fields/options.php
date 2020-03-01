@@ -19,16 +19,29 @@ $options
     ->setLocation('options_page', '==', 'theme-options');
 
 $options
-->addTab('home')
-  ->addImage('img_portada', [
-        'label' => 'Image',
-        'instructions' => 'Imagen primer plano front page (se ubica sobre el cielo)',
-        'return_format' => 'array',
-        'preview_size' => 'thumbnail',
-        'library' => 'all',
+->addTab('despacho', ['placement' => 'left'])
+    ->addRadio('despacho', [
+        'label' => 'Despacho principal',
+        'instructions' => 'Elige el despacho principal de esta web',
+        'choices' => [
+            'superbia' => 'Superbia',
+            'quercus' => 'Quercus'
+        ],
+        'default_value' => '',
+        'layout' => 'vertical',
+        'return_format' => 'value',
     ])
-    ->addTextarea('hero_txt', [
-        'label' => 'Texto para hero',
-    ]);
+    ->addTab('home', ['placement' => 'left'])
+        ->addImage('img_portada', [
+                'label' => 'Image',
+                'instructions' => 'Imagen primer plano front page (se ubica sobre el cielo)',
+                'return_format' => 'array',
+                'preview_size' => 'thumbnail',
+                'library' => 'all',
+            ])
+        ->addTextarea('hero_txt', [
+            'label' => 'Texto para hero',
+        ]);
+
 
 return $options;

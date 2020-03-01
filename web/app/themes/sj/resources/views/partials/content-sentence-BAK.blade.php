@@ -17,7 +17,11 @@
     $nombre = __('Enlace', 'sage');
   @endphp
 @endif
-<h1>adsdasdas</h1>
+
+@php
+    var_dump($pdf)
+@endphp
+
 <li class="infinite-scroll-item px-4 px-md-0 d-md-flex">
 
   <strong>{{ $tribunal}}-{{ $identificador }}@if (get_field('sj'))-(SJ)@endif</strong>
