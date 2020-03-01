@@ -84,4 +84,8 @@ class App extends Controller
         }
     }
 
+    function despacho() {
+        return get_field('despacho', 'option');
+    }
+
 }
