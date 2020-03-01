@@ -18,7 +18,7 @@ $links
         'label' => 'PDF',
         'instructions' => 'Subir aquí el archivo PDF de esta sentencia.',
         'required' => 1,
-        'return_format' => 'array',
+        'return_format' => 'url',
         'library' => 'all',
         'wpml_cf_preferences' => '0',
     ])
@@ -30,7 +30,6 @@ $links
     ->addNumber('sentencia_no', [
         'label' => 'Sentencia nº',
         'instructions' => '',
-        'required' => 1,
         'wpml_cf_preferences' => '0',
   ])
     ->addDatePicker('fecha', [

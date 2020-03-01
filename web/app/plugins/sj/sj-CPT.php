@@ -164,6 +164,28 @@ add_action( 'init', function() {
       'title'    => 'En portada',
       'meta_key' => 'go_to_slider',
     ),
+    'despacho' => [
+      'taxonomy' => 'despacho'
+    ],
+    'cat-sentence' => [
+      'title'    => 'Cat sentencia',
+      'taxonomy' => 'sentence-category',
+    ],
+  ];
+
+  $filters_sentence = [
+    'portada' => [
+      'title'    => 'Slider portada',
+      'meta_key' => 'go_to_slider',
+    ],
+    'despacho' => [
+      'title'    => 'despacho',
+      'taxonomy' => 'despacho'
+    ],
+    'cat-sentence' => [
+      'title'    => 'Cat sentencia',
+      'taxonomy' => 'sentence-category',
+    ],
   ];
 
   $supports_sentence = [
@@ -176,6 +198,7 @@ add_action( 'init', function() {
       'show_in_feed' => true,
       'labels'       => $labels_sentence,
       'admin_cols'   => $cols_sentence,
+      'admin_filters'=> $filters_sentence,
       'supports'     => $supports_sentence,
     ]
   );
