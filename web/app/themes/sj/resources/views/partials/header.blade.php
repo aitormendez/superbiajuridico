@@ -20,12 +20,21 @@
 
 <header class="{{ $clasebanner }}">
   <a class="brand css-transitions-only-after-page-load" href="{{ home_url('/') }}">
-    <div class="logovert">
-      @svg('sj-logo-vert', ['alt' => $nombre_para_alt ])
-    </div>
-    <div class="logohoriz">
-      @svg('sj-logo-horiz', ['alt' => $nombre_para_alt ])
-    </div>
+    @if ($despacho == 'superbia')
+      <div class="logovert">
+        @svg('sj-logo-vert', ['alt' => $nombre_para_alt ])
+      </div>
+      <div class="logohoriz">
+        @svg('sj-logo-horiz', ['alt' => $nombre_para_alt ])
+      </div>
+    @elseif($despacho == 'quercus')
+      <div class="logovert">
+        @svg('qj-logo-vert', ['alt' => $nombre_para_alt ])
+      </div>
+      <div class="logohoriz">
+        @svg('qj-logo-horiz', ['alt' => $nombre_para_alt ])
+      </div>
+    @endif
   </a>
 
   <button class="hamburger hamburger--spin" type="button">

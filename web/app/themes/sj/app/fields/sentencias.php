@@ -4,12 +4,12 @@ namespace App;
 
 use StoutLogic\AcfBuilder\FieldsBuilder;
 
-$links = new FieldsBuilder('sentencias');
+$builder = new FieldsBuilder('sentencias');
 
-$links
+$builder
     ->setLocation('post_type', '==', 'sentence');
 
-$links
+$builder
     ->addText('nombre', [
         'label' => 'Nombre',
         'instructions' => 'Si la sentencia tiene un nombre descriptivo, hay que ponerlo aquí.',
@@ -18,9 +18,8 @@ $links
         'label' => 'PDF',
         'instructions' => 'Subir aquí el archivo PDF de esta sentencia.',
         'required' => 1,
-        'return_format' => 'url',
+        'return_format' => 'array',
         'library' => 'all',
-        'wpml_cf_preferences' => '0',
     ])
     ->addUrl('url_externa', [
         'label' => 'URL externa',
@@ -54,5 +53,6 @@ $links
         'return_format' => 'value',
         'wpml_cf_preferences' => '0',
     ]);
+    var_dump($builder);
 
-return $links;
+return $builder;

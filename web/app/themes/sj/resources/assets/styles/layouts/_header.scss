@@ -8,6 +8,22 @@
   background-color: theme-color("principal");
   font-family: $ff-sans;
 
+  body.quercus & {
+    .brand {
+      .logohoriz,
+      .logovert {
+        #qj-logo-vert path,
+        #qj-logo-horiz path {
+          fill: theme-color("quercus-2");
+        }
+      }
+
+      .logovert {
+        background-color: theme-color("quercus-1");
+      }
+    }
+  }
+
   .brand {
     display: flex;
     justify-content: center;
@@ -350,6 +366,10 @@
 
           svg {
             max-width: 100px;
+          }
+
+          body.quercus & {
+            background-color: theme-color("quercus-1");
           }
         }
       }
