@@ -157,12 +157,20 @@ class FrontPage extends Controller
 
     public function argsGlide()
     {
+        $despacho = get_field('despacho', 'option');
+
+        if ($despacho == 'superbia') {
+            $metakey = 'go_to_slider';
+        } elseif ($despacho == 'quercus') {
+            $metakey = 'go_to_slider_qj';
+        }
+
         $args_glide = array(
         	'post_type'              => ['story', 'text', 'sentence'],
         	'post_status'            => 'publish',
             'nopaging'               => true,
-            'meta_key'		         => 'go_to_slider',
-	        'meta_value'	         => true,
+            'meta_key'		         => $metakey,
+            'meta_value'	         => true,
         );
         return $args_glide;
     }

@@ -13,8 +13,14 @@ $slider
 
 $slider
     ->addTrueFalse('go_to_slider', [
-        'label' => 'Mostrar en el carrusel de portada',
-        'instructions' => 'Activar para que este contenido se muestre en el carrusel de portada',
+        'label' => 'Mostrar en el carrusel de portada SJ',
+        'instructions' => 'Activar para que este contenido se muestre en el carrusel de portada en la web de Superbia',
+        'default_value' => 0,
+        'ui' => 1,
+    ])
+    ->addTrueFalse('go_to_slider_qj', [
+        'label' => 'Mostrar en el carrusel de portada QJ',
+        'instructions' => 'Activar para que este contenido se muestre en el carrusel de portada en la web de Quercus',
         'default_value' => 0,
         'ui' => 1,
     ]);
