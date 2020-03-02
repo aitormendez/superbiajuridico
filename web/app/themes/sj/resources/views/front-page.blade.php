@@ -97,6 +97,8 @@
   </div>
 </section>
 
+@query($args_rincon)
+@hasposts
 <section class="rincon">
   <div class="container">
     <div class="row">
@@ -105,9 +107,7 @@
         <h1>{{ __('Rincón del profesor', 'sage') }}</h1>
         <a class="enlace" href="{{ $site_url }}/text-type/rincon/">{{ __('ver todos', 'sage') }}</a>
       </div>
-
       <div class="contenido">
-        @query($args_rincon)
         @posts
           <div class="entry-header">
             <h2 class="entry-title">
@@ -129,6 +129,7 @@
     </div>
   </div>
 </section>
+@endhasposts
 
 <section class="noticias">
   <div class="container">

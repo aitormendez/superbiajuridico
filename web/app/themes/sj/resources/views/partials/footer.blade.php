@@ -14,15 +14,17 @@
             $args = [
               'post_type'              => ['links'],
               'post_status'            => 'publish',
-              'tax_query'              => [
+              'tax_query' => [
                 'relation' => 'AND',
                 [
                   'taxonomy'         => 'link-category',
                   'terms'            => $link,
+                  'field'            => 'slug'
                 ],
                 [
                   'taxonomy'         => 'despacho',
                   'terms'            => $despacho,
+                  'field'            => 'slug'
                 ],
               ],
             ];

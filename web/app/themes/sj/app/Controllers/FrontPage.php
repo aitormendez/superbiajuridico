@@ -29,24 +29,35 @@ class FrontPage extends Controller
 
     public function argsArticle()
     {
+        $despacho = get_field('despacho', 'option');
+
         $args_article = [
         	'post_type'             => ['text'],
         	'post_status'           => ['publish'],
             'posts_per_page'        => 4,
             'tax_query'             => [
+                'relation' => 'AND',
                 [
                     'taxonomy' => 'article-type',
                         'field'    => 'slug',
-                            'terms'    => ['articulo'],
+                        'terms'    => ['articulo'],
                         'operator' => 'IN',
-                    ]
+                ],
+                [
+                    'taxonomy' => 'despacho',
+                    'field'    => 'slug',
+                    'terms'    => $despacho,
+                    'operator' => 'IN',
                 ]
+            ]
         ];
         return $args_article;
     }
 
     public function argsComment()
     {
+        $despacho = get_field('despacho', 'option');
+
         $args_comment = array(
         	'post_type'             => ['text'],
         	'post_status'           => 'publish',
@@ -57,6 +68,12 @@ class FrontPage extends Controller
                         'field'    => 'slug',
                         'terms'    => ['comentario'],
                     'operator' => 'IN',
+                    ],
+                    [
+                        'taxonomy' => 'despacho',
+                        'field'    => 'slug',
+                        'terms'    => $despacho,
+                        'operator' => 'IN',
                     ]
                 ]
         );
@@ -65,6 +82,8 @@ class FrontPage extends Controller
 
     public function argsAbstract()
     {
+        $despacho = get_field('despacho', 'option');
+
         $args_abstract = array(
         	'post_type'              => ['text'],
         	'post_status'            => 'publish',
@@ -75,6 +94,12 @@ class FrontPage extends Controller
                     'field'    => 'slug',
                     'terms'    => ['resumen'],
                     'operator' => 'IN',
+                ],
+                [
+                    'taxonomy' => 'despacho',
+                    'field'    => 'slug',
+                    'terms'    => $despacho,
+                    'operator' => 'IN',
                 ]
             ]
         );
@@ -83,28 +108,47 @@ class FrontPage extends Controller
 
     public function argsNews()
     {
+        $despacho = get_field('despacho', 'option');
+
         $args_news = array(
-        	'post_type'              => 'story',
-        	'post_status'            => 'publish',
-	        'posts_per_page'         => 21,
-            'meta_key'               => 'fecha_pub',
-            'orderby'	=> 'meta_value_num',
-            'order'		=> 'DESC',
+        	'post_type'        => 'story',
+        	'post_status'      => 'publish',
+	        'posts_per_page'   => 21,
+            'meta_key'         => 'fecha_pub',
+            'orderby'	       => 'meta_value_num',
+            'order'		       => 'DESC',
+            'tax_query' => [
+                [
+                    'taxonomy' => 'despacho',
+                    'field'    => 'slug',
+                    'terms'    => $despacho,
+                    'operator' => 'IN',
+                ]
+            ]
         );
         return $args_news;
     }
+
     public function argsRincon()
     {
+        $despacho = get_field('despacho', 'option');
+
         $args_rincon = array(
         	'post_type'              => ['text'],
         	'post_status'            => 'publish',
             'posts_per_page'         => 1,
             'tax_query'             => [
                 [
-                'taxonomy' => 'article-type',
+                    'taxonomy' => 'article-type',
                     'field'    => 'slug',
                     'terms'    => ['rincon'],
-                'operator' => 'IN',
+                    'operator' => 'IN',
+                ],
+                [
+                    'taxonomy' => 'despacho',
+                    'field'    => 'slug',
+                    'terms'    => $despacho,
+                    'operator' => 'IN',
                 ]
             ]
         );
