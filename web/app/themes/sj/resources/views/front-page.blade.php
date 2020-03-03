@@ -136,9 +136,20 @@
     <div class="row">
       <div class="header">
         <h1>{{ __('Noticias', 'sage') }}</h1>
-        <a class="enlace" href="{{ $site_url }}/news">{{ __('ver todas las noticias', 'sage') }}</a>
-        <a class="enlace"
-          href="{{ $site_url }}/new-categories/superbia-juridico/">{{ __('Superbia Jurídico en los medios', 'sage') }}</a>
+        @if ($despacho == 'superbia')
+          <a class="enlace" href="{{ $site_url }}/news">{{ __('ver todas las noticias', 'sage') }}</a>
+          <a class="enlace"
+            href="{{ $site_url }}/new-categories/superbia-juridico/">
+            {{ __('Superbia Jurídico en los medios', 'sage') }}
+          </a>
+        @elseif($despacho == 'quercus')
+          <a class="enlace" href="{{ $site_url }}/news">{{ __('ver todas las noticias', 'sage') }}</a>
+          <a class="enlace"
+            href="{{ $site_url }}/new-categories/quercus-juridico/">
+            {{ __('Quercus Jurídico en los medios', 'sage') }}
+          </a>
+        @endif
+
       </div>
 
       <div class="contenido">
@@ -151,7 +162,11 @@
   </div>
 </section>
 <div id="template" style="display: none;">
-  <strong>{{ __('Superbia Jurídico en los medios', 'sage') }}</strong>
+  @if ($despacho == 'superbia')
+    <strong>{{ __('Superbia Jurídico en los medios', 'sage') }}</strong>
+  @elseif($despacho == 'quercus')
+    <strong>{{ __('Quercus Jurídico en los medios', 'sage') }}</strong>
+  @endif
 </div>
 
 @endsection

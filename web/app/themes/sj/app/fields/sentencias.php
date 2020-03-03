@@ -53,6 +53,6 @@ $builder
         'return_format' => 'value',
         'wpml_cf_preferences' => '0',
     ]);
-    var_dump($builder);
+    // print_r($builder->build());
 
 return $builder;

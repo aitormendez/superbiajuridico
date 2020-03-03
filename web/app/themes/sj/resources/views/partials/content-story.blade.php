@@ -2,9 +2,16 @@
   <header>
 
     @if (ArchiveStory::setClassNews() == 'infinite-scroll-item sj')
-      <a href="{{ get_bloginfo( 'url' ) . '/news-category/superbia-juridico/'}}" class="marca-sj">
-        @svg('sj-sj')
-      </a>
+      @if ($despacho == 'superbia')
+        <a href="{{ get_bloginfo( 'url' ) . '/news-category/superbia-juridico/'}}" class="marca-sj">
+          @svg('sj-logo-anagrama')
+        </a>
+      @elseif($despacho == 'quercus')
+        <a href="{{ get_bloginfo( 'url' ) . '/news-category/quercus-juridico/'}}" class="marca-qj">
+          @svg('qj-logo-anagrama')
+        </a>
+      @endif
+
     @endif
 
     @if (ArchiveStory::getEnlaceExterno())

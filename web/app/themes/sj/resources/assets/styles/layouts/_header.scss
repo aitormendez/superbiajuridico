@@ -367,10 +367,6 @@
           svg {
             max-width: 100px;
           }
-
-          body.quercus & {
-            background-color: theme-color("quercus-1");
-          }
         }
       }
 
@@ -432,4 +428,8 @@
       }
     }
   }
+}
+
+body.home.quercus .banner.full .brand .logovert {
+  background-color: theme-color("quercus-1");
 }

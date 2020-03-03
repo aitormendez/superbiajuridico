@@ -164,10 +164,11 @@
             overflow: hidden;
 
             header {
-              .marca-sj {
+              .marca-sj,
+              .marca-qj {
                 display: block;
                 position: absolute;
-                margin-bottom: 5px;
+                margin-bottom: 0.4rem;
                 height: 2rem;
                 width: 2rem;
                 background-color: theme-color("secundario");
@@ -182,6 +183,12 @@
 
                 &:hover {
                   background-color: $gray-300;
+                }
+              }
+
+              .marca-qj {
+                svg {
+                  top: 0.5rem;
                 }
               }
 
