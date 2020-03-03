@@ -8,7 +8,7 @@ export default {
 
     // TOOLTIPS
     // ------------------
-    const tps = document.querySelectorAll('.marca-sj');
+    const tps = document.querySelectorAll('.marca');
     const template = document.getElementById('template');
 
     tippy(tps, {

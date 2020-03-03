@@ -164,8 +164,7 @@
             overflow: hidden;
 
             header {
-              .marca-sj,
-              .marca-qj {
+              .marca {
                 display: block;
                 position: absolute;
                 margin-bottom: 0.4rem;
@@ -183,6 +182,12 @@
 
                 &:hover {
                   background-color: $gray-300;
+                }
+              }
+
+              .marca-sj {
+                svg {
+                  top: 0.3rem;
                 }
               }
 
