@@ -7,11 +7,20 @@ export default {
     // TOOLTIPS
     // ------------------
 
-    const tps = document.querySelectorAll('.marca-sj');
-    const template = document.getElementById('template');
-    if (tps.length != 0) {
-      tippy(tps, {
-        content: template.innerHTML,
+    const ttSj = document.querySelectorAll('.marca-sj');
+    const templateSj = document.getElementById('template-sj');
+    if (ttSj.length != 0) {
+      tippy(ttSj, {
+        content: templateSj.innerHTML,
+        animation: 'scale',
+      });
+    }
+
+    const ttQj = document.querySelectorAll('.marca-qj');
+    const templateQj = document.getElementById('template-qj');
+    if (ttQj.length != 0) {
+      tippy(ttQj, {
+        content: templateQj.innerHTML,
         animation: 'scale',
       });
     }
@@ -50,10 +59,17 @@ export default {
     });
 
     main.on('append', function() {
-      const tps = document.querySelectorAll('.marca-sj');
-      if (tps.length != 0) {
-        tippy(tps, {
-          content: template.innerHTML,
+      const ttSj = document.querySelectorAll('.marca-sj');
+      const ttQj = document.querySelectorAll('.marca-qj');
+      if (ttSj.length != 0) {
+        tippy(ttSj, {
+          content: templateSj.innerHTML,
+          animation: 'scale',
+        });
+      }
+      if (ttQj.length != 0) {
+        tippy(ttQj, {
+          content: templateQj.innerHTML,
           animation: 'scale',
         });
       }

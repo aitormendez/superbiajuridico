@@ -42,24 +42,38 @@
       border-radius: 4px;
 
       header {
-        .marca-sj {
+        .marca {
           display: block;
           width: 40px;
           height: 40px;
           padding-left: 10px;
           margin-bottom: 0.7rem;
-          background-color: theme-color("secundario");
           border-radius: 50%;
           border: 2px solid white;
 
           svg {
             position: absolute;
-            top: 7px;
             width: 15px;
           }
 
           &:hover {
             background-color: $gray-400;
+          }
+        }
+
+        .marca-sj {
+          background-color: theme-color("secundario");
+
+          svg {
+            top: 0.4rem;
+          }
+        }
+
+        .marca-qj {
+          background-color: theme-color("quercus-2");
+
+          svg {
+            top: 0.6rem;
           }
         }
       }
