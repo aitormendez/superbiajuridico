@@ -1,8 +1,10 @@
-@if (is_singular('text') || is_post_type_archive('text') || is_post_type_archive('story') || is_singular('story') || is_front_page() )
+@if (is_singular('text') || is_post_type_archive('text') || is_post_type_archive('story') || is_singular('story') || is_front_page() || is_tax('article-type') || is_tax('news-category'))
   @php
     $fecha_pub_raw = new DateTime(get_field('fecha_pub', false, false ));
     $fecha_pub_iso = $fecha_pub_raw->format('c');
-    $fecha_pub = get_field('fecha_pub');
+    $fecha_format = $fecha_pub_raw->format('j M Y');
+    $unixtimestamp = strtotime( $fecha_pub_iso );
+    $fecha_pub = date_i18n( "j M Y", $unixtimestamp );
   @endphp
 @else
   @php

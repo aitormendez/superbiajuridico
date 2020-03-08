@@ -8,7 +8,7 @@
     </div>
   </div>
   <div class="container">
-    <div class="row">
+    <div class="row mx-1 mx-md-4">
       <ul class="infinite-scroll-container">
         @while (have_posts()) @php the_post() @endphp
           @include('partials.content-'.get_post_type())

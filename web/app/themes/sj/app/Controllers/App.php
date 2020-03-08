@@ -84,8 +84,21 @@ class App extends Controller
         }
     }
 
-    function despacho() {
+    public function despacho() {
         return get_field('despacho', 'option');
+    }
+
+    public function menus() {
+        $despacho = get_field('despacho', 'option');
+        $menus = [];
+
+        if ($despacho == 'superbia') {
+            $menus['primary_navigation'] = 'primary_navigation';
+        } elseif ($despacho == 'quercus') {
+            $menus['primary_navigation'] = 'primary_navigation_qj';
+        }
+
+        return $menus;
     }
 
 }

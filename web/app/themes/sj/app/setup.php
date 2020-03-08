@@ -59,7 +59,11 @@ add_action('after_setup_theme', function () {
         'insti_navigation' => __('Menu institucional', 'sage'),
         'texts_navigation' => __('Menu textos', 'sage'),
         'sentence_navigation' => __('Menu sentencias', 'sage'),
-        'quercus_navigation' => __('Menu Quercus', 'sage'),
+        'primary_navigation_qj' => __('Menú principal QJ', 'sage'),
+        'footer_navigation_qj' => __('Menú pie QJ', 'sage'),
+        'texts_navigation_qj' => __('Menu textos QJ', 'sage'),
+        'insti_navigation_qj' => __('Menu institucional QJ', 'sage'),
+        'sentence_navigation_qj' => __('Menu sentencias QJ', 'sage'),
     ]);
 
     /**
@@ -224,3 +228,24 @@ add_theme_support('responsive-embeds');
 // add_filter('get_search_form', function () {
 //     return \App\template( 'partials.searchform' );
 // });
+
+/**
+ * pre get posts según despacho
+ */
+
+add_action( 'pre_get_posts', function($query) {
+
+    $despacho = get_field('despacho', 'option');
+
+    if (! is_admin() && $query->is_main_query() ) {
+        if ( is_post_type_archive() || is_tax() ) {
+            $query->set('tax_query', [
+                [
+                    'taxonomy'  => 'despacho',
+                    'field'     => 'slug',
+                    'terms'     => $despacho,
+                ]
+            ]);
+        }
+    }
+});

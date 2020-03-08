@@ -222,7 +222,8 @@
       }
 
       .menu-principal-container,
-      .menu-principal-ruso-container {
+      .menu-principal-ruso-container,
+      .menu-principal_qj-container {
         width: 100%;
         order: 3;
         border-top: 1px solid $color-blanco-alfa;
@@ -366,6 +367,12 @@
 
           svg {
             max-width: 100px;
+          }
+
+          &.quercus {
+            svg {
+              max-width: 70px;
+            }
           }
         }
       }

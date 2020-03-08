@@ -21,14 +21,14 @@
 <header class="{{ $clasebanner }}">
   <a class="brand css-transitions-only-after-page-load" href="{{ home_url('/') }}">
     @if ($despacho == 'superbia')
-      <div class="logovert">
+      <div class="logovert superbia">
         @svg('sj-logo-vert', ['alt' => $nombre_para_alt ])
       </div>
       <div class="logohoriz">
         @svg('sj-logo-horiz', ['alt' => $nombre_para_alt ])
       </div>
     @elseif($despacho == 'quercus')
-      <div class="logovert">
+      <div class="logovert quercus">
         @svg('qj-logo-vert', ['alt' => $nombre_para_alt ])
       </div>
       <div class="logohoriz">
@@ -53,8 +53,8 @@
     {!! wp_nav_menu(['theme_location' => 'insti_navigation', 'menu_class' => 'menu-institucional']) !!}
     @endif
 
-    @if (has_nav_menu('primary_navigation'))
-    {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu-principal', 'walker' => new \App\Walkers\sj_navwalker()]) !!}
+    @if (has_nav_menu($menus['primary_navigation']))
+    {!! wp_nav_menu(['theme_location' => $menus['primary_navigation'], 'menu_class' => 'menu-principal', 'walker' => new \App\Walkers\sj_navwalker()]) !!}
     @endif
 
     <nav class="social">
