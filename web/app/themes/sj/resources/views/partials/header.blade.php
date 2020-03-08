@@ -49,8 +49,8 @@
     {!! wp_nav_menu(['theme_location' => 'lang_navigation', 'menu_class' => 'menu-lenguaje text-center']) !!}
     @endif
 
-    @if (has_nav_menu('insti_navigation'))
-    {!! wp_nav_menu(['theme_location' => 'insti_navigation', 'menu_class' => 'menu-institucional']) !!}
+    @if (has_nav_menu($menus['insti_navigation']))
+    {!! wp_nav_menu(['theme_location' => $menus['insti_navigation'], 'menu_class' => 'menu-institucional']) !!}
     @endif
 
     @if (has_nav_menu($menus['primary_navigation']))
