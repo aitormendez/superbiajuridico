@@ -7,7 +7,7 @@ use Sober\Controller\Controller;
 class PSubdespacho extends Controller
 {
 
-    public function args() {
+    public function datos() {
 
         // todo esto es para pasar argumentos a la query de las subpáginas (en superbia y quercus)
         // basándose en el trid para que funcione en las páginas traducidas.
@@ -34,7 +34,6 @@ class PSubdespacho extends Controller
         $sentencias_qj_trid = apply_filters( 'wpml_element_trid', NULL, $sentencias_qj_id, 'post_page' );
 
         $trids = [
-            'this_trid'          => $this_trid,
             'noticias_sj_trid'   => $noticias_sj_trid,
             'sentencias_sj_trid' => $sentencias_sj_trid,
             'textos_sj_trid'     => $textos_sj_trid,
@@ -45,7 +44,7 @@ class PSubdespacho extends Controller
 
         $ppp = 4;
 
-        switch ($trids['this_trid']) {
+        switch ($this_trid) {
             case $trids['noticias_sj_trid'] :
                 $args = [
                     'post_type'      => 'story',
@@ -126,7 +125,11 @@ class PSubdespacho extends Controller
                 break;
         }
 
-        return $args;
+        return [
+            'args' => $args,
+            'trids' => $trids,
+            'this_trid' => $this_trid,
+        ];
 
 
     }

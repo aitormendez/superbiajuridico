@@ -1,16 +1,33 @@
 <article {{ post_class(ArchiveStory::setClassNews()) }}>
   <header>
-
     @if (ArchiveStory::setClassNews() == 'infinite-scroll-item sj')
-      @if ($despacho == 'superbia')
-        <a href="{{ get_bloginfo( 'url' ) . '/news-category/superbia-juridico/'}}" class="marca marca-sj">
-          @svg('sj-logo-anagrama')
-        </a>
-      @elseif($despacho == 'quercus')
-        <a href="{{ get_bloginfo( 'url' ) . '/news-category/quercus-juridico/'}}" class="marca marca-qj">
-          @svg('qj-logo-anagrama')
-        </a>
+
+      @if (isset($datos))
+          @if (in_array($datos['this_trid'], $datos['trids']))
+            @if ($despacho == 'superbia')
+
+              <a href="{{ get_bloginfo( 'url' ) . '/news-category/quercus-juridico/'}}" class="marca marca-qj">
+                @svg('qj-logo-anagrama')
+              </a>
+            @elseif($despacho == 'quercus')
+              <a href="{{ get_bloginfo( 'url' ) . '/news-category/superbia-juridico/'}}" class="marca marca-sj">
+                @svg('sj-logo-anagrama')
+              </a>
+            @endif
+          @endif
+        @else
+        @if ($despacho == 'superbia')
+          <a href="{{ get_bloginfo( 'url' ) . '/news-category/superbia-juridico/'}}" class="marca marca-sj">
+            @svg('sj-logo-anagrama')
+          </a>
+        @elseif($despacho == 'quercus')
+          <a href="{{ get_bloginfo( 'url' ) . '/news-category/quercus-juridico/'}}" class="marca marca-qj">
+            @svg('qj-logo-anagrama')
+          </a>
+        @endif
       @endif
+
+
 
     @endif
 

@@ -9,7 +9,7 @@
     @include('partials.page-header-subdespacho')
   @endwhile
 
-  @query($args)
+  @query($datos['args'])
 
   <div class="container">
     <div class="row mx-1 mx-md-4">
@@ -21,7 +21,7 @@
     </div>
   </div>
 @include('partials.loader')
-
+@include('partials.template-tooltip')
 <nav class="nav-links">
   {!! next_posts_link( 'anteriores', $query->max_num_pages) !!}
 </nav>
