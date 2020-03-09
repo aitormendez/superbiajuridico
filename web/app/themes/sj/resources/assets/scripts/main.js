@@ -96,6 +96,7 @@ import pContact from './routes/p-contact'
 import archive from './routes/archive'
 import presentacion from './routes/presentacion'
 import search from './routes/search'
+import pSubdespacho from './routes/pSubdespacho'
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -109,6 +110,7 @@ const routes = new Router({
   archive,
   presentacion,
   search,
+  pSubdespacho,
 })
 
 // Load Events

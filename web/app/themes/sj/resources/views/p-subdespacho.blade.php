@@ -13,18 +13,16 @@
 
   <div class="container">
     <div class="row mx-1 mx-md-4">
-      <div class="infinite-scroll-container mx-4 mx-md-0">
-        <ul>
+      <ul class="infinite-scroll-container mx-4 mx-md-0">
           @posts
             @include('partials.content-'.get_post_type())
           @endposts
-        </ul>
-      </div>
+      </ul>
     </div>
   </div>
 @include('partials.loader')
 
-<nav class="d-none">
+<nav class="nav-links">
   {!! next_posts_link( 'anteriores', $query->max_num_pages) !!}
 </nav>
 
