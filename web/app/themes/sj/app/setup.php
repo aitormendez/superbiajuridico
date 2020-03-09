@@ -58,12 +58,14 @@ add_action('after_setup_theme', function () {
         'lang_navigation' => __('Menu lenguaje', 'sage'),
         'insti_navigation' => __('Menu institucional', 'sage'),
         'texts_navigation' => __('Menu textos', 'sage'),
+        'subdespacho_navigation' => __('Submenu despacho', 'sage'),
         'sentence_navigation' => __('Menu sentencias', 'sage'),
         'primary_navigation_qj' => __('Menú principal QJ', 'sage'),
         'footer_navigation_qj' => __('Menú pie QJ', 'sage'),
         'texts_navigation_qj' => __('Menu textos QJ', 'sage'),
         'insti_navigation_qj' => __('Menu institucional QJ', 'sage'),
         'sentence_navigation_qj' => __('Menu sentencias QJ', 'sage'),
+        'subdespacho_navigation_qj' => __('Submenu despacho QJ', 'sage'),
     ]);
 
     /**

@@ -95,9 +95,13 @@ class App extends Controller
         if ($despacho == 'superbia') {
             $menus['primary_navigation'] = 'primary_navigation';
             $menus['insti_navigation'] = 'insti_navigation';
+            $menus['sentence_navigation'] = 'sentence_navigation';
+            $menus['subdespacho_navigation'] = 'subdespacho_navigation';
         } elseif ($despacho == 'quercus') {
             $menus['primary_navigation'] = 'primary_navigation_qj';
             $menus['insti_navigation'] = 'insti_navigation_qj';
+            $menus['sentence_navigation'] = 'sentence_navigation_qj';
+            $menus['subdespacho_navigation'] = 'subdespacho_navigation_qj';
         }
 
         return $menus;

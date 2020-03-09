@@ -1,5 +1,7 @@
 .post-type-archive-sentence,
-.tax-sentence-category {
+.tax-sentence-category,
+.sentencias-sj,
+.sentencias-qj {
   .infinite-scroll-container {
     padding-left: 0;
 
@@ -28,19 +30,17 @@
   }
 
   @include media-breakpoint-up("md") {
-    ul {
-      li {
-        strong {
-          padding-top: 0.3em;
-          display: inline-block;
-          width: 12rem;
-        }
+    li {
+      strong {
+        padding-top: 0.3em;
+        display: inline-block;
+        width: 12rem;
+      }
 
-        .col-der {
-          display: inline-block;
-          width: calc(100% - 190px);
-          vertical-align: top;
-        }
+      .col-der {
+        display: inline-block;
+        width: calc(100% - 190px);
+        vertical-align: top;
       }
     }
   }
