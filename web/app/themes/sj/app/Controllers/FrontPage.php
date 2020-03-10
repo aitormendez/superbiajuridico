@@ -8,7 +8,11 @@ use Sober\Controller\Controller;
 class FrontPage extends Controller
 {
 
-    public function heroTxt() {
+    public function heroTxtSj() {
+        return wpautop(get_field('hero_txt', 'option'), false) ;
+    }
+
+    public function heroTxtQj() {
         return wpautop(get_field('hero_txt', 'option'), false) ;
     }
 

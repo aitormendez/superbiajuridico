@@ -2,18 +2,12 @@
 
 @section('content')
 
-<section id="hero">
-  <div class="texto">
-    {!! $hero_txt !!}
-  </div>
+@if ($despacho == 'superbia')
+  @include('partials.hero-sj')
+@elseif ($despacho == 'quercus')
+  @include('partials.hero-qj')
+@endif
 
-  <a href="{{ $contact_link }}" class="preguntanos">{{ __('Pregúntanos', 'sage') }}</a>
-
-  {!! $img_portada  !!}
-
-  <a id="flecha-1"><i class="fas fa-arrow-circle-down"></i></a>
-
-</section>
 
 <section class="slider">
     <div class="container">
@@ -149,7 +143,6 @@
             {{ __('Quercus Jurídico en los medios', 'sage') }}
           </a>
         @endif
-
       </div>
 
       <div class="contenido">
