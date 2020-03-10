@@ -46,15 +46,15 @@
 
   <nav id="solapa" class="solapa">
     @if (has_nav_menu('lang_navigation'))
-    {!! wp_nav_menu(['theme_location' => 'lang_navigation', 'menu_class' => 'menu-lenguaje text-center']) !!}
+      {!! wp_nav_menu(['theme_location' => 'lang_navigation', 'menu_class' => 'menu-lenguaje text-center']) !!}
     @endif
 
     @if (has_nav_menu($menus['insti_navigation']))
-    {!! wp_nav_menu(['theme_location' => $menus['insti_navigation'], 'menu_class' => 'menu-institucional']) !!}
+      {!! wp_nav_menu(['theme_location' => $menus['insti_navigation'], 'menu_class' => 'menu-institucional']) !!}
     @endif
 
     @if (has_nav_menu($menus['primary_navigation']))
-    {!! wp_nav_menu(['theme_location' => $menus['primary_navigation'], 'menu_class' => 'menu-principal', 'walker' => new \App\Walkers\sj_navwalker()]) !!}
+      {!! wp_nav_menu(['theme_location' => $menus['primary_navigation'], 'menu_class' => 'menu-principal', 'walker' => new \App\Walkers\sj_navwalker()]) !!}
     @endif
 
     <nav class="social">

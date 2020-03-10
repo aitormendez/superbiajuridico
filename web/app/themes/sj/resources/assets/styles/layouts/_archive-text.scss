@@ -1,7 +1,9 @@
 /* stylelint-disable no-descending-specificity */
 .archive,
 .textos-sj,
-.textos-qj {
+.textos-qj,
+.page-тексты-qj-data,
+.page-тексты-sj-data {
   article {
     margin-bottom: $pad-2;
     display: flex;

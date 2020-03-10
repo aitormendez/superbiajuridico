@@ -39,15 +39,6 @@ class App extends Controller
         if (is_tax('news-category', 'superbia-juridico')) {
             return __('Superbia Jurídico en los medios', 'sage');
         }
-        if (is_tax('article-type', 'articulo') ) {
-            return __('Artículos', 'sage');
-        }
-        if (is_tax('article-type', 'resumen') ) {
-            return __('Resúmenes de sentencias', 'sage');
-        }
-        if (is_tax('article-type', 'comentario') ) {
-            return __('Sentencias comentadas', 'sage');
-        }
         if (is_post_type_archive('sentence') || is_tax('sentence-category')) {
             return __('Jurisprudencia', 'sage');
         }
