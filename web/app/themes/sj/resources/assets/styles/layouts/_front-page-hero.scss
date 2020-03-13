@@ -1,0 +1,108 @@
+/* stylelint-disable no-descending-specificity */
+.home {
+  #hero {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 30px;
+    text-align: center;
+    z-index: -100;
+
+    .texto {
+      padding-right: $pad-2;
+      padding-left: $pad-2;
+      text-align: left;
+      line-height: 1.5em;
+
+      p {
+        color: #ffffffc2;
+      }
+    }
+
+    .preguntanos {
+      display: inline-block;
+      margin-top: $pad-2;
+      padding: 1em;
+      font-family: $ff-sans;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: theme-color("principal");
+      background-color: theme-color("allo");
+      border: 4px solid #fff;
+      border-radius: 0.6em;
+      z-index: 100;
+    }
+
+    #flecha-1 {
+      display: block;
+      position: absolute;
+      bottom: 1rem;
+      left: 48vw;
+      color: #fff;
+      z-index: 100;
+      font-size: 2rem;
+    }
+
+    @include media-breakpoint-up(sm) {
+      text-align: left;
+      padding-top: 23rem;
+
+      .texto {
+        padding-right: 0;
+        padding-left: 0;
+        max-width: 400px;
+        margin-top: 4rem;
+        margin-left: 6rem;
+
+        p {
+          font-size: 1.2rem;
+        }
+      }
+
+      .preguntanos {
+        margin-left: 6rem;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      padding-top: 20rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      .texto {
+        margin-top: 5rem;
+      }
+    }
+  }
+
+  &.superbia {
+    #hero {
+      background-image: url("../images/fondo-cielo.jpg");
+      background-size: cover;
+
+      img {
+        display: block;
+        position: absolute;
+        bottom: 2vh;
+        right: 0;
+        max-width: 80vw;
+        max-height: 50vh;
+        width: auto;
+        height: auto;
+        z-index: 50;
+      }
+    }
+  }
+
+  &.quercus {
+    #hero {
+      background-image: url("../images/fondo-cielo.jpg");
+      background-size: 100%;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-color: #6f70aa;
+    }
+  }
+}

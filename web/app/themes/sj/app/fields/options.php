@@ -33,14 +33,24 @@ $options
     ])
     ->addTab('home', ['placement' => 'left'])
         ->addImage('img_portada', [
-                'label' => 'Image',
-                'instructions' => 'Imagen primer plano front page (se ubica sobre el cielo)',
+                'label' => 'Imagen SJ',
+                'instructions' => 'Imagen primer plano front page en SJ',
                 'return_format' => 'array',
-                'preview_size' => 'thumbnail',
+                'preview_size' => 'medium',
                 'library' => 'all',
             ])
+        ->addImage('img_portada_qj', [
+            'label' => 'Imagen QJ',
+            'instructions' => 'Imagen front page en QJ',
+            'return_format' => 'array',
+            'preview_size' => 'medium',
+            'library' => 'all',
+        ])
         ->addTextarea('hero_txt', [
-            'label' => 'Texto para hero',
+            'label' => 'Texto para hero de SJ',
+        ])
+        ->addTextarea('hero_txt_qj', [
+            'label' => 'Texto para hero de QJ',
         ]);
 
 

@@ -9,11 +9,16 @@ class FrontPage extends Controller
 {
 
     public function heroTxtSj() {
-        return wpautop(get_field('hero_txt', 'option'), false) ;
+        return wpautop(get_field('hero_txt', 'option'), false);
     }
 
     public function heroTxtQj() {
-        return wpautop(get_field('hero_txt', 'option'), false) ;
+        return wpautop(get_field('hero_txt', 'option'), false);
+    }
+
+    public function imgPortadaQj() {
+        $img_portada = get_field('img_portada_qj', 'option');
+        return $img_portada['ID'];
     }
 
     public function imgPortada()
