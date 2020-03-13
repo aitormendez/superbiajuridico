@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Fourteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-07 01:00:56+0000\n"
+"PO-Revision-Date: 2020-02-15 15:42:20+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -223,23 +223,23 @@ msgstr "Carrusel"
 
 #: inc/customizer.php:88
 msgid "Grid"
-msgstr "Rejilla"
+msgstr "Cuadrícula"
 
 #: inc/customizer.php:84
 msgid "Layout"
 msgstr "Diseño de pantalla"
 
-#: inc/customizer.php:64 inc/customizer.php:162 inc/featured-content.php:384
-#: inc/featured-content.php:396 inc/featured-content.php:462
+#: inc/featured-content.php:384 inc/featured-content.php:396
+#: inc/featured-content.php:462 inc/customizer.php:64 inc/customizer.php:162
 msgctxt "featured content default tag slug"
 msgid "featured"
 msgstr "destacado"
 
-#: inc/customizer.php:63 inc/featured-content.php:383
+#: inc/featured-content.php:383 inc/customizer.php:63
 msgid "Use a <a href=\"%1$s\">tag</a> to feature your posts. If no posts match the tag, <a href=\"%2$s\">sticky posts</a> will be displayed instead."
 msgstr "Usa una <a href=\"%1$s\">etiqueta</a> para destacar tus entradas. Si ninguna entrada se ajusta a la etiqueta entonces se usarán las <a href=\"%2$s\">entradas fijas</a>."
 
-#: inc/customizer.php:61 inc/featured-content.php:381
+#: inc/featured-content.php:381 inc/customizer.php:61
 msgid "Featured Content"
 msgstr "Contenido destacado"
 
@@ -271,15 +271,15 @@ msgstr "Imagen siguiente"
 msgid "Previous Image"
 msgstr "Imagen anterior"
 
-#: header.php:53
+#: header.php:54
 msgid "Skip to content"
 msgstr "Saltar al contenido"
 
-#: header.php:52
+#: header.php:53
 msgid "Primary Menu"
 msgstr "Menú principal"
 
-#: header.php:48
+#: header.php:49
 msgid "Search"
 msgstr "Buscar"
 
@@ -358,47 +358,47 @@ msgstr "¿Preparado para publicar tu primera entrada? <a href=\"%1$s\">Empieza a
 msgid "Nothing Found"
 msgstr "No se ha encontrado nada"
 
-#: content-gallery.php:56 content-aside.php:56 content-video.php:56
-#: content-image.php:56 content-link.php:56 content-audio.php:56
-#: content-page.php:23 content-quote.php:56 image.php:56 content.php:65
+#: content-audio.php:56 content.php:65 content-gallery.php:56
+#: content-video.php:56 content-quote.php:56 content-page.php:23
+#: content-link.php:56 content-image.php:56 image.php:56 content-aside.php:56
 msgid "Pages:"
 msgstr "Páginas:"
 
 #. translators: %s: Name of current post
-#: content-gallery.php:49 content-aside.php:49 content-video.php:49
-#: inc/template-tags.php:229 content-image.php:49 content-link.php:49
-#: content-audio.php:49 content-quote.php:49 content.php:58
+#: content-audio.php:49 content.php:58 content-gallery.php:49
+#: content-video.php:49 content-quote.php:49 content-link.php:49
+#: content-image.php:49 content-aside.php:49 inc/template-tags.php:229
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Seguir leyendo %s <span class=\"meta-nav\">&rarr;</span>"
 
-#: content-gallery.php:40 content-aside.php:40 content-video.php:40
-#: content-image.php:40 content-link.php:40 content-audio.php:40
-#: page-templates/contributors.php:36 content-page.php:30 content-quote.php:40
-#: image.php:35 content.php:43
+#: content-audio.php:40 content.php:43 content-gallery.php:40
+#: content-video.php:40 content-quote.php:40 content-page.php:30
+#: page-templates/contributors.php:36 content-link.php:40 content-image.php:40
+#: image.php:35 content-aside.php:40
 msgid "Edit"
 msgstr "Editar"
 
-#: content-gallery.php:37 content-aside.php:37 content-video.php:37
-#: inc/widgets.php:225 content-image.php:37 content-link.php:37
-#: content-audio.php:37 content-quote.php:37 content.php:39
+#: content-audio.php:37 content.php:39 content-gallery.php:37
+#: content-video.php:37 content-quote.php:37 content-link.php:37
+#: content-image.php:37 content-aside.php:37 inc/widgets.php:225
 msgid "% Comments"
 msgstr "% comentarios"
 
-#: content-gallery.php:37 content-aside.php:37 content-video.php:37
-#: inc/widgets.php:225 content-image.php:37 content-link.php:37
-#: content-audio.php:37 content-quote.php:37 content.php:39
+#: content-audio.php:37 content.php:39 content-gallery.php:37
+#: content-video.php:37 content-quote.php:37 content-link.php:37
+#: content-image.php:37 content-aside.php:37 inc/widgets.php:225
 msgid "1 Comment"
 msgstr "1 comentario"
 
-#: content-gallery.php:37 content-aside.php:37 content-video.php:37
-#: inc/widgets.php:225 content-image.php:37 content-link.php:37
-#: content-audio.php:37 content-quote.php:37 content.php:39
+#: content-audio.php:37 content.php:39 content-gallery.php:37
+#: content-video.php:37 content-quote.php:37 content-link.php:37
+#: content-image.php:37 content-aside.php:37 inc/widgets.php:225
 msgid "Leave a comment"
 msgstr "Deja un comentario"
 
-#: content-gallery.php:17 content-aside.php:17 content-video.php:17
-#: content-image.php:17 content-link.php:17 content-audio.php:17
-#: content-quote.php:17 content-featured-post.php:28 content.php:19
+#: content-audio.php:17 content.php:19 content-gallery.php:17
+#: content-video.php:17 content-quote.php:17 content-featured-post.php:28
+#: content-link.php:17 content-image.php:17 content-aside.php:17
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ", "
