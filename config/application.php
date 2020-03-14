@@ -124,4 +124,5 @@ if (!defined('ABSPATH')) {
     define('ABSPATH', $webroot_dir . '/wp/');
 }
 
-define('WP_MEMORY_LIMIT', '128M');
+define('WP_MEMORY_LIMIT', '1024');
+define('WP_MAX_MEMORY_LIMIT', '1024');

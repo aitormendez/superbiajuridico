@@ -90,6 +90,10 @@
     {
       "type": "vcs",
       "url": "git@github.com:aitormendez/acfml.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:aitormendez/wpml-wpforms.git"
     }
   ],
   "require": {
@@ -117,6 +121,7 @@
     "aitormendez/wpml-media-translation": "*",
     "aitormendez/wpml-string-translation": "*",
     "aitormendez/wpml-translation-management": "*",
+    "aitormendez/wpml-wpforms": "*",
     "aitormendez/acfml": "1.4.0",
     "wpackagist-plugin/wp-optimize": "*",
     "wpackagist-plugin/easy-wp-smtp": "*",
