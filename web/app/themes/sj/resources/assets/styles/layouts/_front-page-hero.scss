@@ -45,27 +45,6 @@
       font-size: 2rem;
     }
 
-    @include media-breakpoint-up(sm) {
-      text-align: left;
-      padding-top: 23rem;
-
-      .texto {
-        padding-right: 0;
-        padding-left: 0;
-        max-width: 400px;
-        margin-top: 4rem;
-        margin-left: 6rem;
-
-        p {
-          font-size: 1.2rem;
-        }
-      }
-
-      .preguntanos {
-        margin-left: 6rem;
-      }
-    }
-
     @include media-breakpoint-up(md) {
       padding-top: 20rem;
     }
@@ -92,6 +71,31 @@
         width: auto;
         height: auto;
         z-index: 50;
+      }
+
+      @include media-breakpoint-up(sm) {
+        text-align: left;
+        padding-top: 23rem;
+
+        .texto {
+          p {
+            font-size: 1.2rem;
+          }
+        }
+
+        .preguntanos {
+          margin-left: 6rem;
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        .texto {
+          padding-right: 0;
+          padding-left: 0;
+          max-width: 400px;
+          margin-top: 4rem;
+          margin-left: 6rem;
+        }
       }
     }
   }

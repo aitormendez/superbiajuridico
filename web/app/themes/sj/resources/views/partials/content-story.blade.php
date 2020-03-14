@@ -1,6 +1,6 @@
 <article {{ post_class(ArchiveStory::setClassNews()) }}>
   <header>
-    @if (ArchiveStory::setClassNews() == 'infinite-scroll-item sj')
+    @if (ArchiveStory::setClassNews() == 'infinite-scroll-item sj my-3')
 
       @if (isset($datos))
           @if (in_array($datos['this_trid'], $datos['trids']))

@@ -17,10 +17,6 @@
           fill: theme-color("quercus-2");
         }
       }
-
-      .logovert {
-        background-color: theme-color("quercus-1");
-      }
     }
   }
 
@@ -440,6 +436,9 @@
   }
 }
 
-body.home.quercus .banner.full .brand .logovert {
-  background-color: theme-color("quercus-1");
+@include media-breakpoint-up(md) {
+  body.home.quercus .banner.full .brand .logovert {
+    background-color: theme-color("quercus-1");
+  }
 }
+

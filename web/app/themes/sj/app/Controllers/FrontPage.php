@@ -13,7 +13,7 @@ class FrontPage extends Controller
     }
 
     public function heroTxtQj() {
-        return wpautop(get_field('hero_txt', 'option'), false);
+        return wpautop(get_field('hero_txt_qj', 'option'), false);
     }
 
     public function imgPortadaQj() {
