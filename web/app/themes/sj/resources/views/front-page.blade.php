@@ -8,7 +8,7 @@
   @include('partials.hero-qj')
 @endif
 
-
+<h1>{{ env('google_maps_key') }}</h1>
 <section class="slider">
     <div class="container">
       <div class="row">

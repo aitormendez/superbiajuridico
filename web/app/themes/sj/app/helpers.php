@@ -148,3 +148,15 @@ function get_field_partial($partial)
     $partial = str_replace('.', '/', $partial);
     return include(config('theme.dir')."/app/fields/{$partial}.php");
 }
+
+/**
+ * Load Google Maps API key for ACF
+ */
+/**
+ * Load Google Maps API key for ACF
+ */
+add_filter('acf/fields/google_map/api', function ($api) {
+    $api['key'] = env('GOOGLE_MAPS_API');
+
+    return $api;
+});
