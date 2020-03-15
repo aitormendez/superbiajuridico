@@ -238,11 +238,10 @@ add_theme_support('responsive-embeds');
 
 add_action( 'pre_get_posts', function($query) {
 
-    $despacho = get_field('despacho', 'option');
-
     if (! is_admin() && $query->is_main_query() ) {
 
         if (is_post_type_archive() || is_tax('article-type')) {
+            $despacho = get_field('despacho', 'option');
             $query->set('tax_query', [
                 [
                     'taxonomy'  => 'despacho',
