@@ -67,6 +67,8 @@ add_action('after_setup_theme', function () {
         'insti_navigation_qj' => __('Menu institucional QJ', 'sage'),
         'sentence_navigation_qj' => __('Menu sentencias QJ', 'sage'),
         'subdespacho_navigation_qj' => __('Submenu despacho QJ', 'sage'),
+        'sub_tarjetas_navigation_qj' => __('Submenu tarjetas QJ', 'sage'),
+        'sub_hipotecas_navigation_qj' => __('Submenu hipotecas QJ', 'sage'),
     ]);
 
     /**

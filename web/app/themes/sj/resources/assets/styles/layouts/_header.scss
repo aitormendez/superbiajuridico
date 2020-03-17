@@ -392,6 +392,13 @@
                   display: block;
                   color: $color-blanco-alfa;
                   margin-bottom: 0.5rem;
+
+                  &.fa-plataforma {
+                    margin-top: 0.2rem;
+                    margin-bottom: 0.7rem;
+                    font-size: 1.3rem;
+                    line-height: 1.7rem;
+                  }
                 }
 
                 .description {

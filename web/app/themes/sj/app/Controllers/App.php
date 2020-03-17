@@ -88,11 +88,15 @@ class App extends Controller
             $menus['insti_navigation'] = 'insti_navigation';
             $menus['sentence_navigation'] = 'sentence_navigation';
             $menus['subdespacho_navigation'] = 'subdespacho_navigation';
+            $menus['sub_hipotecas_navigation'] = 'sub_hipotecas_navigation';
+            $menus['sub_tarjetas_navigation'] = 'sub_tarjetas_navigation';
         } elseif ($despacho == 'quercus') {
             $menus['primary_navigation'] = 'primary_navigation_qj';
             $menus['insti_navigation'] = 'insti_navigation_qj';
             $menus['sentence_navigation'] = 'sentence_navigation_qj';
             $menus['subdespacho_navigation'] = 'subdespacho_navigation_qj';
+            $menus['sub_hipotecas_navigation'] = 'sub_hipotecas_navigation_qj';
+            $menus['sub_tarjetas_navigation'] = 'sub_tarjetas_navigation_qj';
         }
 
         return $menus;

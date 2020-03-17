@@ -30,6 +30,11 @@
   @elseif ($pag_newsletter)
     <i class="fas fa-envelope-open-text"></i>
     <h1>{!! App::title() !!}</h1>
+  @elseif (is_page('plataforma'))
+    <div class="icon">
+      <i class="fas fa-home"></i> <i class="fas fa-credit-card"></i>
+    </div>
+    <h1>{{ __('Plataforma afectados IRPH y tarjetas revolving', 'sage') }} </h1>
   @else
     <h1>{!! App::title() !!}</h1>
   @endif

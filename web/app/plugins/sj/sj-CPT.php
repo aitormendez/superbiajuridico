@@ -61,8 +61,8 @@ add_action( 'init', function() {
     'despacho' => [
       'taxonomy' => 'despacho'
     ],
-    'cat_texto' => [
-      'taxonomy' => 'article-category'
+    'tema' => [
+      'taxonomy' => 'tema'
     ],
   ];
 
@@ -87,6 +87,9 @@ add_action( 'init', function() {
       'title'    => 'despacho',
       'taxonomy' => 'despacho'
     ],
+    'tema' => [
+      'taxonomy' => 'tema'
+    ],
   ];
 
   register_extended_post_type( 'text',
@@ -107,7 +110,6 @@ add_action( 'init', function() {
     ],
     [
       'meta_box' => 'simple',
-      'hierarchical' => false,
     ],
     [
       'singular' => __( 'Tema', 'sj-CPT' ),
@@ -263,6 +265,9 @@ add_action( 'init', function() {
       'title'    => 'despacho',
       'taxonomy' => 'despacho'
     ],
+    'tema' => [
+      'taxonomy' => 'tema'
+    ],
   ];
 
   $filters_story = [
@@ -281,6 +286,9 @@ add_action( 'init', function() {
     'cat_noticia' => [
       'title'    => 'Cat noticia',
       'taxonomy' => 'news-category',
+    ],
+    'tema' => [
+      'taxonomy' => 'tema'
     ],
   ];
 
