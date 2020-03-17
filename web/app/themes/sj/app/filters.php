@@ -120,3 +120,22 @@ function featuredtoRSS($content) {
 }
 add_filter('the_excerpt_rss', __NAMESPACE__ . '\\featuredtoRSS');
 add_filter('the_excerpt_feed', __NAMESPACE__ . '\\featuredtoRSS');
+
+/**
+* Term description wysywyg para taxonomy temas
+*/
+add_action("tema_edit_form_fields", function($term, $taxonomy) {
+    ?>
+    <tr valign="top">
+        <th scope="row">Description</th>
+        <td>
+            <?php wp_editor(html_entity_decode($term->description), 'description', array('media_buttons' => false)); ?>
+            <script>
+                jQuery(window).ready(function(){
+                    jQuery('label[for=description]').parent().parent().remove();
+                });
+            </script>
+        </td>
+    </tr>
+    <?php
+}, 10, 2);

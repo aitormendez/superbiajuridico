@@ -87,10 +87,6 @@ add_action( 'init', function() {
       'title'    => 'despacho',
       'taxonomy' => 'despacho'
     ],
-    'cat-texto' => [
-      'title'    => 'Cat texto',
-      'taxonomy' => 'article-category',
-    ],
   ];
 
   register_extended_post_type( 'text',
@@ -104,18 +100,18 @@ add_action( 'init', function() {
     ]
   );
 
-  register_extended_taxonomy( 'article-category',
+  register_extended_taxonomy( 'tema',
     [
       'text',
+      'story',
     ],
     [
-      'meta_box' => 'radio',
+      'meta_box' => 'simple',
       'hierarchical' => false,
     ],
     [
-      'singular' => __( 'Categoría de texto', 'sj-CPT' ),
-      'plural'   => __( 'Categorias de texto', 'sj-CPT' ),
-      'slug'     => 'text-category'
+      'singular' => __( 'Tema', 'sj-CPT' ),
+      'plural'   => __( 'Temas', 'sj-CPT' ),
     ]
   );
 
