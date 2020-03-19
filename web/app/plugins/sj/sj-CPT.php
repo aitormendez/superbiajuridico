@@ -188,6 +188,7 @@ add_action( 'init', function() {
 
   $supports_sentence = [
     'title',
+    'excerpt',
   ];
 
   register_extended_post_type( 'sentence',
