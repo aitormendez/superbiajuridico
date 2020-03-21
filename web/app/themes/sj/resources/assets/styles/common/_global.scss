@@ -42,7 +42,8 @@ a {
     margin: 0;
 
     &:not(.author) {
-      font-style: italic;
+      max-width: 400px;
+      color: #858585;
     }
   }
 

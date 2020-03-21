@@ -10,7 +10,7 @@
   @endwhile
 
   <div class="container">
-    <div class="row py-3">
+    <div class="row py-3 mx-1 mx-md-4">
       @if ( have_rows('locations') )
         <div class="ubicaciones">
           <h3 class="mb-3">{{ __('Dónde estamos', 'sage') }}</h3>

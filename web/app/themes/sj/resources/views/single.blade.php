@@ -3,7 +3,7 @@
 @section('content')
   @while(have_posts()) @php the_post() @endphp
     <div class="container">
-      <div class="row">
+      <div class="row mx-1 mx-md-4">
         @include('partials.content-single-'.get_post_type())
       </div>
     </div>

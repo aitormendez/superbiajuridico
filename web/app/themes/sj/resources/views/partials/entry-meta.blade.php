@@ -21,8 +21,8 @@
           <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" rel="author" class="fn">
             {{ get_the_author() }}
           </a>
-          {!! get_field('info_adicional', 'user_' . get_the_author_meta('ID')) !!}
         </p>
+        {!! get_field('info_adicional', 'user_' . get_the_author_meta('ID')) !!}
       @endif
     @endif
     <time class="updated" datetime="{{ $fecha_pub_iso }}">{{ $fecha_pub }}</time>
