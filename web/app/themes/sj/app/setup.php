@@ -254,3 +254,17 @@ add_action( 'pre_get_posts', function($query) {
         }
     }
 });
+
+/**
+ * nopaging en newslwtter-category
+ */
+
+add_action( 'pre_get_posts', function($query) {
+
+    if (! is_admin() && $query->is_main_query() ) {
+
+        if (is_tax('newsletter-category')) {
+            $query->set('nopaging', true);
+        }
+    }
+});
