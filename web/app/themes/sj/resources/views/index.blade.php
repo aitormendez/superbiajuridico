@@ -18,6 +18,9 @@
         <div class="infinite-scroll-container mx-4 mx-md-0">
           @while (have_posts()) @php the_post() @endphp
             @include('partials.content-'.get_post_type())
+            @if(is_tax('newsletter-category', 'publicar'))
+              @php the_post_thumbnail('medium', ['class' => 'mb-5']); @endphp
+            @endif
           @endwhile
         </div>
       </div>
