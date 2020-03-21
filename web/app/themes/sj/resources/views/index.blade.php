@@ -30,4 +30,3 @@
     <strong>{{ __('Superbia Jurídico en los medios', 'sage') }}</strong>
   </div>
 @endsection
-
