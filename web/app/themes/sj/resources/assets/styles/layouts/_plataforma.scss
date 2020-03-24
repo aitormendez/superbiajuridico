@@ -1,0 +1,16 @@
+.page-template-p-plataforma {
+  .ultimos {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-top: 1px solid #8f8f8f;
+
+      &:last-child {
+        border-bottom: 1px solid #8f8f8f;
+      }
+    }
+  }
+}
