@@ -28,9 +28,6 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: theme-color("principal");
-      background-color: theme-color("allo");
-      border: 4px solid #fff;
       border-radius: 0.6em;
       z-index: 100;
     }
@@ -51,7 +48,7 @@
 
     @include media-breakpoint-up(lg) {
       .texto {
-        margin-top: 5rem;
+        margin-top: 4rem;
       }
     }
   }
@@ -71,6 +68,12 @@
         width: auto;
         height: auto;
         z-index: 50;
+      }
+
+      .preguntanos {
+        color: theme-color("principal");
+        background-color: theme-color("allo");
+        border: 4px solid #fff;
       }
 
       @include media-breakpoint-up(sm) {
@@ -107,6 +110,20 @@
       background-position: bottom;
       background-repeat: no-repeat;
       background-color: #6f70aa;
+
+      .preguntanos {
+        color: theme-color("crudo");
+        background-color: theme-color("quercus-1");
+        box-shadow: 0 0 10px #00000067;
+      }
+
+      .texto {
+        margin-top: 3rem;
+
+        p {
+          color: theme-color("quercus-1");
+        }
+      }
     }
   }
 }

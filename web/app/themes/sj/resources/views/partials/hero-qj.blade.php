@@ -1,10 +1,11 @@
 @component('components.bg-image-hero', ['image' => $img_portada_qj])
 <div class="container">
   <div class="row d-flex align-items-center">
-    <div class="texto col-sm-6 col-md-5 order-sm-1">
+    <div class="texto col-sm-7 col-md-6 order-sm-1">
       {!! $hero_txt_qj !!}
+      <img class="w-50" src="@asset('images/logo-legal-touch.jpg')">
     </div>
-      <div class="col-sm-4 col-md-5">
+      <div class="col-sm-3 col-md-4">
         <a href="{{ $contact_link }}" class="preguntanos">{{ __('Pregúntanos', 'sage') }}</a>
       </div>
   </div>
