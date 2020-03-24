@@ -64,6 +64,9 @@ add_action( 'init', function() {
     'tema' => [
       'taxonomy' => 'tema'
     ],
+    'newsletter' => [
+      'taxonomy' => 'newsletter-category'
+    ],
   ];
 
   $supports_texto = [
@@ -89,6 +92,9 @@ add_action( 'init', function() {
     ],
     'tema' => [
       'taxonomy' => 'tema'
+    ],
+    'newsletter' => [
+      'taxonomy' => 'newsletter-category'
     ],
   ];
 

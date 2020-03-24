@@ -1,0 +1,31 @@
+.submenu {
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+      margin-bottom: 1em;
+
+      a {
+        padding: 0.5em 0.7em;
+        background-color: theme-color("azul");
+        color: #fff;
+        font-family: $ff-sans;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        border-radius: 3px;
+      }
+
+      &.current-menu-item a {
+        background-color: theme-color("principal");
+      }
+    }
+  }
+
+  @include media-breakpoint-up("md") {
+    ul li a {
+      font-size: 0.7em;
+    }
+  }
+}

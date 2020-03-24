@@ -9,7 +9,7 @@
     </div>
   @endif
 
-    <nav class="menu-textos-wrap">
+    <nav class="submenu">
       @if (has_nav_menu($menus['subdespacho_navigation']))
       {!! wp_nav_menu(['theme_location' => $menus['subdespacho_navigation'], 'menu_class' => 'submenu']) !!}
       @endif

@@ -10,7 +10,7 @@
       </div>
     @endif
     <h1>{!! App::title() !!}</h1>
-    <nav class="menu-textos-wrap">
+    <nav class="submenu">
       @if (has_nav_menu('texts_navigation'))
       {!! wp_nav_menu(['theme_location' => 'texts_navigation', 'menu_class' => 'menu-textos']) !!}
       @endif
@@ -21,7 +21,7 @@
   @elseif (is_post_type_archive('sentence') || is_tax('sentence-category'))
     <i class="fas fa-gavel"></i>
     <h1>{!! App::title() !!}</h1>
-    <nav class="menu-textos-wrap">
+    <nav class="submenu">
       @if (has_nav_menu($menus['sentence_navigation']))
       {!! wp_nav_menu(['theme_location' => $menus['sentence_navigation'], 'menu_class' => 'menu-sentencias']) !!}
       @endif
