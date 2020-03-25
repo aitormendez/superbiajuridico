@@ -44,6 +44,9 @@
             </div>
           @endforeach
         @endif
+      <div class="col bloque">
+        <img class="legaltouch" src="@asset('images/logo-legal-touch.jpg')">
+      </div>
     </div>
   </div>
 </footer>
