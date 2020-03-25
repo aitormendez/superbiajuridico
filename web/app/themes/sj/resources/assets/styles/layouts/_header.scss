@@ -140,10 +140,6 @@
           .description {
             display: none;
           }
-
-          &:last-child {
-            border-bottom: 1px solid $color-blanco-alfa;
-          }
         }
 
         a {
@@ -302,12 +298,12 @@
           &.subdespacho {
             display: inline-block;
             border: 1px solid theme-color("crudo") !important;
-            padding-left: 0.5rem !important;
-            padding-right: 0.5rem !important;
             text-transform: uppercase;
 
             a {
               font-weight: 200 !important;
+              padding-left: 0.5rem;
+              padding-right: 0.5rem;
             }
           }
         }
@@ -437,7 +433,6 @@
                 a {
                   padding: 1rem;
                   background-color: #00000023;
-                  border: 1px solid $color-blanco-alfa;
 
                   svg {
                     font-size: 5rem;
