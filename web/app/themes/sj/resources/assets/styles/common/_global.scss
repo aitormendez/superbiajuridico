@@ -16,6 +16,14 @@ body {
       }
     }
   }
+
+  &.quercus.p-presentacion,
+  &.quercus.p-newsletter,
+  &.quercus.p-contact {
+    .main {
+      background-color: theme-color("azul");
+    }
+  }
 }
 
 a {
