@@ -451,23 +451,29 @@
 }
 
 @include media-breakpoint-up(md) {
-  body.quercus .banner {
-    .brand {
-      background-color: theme-color("crudo");
-
-      .logovert,
-      .logohoriz {
-        background-color: theme-color("crudo");
-      }
-    }
-
-    &.full {
+  body.quercus {
+    .banner {
       .brand {
-        background-color: transparent;
+        background-color: theme-color("crudo");
 
         .logovert,
         .logohoriz {
           background-color: theme-color("crudo");
+        }
+      }
+    }
+
+    &.home {
+      .banner {
+        &.full {
+          .brand {
+            background-color: transparent;
+
+            .logovert,
+            .logohoriz {
+              background-color: theme-color("crudo");
+            }
+          }
         }
       }
     }
