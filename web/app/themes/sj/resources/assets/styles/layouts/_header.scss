@@ -298,6 +298,18 @@
           a {
             color: $color-blanco-alfa;
           }
+
+          &.subdespacho {
+            display: inline-block;
+            border: 1px solid theme-color("crudo") !important;
+            padding-left: 0.5rem !important;
+            padding-right: 0.5rem !important;
+            text-transform: uppercase;
+
+            a {
+              font-weight: 200 !important;
+            }
+          }
         }
 
         &.menu-lenguaje {
