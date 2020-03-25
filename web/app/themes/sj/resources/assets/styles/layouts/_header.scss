@@ -298,12 +298,16 @@
           &.subdespacho {
             display: inline-block;
             border: 1px solid theme-color("crudo") !important;
-            text-transform: uppercase;
 
             a {
               font-weight: 200 !important;
               padding-left: 0.5rem;
               padding-right: 0.5rem;
+
+              .epi {
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+              }
             }
           }
         }
