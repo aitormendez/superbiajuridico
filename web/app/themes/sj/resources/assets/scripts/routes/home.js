@@ -4,7 +4,15 @@ import tippy from 'tippy.js';
 
 export default {
   init() {
-    // JavaScript to be fired on the home page
+    // JavaScript to be fired on the home
+
+    let bannerHeight = $('.banner').height();
+    console.log(bannerHeight);
+
+    window.addEventListener('resize', function () {
+      let bannerHeight = $('.banner').height();
+      console.log(bannerHeight);
+    })
 
     // TOOLTIPS
     // ------------------

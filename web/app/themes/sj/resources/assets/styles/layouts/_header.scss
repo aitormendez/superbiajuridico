@@ -3,17 +3,12 @@
 .banner {
   width: calc(100vw - (100vw - 100%)); // https://stackoverflow.com/a/34884924/2986401
   display: flex;
+  position: absolute;
+  top: 0;
   flex-wrap: wrap;
   justify-content: center;
   font-family: $ff-sans;
-
-  .quercus & {
-    background-color: theme-color("azul");
-  }
-
-  .superbia & {
-    background-color: theme-color("principal");
-  }
+  z-index: 3000;
 
   body.quercus & {
     .brand {
@@ -160,6 +155,20 @@
         margin-right: 1rem;
         font-size: 24px;
         color: theme-color("principal");
+      }
+    }
+  }
+
+  .quercus & {
+    background-color: theme-color("quercus-2");
+  }
+
+  .superbia & {
+    background-color: theme-color("principal");
+
+    .logovert {
+      svg {
+        max-width: 100px;
       }
     }
   }
@@ -426,6 +435,7 @@
                   color: $color-blanco-alfa;
                   font-family: $ff-serif;
                   font-size: 1rem;
+                  line-height: 1.3rem;
                   font-weight: normal;
                   font-style: italic;
                 }
