@@ -16,7 +16,7 @@ export default {
         }, 500);
       });
 
-      if (viewportWidth >= 600) {
+      if (viewportWidth >= 992) {
         w.scroll(function() {
           let
             currY = w.scrollTop(),

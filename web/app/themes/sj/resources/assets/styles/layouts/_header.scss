@@ -10,18 +10,6 @@
   font-family: $ff-sans;
   z-index: 3000;
 
-  body.quercus & {
-    .brand {
-      .logohoriz,
-      .logovert {
-        #qj-logo-vert path,
-        #qj-logo-horiz path {
-          fill: theme-color("quercus-1");
-        }
-      }
-    }
-  }
-
   .brand {
     display: flex;
     justify-content: center;
@@ -42,7 +30,7 @@
   }
 
   .hamburger {
-    position: fixed;
+    position: absolute;
     right: $pad-2;
     top: $pad-2;
     z-index: 5001;
@@ -77,7 +65,6 @@
     width: 100vw;
     height: 100vh;
     padding: $pad $pad-4 $pad-4;
-    background-color: theme-color("secundario");
     color: theme-color("principal");
     transition: left $trans;
     z-index: 5000;
@@ -159,12 +146,12 @@
     }
   }
 
-  .quercus & {
-    background-color: theme-color("quercus-2");
-  }
-
   .superbia & {
     background-color: theme-color("principal");
+
+    .solapa {
+      background-color: theme-color("secundario");
+    }
 
     .logovert {
       svg {
@@ -173,7 +160,38 @@
     }
   }
 
-  @include media-breakpoint-up(md) {
+  .quercus & {
+    background-color: theme-color("crudo");
+
+    .solapa {
+      background-color: theme-color("quercus-2");
+    }
+
+    .hamburger-inner {
+      background-color: theme-color("quercus-1");
+
+      &::before,
+      &::after {
+        background-color: theme-color("quercus-1");
+      }
+    }
+
+    .brand {
+      .logohoriz,
+      .logovert {
+        #qj-logo-vert path,
+        #qj-logo-horiz path {
+          fill: theme-color("quercus-1");
+        }
+      }
+
+      .logovert {
+        max-width: 100px;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
     top: 0;
     position: fixed;
     transition: top $trans;
@@ -208,7 +226,6 @@
       width: 85%;
       height: auto;
       padding: 0;
-      background-color: transparent;
       flex-direction: row;
       flex-wrap: wrap;
 
@@ -263,6 +280,10 @@
         background-color: theme-color("secundario");
         z-index: 600;
         transition: left 0.5s;
+
+        .quercus & {
+          background-color: theme-color("quercus-2");
+        }
 
         .cruz {
           display: block;
@@ -471,8 +492,16 @@
   }
 }
 
-@include media-breakpoint-up(md) {
-  body.quercus {
+@include media-breakpoint-up(lg) {
+  .superbia {
+    .banner {
+      .solapa {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .quercus {
     .banner {
       .brand {
         background-color: theme-color("crudo");
@@ -481,6 +510,10 @@
         .logohoriz {
           background-color: theme-color("crudo");
         }
+      }
+
+      .solapa {
+        background-color: theme-color("azul");
       }
     }
 
@@ -494,6 +527,10 @@
             .logohoriz {
               background-color: theme-color("crudo");
             }
+          }
+
+          .solapa {
+            background-color: transparent;
           }
         }
       }
