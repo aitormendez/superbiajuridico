@@ -1,4 +1,4 @@
-<footer class="content-info bg-principal py-4">
+<footer class="content-info py-4">
   <div class="container">
     <div class="row d-flex">
       <div class="col bloque py-3">

@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 .content-info {
   font-family: $ff-sans;
 
@@ -31,5 +33,13 @@
 
   .legaltouch {
     width: 100%;
+  }
+
+  .superbia & {
+    background-color: theme-color("principal");
+  }
+
+  .quercus & {
+    background-color: theme-color("quercus-1");
   }
 }
