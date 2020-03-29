@@ -3,12 +3,15 @@
 .banner {
   width: calc(100vw - (100vw - 100%)); // https://stackoverflow.com/a/34884924/2986401
   display: flex;
-  position: absolute;
   top: 0;
   flex-wrap: wrap;
   justify-content: center;
   font-family: $ff-sans;
   z-index: 3000;
+
+  .home & {
+    position: absolute;
+  }
 
   .brand {
     display: flex;
