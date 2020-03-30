@@ -11,6 +11,10 @@
 
   .home & {
     position: absolute;
+
+    @include media-breakpoint-up(lg) {
+      position: fixed;
+    }
   }
 
   .brand {
