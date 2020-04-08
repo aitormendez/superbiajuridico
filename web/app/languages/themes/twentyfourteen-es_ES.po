@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Fourteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-02-15 15:42:20+0000\n"
+"PO-Revision-Date: 2020-03-31 20:41:47+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,7 +16,7 @@ msgid "In 2014, our default theme lets you create a responsive magazine website 
 msgstr "En 2014 nuestro tema por defecto permite crear una revista digital adaptable con  un diseño moderno y limpio. Destaca tu contenido favorito en la portada en modo rejilla o carrusel. Usa las tres áreas de widges para personalizar tu web, y cambia la disposición de tu contenido gracias a la plantilla de página de ancho completo, o la de colaborador, que muestra los autores de tu sitio. Crear una revista digital con WordPress nunca ha sido más fácil."
 
 #. Theme Name of the theme
-#: inc/customizer.php:159
+#: inc/customizer.php:160
 msgid "Twenty Fourteen"
 msgstr "Twenty Fourteen"
 
@@ -44,7 +44,7 @@ msgstr "Negro"
 msgid "Green"
 msgstr "Verde"
 
-#. translators: 1: number of comments, 2: post title
+#. translators: 1: Number of comments, 2: Post title.
 #: comments.php:34
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
@@ -52,7 +52,7 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "%1$s comentario sobre &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s comentarios sobre &ldquo;%2$s&rdquo;"
 
-#. translators: %s: post title
+#. translators: %s: Post title.
 #: comments.php:30
 msgctxt "comments title"
 msgid "One thought on &ldquo;%s&rdquo;"
@@ -66,38 +66,41 @@ msgstr "Página de ancho completo"
 msgid "Contributor Page"
 msgstr "Página de colaborador"
 
-#: tag.php:22
+#. translators: %s: Tag title.
+#: tag.php:25
 msgid "Tag Archives: %s"
 msgstr "Archivo de la etiqueta: %s"
 
-#: search.php:18
+#. translators: %s: Search query.
+#: search.php:21
 msgid "Search Results for: %s"
 msgstr "Resultados de la búsqueda para: %s"
 
-#: inc/widgets.php:292
+#: inc/widgets.php:293
 msgid "Post format to show:"
 msgstr "Formato de entrada a mostrar:"
 
-#: inc/widgets.php:289
+#: inc/widgets.php:290
 msgid "Number of posts to show:"
 msgstr "Número de entradas a mostrar:"
 
-#: inc/widgets.php:286
+#: inc/widgets.php:287
 msgid "Title:"
 msgstr "Título:"
 
-#. translators: used with More archives link
-#: inc/widgets.php:237
+#. translators: Used with More archives link.
+#: inc/widgets.php:238
 msgid "%s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "%s <span class=\"meta-nav\">&rarr;</span>"
 
-#: inc/widgets.php:192
+#. translators: 1: Post permalink, 2: Number of images in the gallery.
+#: inc/widgets.php:193
 msgid "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photo</a>."
 msgid_plural "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photos</a>."
 msgstr[0] "Esta galería contiene <a href=\"%1$s\" rel=\"bookmark\">%2$s foto</a>."
 msgstr[1] "Esta galería contiene <a href=\"%1$s\" rel=\"bookmark\">%2$s fotos</a>."
 
-#: inc/widgets.php:153 inc/widgets.php:202
+#: inc/widgets.php:153 inc/widgets.php:203
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Sigue leyendo <span class=\"meta-nav\">&rarr;</span>"
 
@@ -197,49 +200,56 @@ msgstr "Siguiente &rarr;"
 msgid "&larr; Previous"
 msgstr "&larr; Anterior"
 
-#: inc/featured-content.php:422
+#: inc/featured-content.php:423
 msgid "Don&rsquo;t display tag on front end."
 msgstr "No mostrar la etiqueta en la portada."
 
-#: inc/featured-content.php:414
+#: inc/featured-content.php:415
 msgid "Tag Name"
 msgstr "Nombre de la etiqueta"
 
-#: inc/customizer.php:164
+#. translators: %s: Twenty Fourteen documentation URL.
+#: inc/customizer.php:168
 msgid "For an in-depth tutorial, and more tips and tricks, visit the <a href=\"%s\">Twenty Fourteen documentation</a>."
 msgstr "Para un tutorial en profundidad y más trucos visita la página de <a href=\"%s\">documentación de Twenty Fourteen</a>."
 
-#: inc/customizer.php:163
+#. translators: %s: Featured images documentation URL.
+#: inc/customizer.php:166
 msgid "Enhance your site design by using <a href=\"%s\">Featured Images</a> for posts you&rsquo;d like to stand out (also known as post thumbnails). This allows you to associate an image with your post without inserting it. Twenty Fourteen uses featured images for posts and pages&mdash;above the title&mdash;and in the Featured Content area on the home page."
 msgstr "Mejora el diseño de tu sitio usando <a href=\"%s\">Imágenes destacadas</a> en las entradas que quieras resaltar (también conocidas como miniaturas de entrada). Esto te permite asociar una imagen con tu entrada sin insertarla en la misma. Twenty Fourteen utiliza las imágenes destacadas de las entradas y páginas&mdash;sobre el título&mdash; y el área de Contenido destacado en la portada."
 
-#: inc/customizer.php:162
+#. translators: 1: Featured tag editor URL, 2: Post editor URL, 3: Customizer
+#. URL, 4: Post editor URL.
+#: inc/customizer.php:164
 msgid "The home page features your choice of up to 6 posts prominently displayed in a grid or slider, controlled by a <a href=\"%1$s\">tag</a>; you can change the tag and layout in <a href=\"%2$s\">Appearance &rarr; Customize</a>. If no posts match the tag, <a href=\"%3$s\">sticky posts</a> will be displayed instead."
 msgstr "La página de inicio te ofrece la elección de hasta 6 entradas destacadas en una rejilla o carrusel, controlados por una <a href=\"%1$s\">etiqueta</a>. Puedes cambiar la etiqueta y el diseño en <a href=\"%2$s\">Apariencia &rarr; Personalizar</a>. Si ninguna entrada coincide con la etiqueta, se mostrarán las <a href=\"%3$s\">entradas fijas</a> en su lugar."
 
-#: inc/customizer.php:89
+#: inc/customizer.php:90
 msgid "Slider"
 msgstr "Carrusel"
 
-#: inc/customizer.php:88
+#: inc/customizer.php:89
 msgid "Grid"
 msgstr "Cuadrícula"
 
-#: inc/customizer.php:84
+#: inc/customizer.php:85
 msgid "Layout"
 msgstr "Diseño de pantalla"
 
-#: inc/featured-content.php:384 inc/featured-content.php:396
-#: inc/featured-content.php:462 inc/customizer.php:64 inc/customizer.php:162
+#. translators: 1: Featured tag editor URL, 2: Post editor URL, 3: Customizer
+#. URL, 4: Post editor URL.
+#: inc/customizer.php:65 inc/customizer.php:164 inc/featured-content.php:385
+#: inc/featured-content.php:397 inc/featured-content.php:463
 msgctxt "featured content default tag slug"
 msgid "featured"
 msgstr "destacado"
 
-#: inc/featured-content.php:383 inc/customizer.php:63
+#. translators: 1: Featured tag editor URL, 2: Post editor URL.
+#: inc/customizer.php:64 inc/featured-content.php:384
 msgid "Use a <a href=\"%1$s\">tag</a> to feature your posts. If no posts match the tag, <a href=\"%2$s\">sticky posts</a> will be displayed instead."
 msgstr "Usa una <a href=\"%1$s\">etiqueta</a> para destacar tus entradas. Si ninguna entrada se ajusta a la etiqueta entonces se usarán las <a href=\"%2$s\">entradas fijas</a>."
 
-#: inc/featured-content.php:381 inc/customizer.php:61
+#: inc/customizer.php:61 inc/featured-content.php:381
 msgid "Featured Content"
 msgstr "Contenido destacado"
 
@@ -259,7 +269,8 @@ msgstr "Muestra el título y descripción del sitio"
 msgid "Site Title Color"
 msgstr "Color del título del sitio"
 
-#: inc/back-compat.php:37 inc/back-compat.php:48 inc/back-compat.php:64
+#. translators: %s: WordPress version.
+#: inc/back-compat.php:38 inc/back-compat.php:50 inc/back-compat.php:67
 msgid "Twenty Fourteen requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again."
 msgstr "Twenty Fourteen requiere al menos la versión 3.6 de WordPress. Estás usando la versión %s. Por favor, actualiza e inténtalo de nuevo."
 
@@ -283,50 +294,52 @@ msgstr "Menú principal"
 msgid "Search"
 msgstr "Buscar"
 
-#: functions.php:625
+#. translators: %s: Page number.
+#: functions.php:632
 msgid "Page %s"
 msgstr "Página %s"
 
-#: functions.php:506
+#. translators: %d: Post count.
+#: functions.php:511
 msgid "%d Article"
 msgid_plural "%d Articles"
 msgstr[0] "%d Artículo"
 msgstr[1] "%d Artículos"
 
-#: functions.php:347
+#: functions.php:350
 msgid "Next"
 msgstr "Siguiente"
 
-#: functions.php:346
+#: functions.php:349
 msgid "Previous"
 msgstr "Anterior"
 
-#: functions.php:295
+#: functions.php:297
 msgctxt "Lato font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:272
+#: functions.php:274
 msgid "Appears in the footer section of the site."
 msgstr "Aparece en la sección de pie de página del sitio."
 
-#: functions.php:270
+#: functions.php:272
 msgid "Footer Widget Area"
 msgstr "Área de widgets del pie de página"
 
-#: functions.php:261
+#: functions.php:263
 msgid "Additional sidebar that appears on the right."
 msgstr "Barra lateral adicional que aparece a la derecha."
 
-#: functions.php:259
+#: functions.php:261
 msgid "Content Sidebar"
 msgstr "Barra lateral de contenido"
 
-#: functions.php:250
+#: functions.php:252
 msgid "Main sidebar that appears on the left."
 msgstr "Barra lateral principal que aparece a la izquierda."
 
-#: functions.php:248
+#: functions.php:250
 msgid "Primary Sidebar"
 msgstr "Barra lateral principal"
 
@@ -338,67 +351,69 @@ msgstr "Menú secundario de la barra lateral izquierda"
 msgid "Top primary menu"
 msgstr "Menú principal superior"
 
-#: footer.php:27
+#. translators: %s: WordPress
+#: footer.php:29
 msgid "Proudly powered by %s"
 msgstr "Creado con %s"
 
-#: content-none.php:27
+#: content-none.php:32
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr "Parece que no encontramos lo que estás intentando localizar. Es posible que te ayude buscarlo."
 
-#: content-none.php:22
+#: content-none.php:27
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr "Lo siento pero no hay nada que se ajuste a tus criterios de búsqueda. Por favor, inténtalo de nuevo con palabras claves distintas."
 
-#: content-none.php:18
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "¿Preparado para publicar tu primera entrada? <a href=\"%1$s\">Empieza aquí</a>."
+#. translators: %s: Post editor URL.
+#: content-none.php:21
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr "¿Preparado para publicar tu primera entrada? <a href=\"%s\">Empieza aquí</a>."
 
 #: content-none.php:12
 msgid "Nothing Found"
 msgstr "No se ha encontrado nada"
 
-#: content-audio.php:56 content.php:65 content-gallery.php:56
-#: content-video.php:56 content-quote.php:56 content-page.php:23
-#: content-link.php:56 content-image.php:56 image.php:56 content-aside.php:56
+#: content-gallery.php:56 content-aside.php:56 content-video.php:56
+#: content-image.php:56 content-link.php:56 content-audio.php:56
+#: content-page.php:23 content-quote.php:56 image.php:56 content.php:65
 msgid "Pages:"
 msgstr "Páginas:"
 
-#. translators: %s: Name of current post
-#: content-audio.php:49 content.php:58 content-gallery.php:49
-#: content-video.php:49 content-quote.php:49 content-link.php:49
-#: content-image.php:49 content-aside.php:49 inc/template-tags.php:229
+#. translators: %s: Post title.
+#: content-gallery.php:49 content-aside.php:49 content-video.php:49
+#: inc/template-tags.php:230 content-image.php:49 content-link.php:49
+#: content-audio.php:49 content-quote.php:49 content.php:58
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Seguir leyendo %s <span class=\"meta-nav\">&rarr;</span>"
 
-#: content-audio.php:40 content.php:43 content-gallery.php:40
-#: content-video.php:40 content-quote.php:40 content-page.php:30
-#: page-templates/contributors.php:36 content-link.php:40 content-image.php:40
-#: image.php:35 content-aside.php:40
+#: content-gallery.php:40 content-aside.php:40 content-video.php:40
+#: content-image.php:40 content-link.php:40 content-audio.php:40
+#: page-templates/contributors.php:36 content-page.php:30 content-quote.php:40
+#: image.php:35 content.php:43
 msgid "Edit"
 msgstr "Editar"
 
-#: content-audio.php:37 content.php:39 content-gallery.php:37
-#: content-video.php:37 content-quote.php:37 content-link.php:37
-#: content-image.php:37 content-aside.php:37 inc/widgets.php:225
+#: content-gallery.php:37 content-aside.php:37 content-video.php:37
+#: inc/widgets.php:226 content-image.php:37 content-link.php:37
+#: content-audio.php:37 content-quote.php:37 content.php:39
 msgid "% Comments"
 msgstr "% comentarios"
 
-#: content-audio.php:37 content.php:39 content-gallery.php:37
-#: content-video.php:37 content-quote.php:37 content-link.php:37
-#: content-image.php:37 content-aside.php:37 inc/widgets.php:225
+#: content-gallery.php:37 content-aside.php:37 content-video.php:37
+#: inc/widgets.php:226 content-image.php:37 content-link.php:37
+#: content-audio.php:37 content-quote.php:37 content.php:39
 msgid "1 Comment"
 msgstr "1 comentario"
 
-#: content-audio.php:37 content.php:39 content-gallery.php:37
-#: content-video.php:37 content-quote.php:37 content-link.php:37
-#: content-image.php:37 content-aside.php:37 inc/widgets.php:225
+#: content-gallery.php:37 content-aside.php:37 content-video.php:37
+#: inc/widgets.php:226 content-image.php:37 content-link.php:37
+#: content-audio.php:37 content-quote.php:37 content.php:39
 msgid "Leave a comment"
 msgstr "Deja un comentario"
 
-#: content-audio.php:17 content.php:19 content-gallery.php:17
-#: content-video.php:17 content-quote.php:17 content-featured-post.php:28
-#: content-link.php:17 content-image.php:17 content-aside.php:17
+#: content-gallery.php:17 content-aside.php:17 content-video.php:17
+#: content-image.php:17 content-link.php:17 content-audio.php:17
+#: content-quote.php:17 content-featured-post.php:28 content.php:19
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ", "
@@ -419,11 +434,13 @@ msgstr "&larr; Comentarios más antiguos"
 msgid "Comment navigation"
 msgstr "Navegación de comentarios"
 
-#: category.php:20
+#. translators: %s: Category title.
+#: category.php:23
 msgid "Category Archives: %s"
 msgstr "Archivo de la categoría: %s"
 
-#: author.php:31
+#. translators: %s: Author display name.
+#: author.php:32
 msgid "All posts by %s"
 msgstr "Todas las entradas de:  %s"
 
@@ -431,25 +448,30 @@ msgstr "Todas las entradas de:  %s"
 msgid "Archives"
 msgstr "Archivo"
 
-#: archive.php:37
+#. translators: %s: Date.
+#: archive.php:38
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
-#: archive.php:37
+#. translators: %s: Date.
+#: archive.php:38
 msgid "Yearly Archives: %s"
 msgstr "Archivo por años: %s"
 
-#: archive.php:34
+#. translators: %s: Date.
+#: archive.php:35
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
 
-#: archive.php:34
+#. translators: %s: Date.
+#: archive.php:35
 msgid "Monthly Archives: %s"
 msgstr "Archivo por meses: %s"
 
-#: archive.php:31
+#. translators: %s: Date.
+#: archive.php:32
 msgid "Daily Archives: %s"
 msgstr "Archivo por días: %s"
 
