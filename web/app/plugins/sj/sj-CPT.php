@@ -275,6 +275,10 @@ add_action( 'init', function() {
     'tema' => [
       'taxonomy' => 'tema'
     ],
+    'fecha_pub' => array(
+      'title'    => 'Fecha pub',
+      'meta_key' => 'fecha_pub',
+    ),
   ];
 
   $filters_story = [
