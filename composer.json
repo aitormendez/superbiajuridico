@@ -101,7 +101,7 @@
     "composer/installers": "^1.4",
     "vlucas/phpdotenv": "^3.0.0",
     "oscarotero/env": "^1.1.0",
-    "roots/wordpress": "5.4",
+    "roots/wordpress": "5.4.1",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "johnbillion/extended-cpts": "^4.2",
@@ -124,9 +124,9 @@
     "aitormendez/wpml-wpforms": "*",
     "aitormendez/acfml": "1.4.0",
     "wpackagist-plugin/wp-optimize": "*",
-    "wpackagist-plugin/easy-wp-smtp": "*",
     "stoutlogic/acf-builder": "^1.9",
     "wpackagist-plugin/google-sitemap-generator": "*",
+    "wpackagist-plugin/updraftplus": "*",
     "wpackagist-plugin/mailchimp-for-wp": "*"
   },
   "require-dev": {

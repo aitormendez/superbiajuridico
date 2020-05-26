@@ -123,8 +123,3 @@ Config::apply();
 if (!defined('ABSPATH')) {
     define('ABSPATH', $webroot_dir . '/wp/');
 }
-
-define('WP_MEMORY_LIMIT', '1024');
-define('WP_MAX_MEMORY_LIMIT', '1024');
-define( 'WPMS_ON', true );
-define( 'WPMS_SMTP_PASS', 'Michaelairjordan23' );
