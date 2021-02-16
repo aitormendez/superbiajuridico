@@ -12,9 +12,9 @@
   <div class="container">
     <div class="row py-3 mx-1 mx-md-4">
       @if ( have_rows('locations') )
-        <div class="ubicaciones">
+        <div class="ubicaciones flex-column align-items-center">
           <h3 class="mb-3">{{ __('Dónde estamos', 'sage') }}</h3>
-          <div class="d-sm-flex">
+          <div class="d-sm-flex justify-content-center">
             @while (have_rows('locations')) @php the_row(); @endphp
               <div class="ubicacion">
                 <h4>{{ the_sub_field('title') }}</h4>
