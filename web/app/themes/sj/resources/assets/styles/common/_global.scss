@@ -35,6 +35,10 @@ a {
   }
 }
 
+article {
+  max-width: 900px;
+}
+
 // Tooltips
 
 .tippy-content {
@@ -46,12 +50,26 @@ a {
   font-family: $ff-sans;
   font-size: 0.8rem;
 
+  .autores {
+    margin-bottom: 1rem;
+  }
+
+  .autor {
+    margin-right: 2rem;
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+
   p {
     margin: 0;
 
     &:not(.author) {
+      font-size: 0.7rem;
       font-weight: 200;
-      max-width: 400px;
+      line-height: 1.2em;
+      max-width: 200px;
       color: #858585;
     }
   }

@@ -6,6 +6,17 @@
     letter-spacing: 0.05em;
   }
 
+  .meta {
+    .autor {
+      img {
+        width: calc(5vw + 20px);
+        height: auto;
+        min-width: 60px;
+        border: 5px solid #fff;
+      }
+    }
+  }
+
   .excerpt {
     font-family: $ff-sans;
     background-color: #fff;

@@ -14,14 +14,15 @@
 @endif
 
 <div class="meta">
-  <div>
-    @if (is_singular('text') || is_post_type_archive('text') || is_tax() )
-      @if (!is_tax('news-category'))
-
-            @foreach ($los_autores as $autor)
-            <div class="avatar">
-              <img src="{{$autor['avatar_url']}}" alt="{{ $autor['nombre'] }}">
-            </div>
+    @if (is_singular('text'))
+      <div class="autores d-flex flex-wrap">
+        @foreach ($los_autores as $autor)
+          <div class="autor">
+            @if (array_key_exists('avatar_url', $autor))
+              <div class="avatar">
+                <img class="rounded-circle" src="{{$autor['avatar_url']}}" alt="{{ $autor['nombre'] }}">
+              </div>
+            @endif
             <div class="datos">
               <p class="byline author vcard">
                 <a href="{{ $autor['pagina_autor'] }}" rel="author" class="fn">
@@ -30,10 +31,26 @@
                 {!! $autor['info'] !!}
               </p>
             </div>
-            @endforeach
-
+          </div>
+        @endforeach
+      </div>
+    @elseif (is_post_type_archive('text') || is_tax() )
+      @if (!is_tax('news-category'))
+        @php
+            $autores = ArchiveText::losAutoresLoop();
+        @endphp
+        @foreach ($autores as $autor)
+          <div class="autor">
+            <div class="datos">
+              <p class="byline author vcard">
+                <a href="{{ $autor['pagina_autor'] }}" rel="author" class="fn">
+                  {{ $autor['nombre'] }}
+                </a>
+              </p>
+            </div>
+          </div>
+        @endforeach
       @endif
     @endif
     <time class="updated" datetime="{{ $fecha_pub_iso }}">{{ $fecha_pub }}</time>
-  </div>
 </div>
