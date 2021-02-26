@@ -23,6 +23,11 @@ $textos
         'return_format' => 'object',
         'wpml_cf_preferences' => '0',
     ])
-    ->addFields(get_field_partial('partials.fechapub'));;
+    ->addFields(get_field_partial('partials.fechapub'))
+    ->addUser('autores', [
+        'label' => 'Autores',
+        'instructions' => 'Introduce uno o más autores. Si se deja en blanco se usará el autor del post',
+        'multiple' => 1,
+    ]);
 
 return $textos;

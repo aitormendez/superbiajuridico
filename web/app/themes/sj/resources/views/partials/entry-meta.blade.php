@@ -17,12 +17,21 @@
   <div>
     @if (is_singular('text') || is_post_type_archive('text') || is_tax() )
       @if (!is_tax('news-category'))
-        <p class="byline author vcard">
-          <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" rel="author" class="fn">
-            {{ get_the_author() }}
-          </a>
-        </p>
-        {!! get_field('info_adicional', 'user_' . get_the_author_meta('ID')) !!}
+
+            @foreach ($los_autores as $autor)
+            <div class="avatar">
+              <img src="{{$autor['avatar_url']}}" alt="{{ $autor['nombre'] }}">
+            </div>
+            <div class="datos">
+              <p class="byline author vcard">
+                <a href="{{ $autor['pagina_autor'] }}" rel="author" class="fn">
+                  {{ $autor['nombre'] }}
+                </a>
+                {!! $autor['info'] !!}
+              </p>
+            </div>
+            @endforeach
+
       @endif
     @endif
     <time class="updated" datetime="{{ $fecha_pub_iso }}">{{ $fecha_pub }}</time>
