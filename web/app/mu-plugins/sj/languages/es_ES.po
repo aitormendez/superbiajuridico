@@ -1,0 +1,424 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: sj-CPT\n"
+"POT-Creation-Date: 2019-03-12 11:32+0100\n"
+"PO-Revision-Date: 2019-03-12 11:44+0100\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: sj-CPT.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: es_ES\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: sj-CPT.php:21
+msgctxt "Post Type General Name"
+msgid "Text"
+msgstr "Texto"
+
+#: sj-CPT.php:22
+msgctxt "Post Type Singular Name"
+msgid "Text"
+msgstr "Texto"
+
+#: sj-CPT.php:23
+msgid "Texts"
+msgstr "Textos"
+
+#: sj-CPT.php:24
+msgid "Text"
+msgstr "Texto"
+
+#: sj-CPT.php:25
+msgid "Text archive"
+msgstr "Archivo de texto"
+
+#: sj-CPT.php:26
+msgid "Text attributes"
+msgstr "Atributos de texto"
+
+#: sj-CPT.php:27
+msgid "Parent text:"
+msgstr "Texto principal:"
+
+#: sj-CPT.php:28
+msgid "All texts"
+msgstr "Todos los textos"
+
+#: sj-CPT.php:29
+msgid "Add new text"
+msgstr "Añadir texto nuevo"
+
+#: sj-CPT.php:30 sj-CPT.php:132 sj-CPT.php:179 sj-CPT.php:269
+msgid "Add new"
+msgstr "Añadir nueva"
+
+#: sj-CPT.php:31
+msgid "New text"
+msgstr "Nuevo texto"
+
+#: sj-CPT.php:32
+msgid "Edit text"
+msgstr "Editar texto"
+
+#: sj-CPT.php:33
+msgid "Update text"
+msgstr "Actualizar texto"
+
+#: sj-CPT.php:34
+msgid "view text"
+msgstr "Ver texto"
+
+#: sj-CPT.php:35
+msgid "View texts"
+msgstr "Ver textos"
+
+#: sj-CPT.php:36
+msgid "Search texts"
+msgstr "Buscar textos"
+
+#: sj-CPT.php:37 sj-CPT.php:139 sj-CPT.php:186 sj-CPT.php:276
+msgid "Not found"
+msgstr "No encontrado"
+
+#: sj-CPT.php:38 sj-CPT.php:277
+msgid "Not found in trash"
+msgstr "No encontrado en la papelera"
+
+#: sj-CPT.php:39 sj-CPT.php:188
+msgid "Featured image"
+msgstr "Imagen destacada"
+
+#: sj-CPT.php:40 sj-CPT.php:189
+msgid "Set featured image"
+msgstr "Establecer imagen destacada"
+
+#: sj-CPT.php:41 sj-CPT.php:190
+msgid "Remove featured image"
+msgstr "Eliminar imagen destacada"
+
+#: sj-CPT.php:42 sj-CPT.php:191
+msgid "Use featured image"
+msgstr "Usar como imagen destacada"
+
+#: sj-CPT.php:43
+msgid "Insert into text"
+msgstr "Insertar en texto"
+
+#: sj-CPT.php:44
+msgid "Uploaded to this text"
+msgstr "Cargado en este texto"
+
+#: sj-CPT.php:45
+msgid "Texts list"
+msgstr "Lista de textos"
+
+#: sj-CPT.php:46
+msgid "Texts list navigation"
+msgstr "Lista de textos de navegación"
+
+#: sj-CPT.php:47
+msgid "Filter texts list"
+msgstr "Filtrar lista de textos"
+
+#: sj-CPT.php:84
+msgid "Text category"
+msgstr "Categoría de texto"
+
+#: sj-CPT.php:85
+msgid "Text categories"
+msgstr "Categorías de texto"
+
+#: sj-CPT.php:99
+msgid "Text tag"
+msgstr "Etiqueta de texto"
+
+#: sj-CPT.php:100
+msgid "Texts tag"
+msgstr "Etiqueta de textos"
+
+#: sj-CPT.php:114
+msgid "Text type"
+msgstr "Tipo de texto"
+
+#: sj-CPT.php:115
+msgid "Text types"
+msgstr "Tipos de texto"
+
+#: sj-CPT.php:123
+msgctxt "Post Type General Name"
+msgid "Judgment"
+msgstr "Sentencia"
+
+#: sj-CPT.php:124
+msgctxt "Post Type Singular Name"
+msgid "Judgment"
+msgstr "Sentencia"
+
+#: sj-CPT.php:125
+msgid "Judgments"
+msgstr "Sentencias"
+
+#: sj-CPT.php:126
+msgid "Judgment"
+msgstr "Juicio"
+
+#: sj-CPT.php:127
+msgid "Judgments archive"
+msgstr "Archivo de sentencias"
+
+#: sj-CPT.php:128
+msgid "Judgment attributes"
+msgstr "Atributos de sentencia"
+
+#: sj-CPT.php:129
+msgid "Parent Judgment:"
+msgstr "Sentencia padre:"
+
+#: sj-CPT.php:130
+msgid "All Judgments"
+msgstr "Todas las sentencias"
+
+#: sj-CPT.php:131
+msgid "Add new Judgment"
+msgstr "Añadir nueva sentencia"
+
+#: sj-CPT.php:133
+msgid "New Judgment"
+msgstr "Nueva sentencia"
+
+#: sj-CPT.php:134
+msgid "Edit Judgment"
+msgstr "Editar sentencia"
+
+#: sj-CPT.php:135
+msgid "Update Judgment"
+msgstr "Actualizar sentencia"
+
+#: sj-CPT.php:136
+msgid "View Judgment"
+msgstr "Ver sentencia"
+
+#: sj-CPT.php:137
+msgid "View Judgments"
+msgstr "Ver sentencias"
+
+#: sj-CPT.php:138
+msgid "search Judgments"
+msgstr "buscar sentencias"
+
+#: sj-CPT.php:140 sj-CPT.php:187
+msgid "Not found en la papelera"
+msgstr "No encontrado en la papelera"
+
+#: sj-CPT.php:141
+msgid "Insert into Judgment"
+msgstr "Insertar en sentencia"
+
+#: sj-CPT.php:142
+msgid "Uploaded to this Judgment"
+msgstr "Subido a esta sentencia"
+
+#: sj-CPT.php:143
+msgid "Judgments list"
+msgstr "Lista de sentencias"
+
+#: sj-CPT.php:144
+msgid "Judgment list navigation"
+msgstr "Navegación por la lista de sentencia"
+
+#: sj-CPT.php:145
+msgid "Filter Judgments list"
+msgstr "Filtrar lista de sentencias"
+
+#: sj-CPT.php:170
+msgctxt "Post Type General Name"
+msgid "Stories"
+msgstr "Noticias"
+
+#: sj-CPT.php:171
+msgctxt "Post Type Singular Name"
+msgid "Story"
+msgstr "Noticia"
+
+#: sj-CPT.php:172
+msgid "Stories"
+msgstr "Noticias"
+
+#: sj-CPT.php:173
+msgid "Story"
+msgstr "Historia"
+
+#: sj-CPT.php:174
+msgid "Stories archive"
+msgstr "Archivo de noticias"
+
+#: sj-CPT.php:175
+msgid "Story attribute"
+msgstr "Atributo de noticia"
+
+#: sj-CPT.php:176
+msgid "Parent Story:"
+msgstr "Noticia padre:"
+
+#: sj-CPT.php:177
+msgid "All Stories"
+msgstr "Todas las noticias"
+
+#: sj-CPT.php:178
+msgid "Add new Story"
+msgstr "Añadir nueva noticia"
+
+#: sj-CPT.php:180
+msgid "New Story"
+msgstr "Nueva noticia"
+
+#: sj-CPT.php:181
+msgid "Edit Story"
+msgstr "Editar noticia"
+
+#: sj-CPT.php:182
+msgid "Update Story"
+msgstr "Actualizar noticia"
+
+#: sj-CPT.php:183
+msgid "View Story"
+msgstr "Ver noticia"
+
+#: sj-CPT.php:184
+msgid "View Stories"
+msgstr "Ver noticias"
+
+#: sj-CPT.php:185
+msgid "search Story"
+msgstr "buscar noticia"
+
+#: sj-CPT.php:192
+msgid "Insert into Story"
+msgstr "Insertar en la noticia"
+
+#: sj-CPT.php:193
+msgid "Uploaded to this Story"
+msgstr "Subido a esta noticia"
+
+#: sj-CPT.php:194
+msgid "Stories list"
+msgstr "Lista de noticia"
+
+#: sj-CPT.php:195
+msgid "Stories list navigation"
+msgstr "Navegación por la lista de noticias"
+
+#: sj-CPT.php:196
+msgid "Filter stories list"
+msgstr "Filtrar lista de noticia"
+
+#: sj-CPT.php:236
+msgid "Story tag"
+msgstr "Etiqueta de la noticia"
+
+#: sj-CPT.php:237
+msgid "Story tags"
+msgstr "Etiquetas de la noticia"
+
+#: sj-CPT.php:251
+msgid "Story category"
+msgstr "Categoría de la noticia"
+
+#: sj-CPT.php:252
+msgid "Story categories"
+msgstr "Categorías de noticia"
+
+#: sj-CPT.php:260
+msgctxt "Post Type General Name"
+msgid "Links"
+msgstr "Enlaces"
+
+#: sj-CPT.php:261
+msgctxt "Post Type Singular Name"
+msgid "Link"
+msgstr "Enlace"
+
+#: sj-CPT.php:262
+msgid "Links"
+msgstr "Enlaces"
+
+#: sj-CPT.php:263
+msgid "Link"
+msgstr "Enlace"
+
+#: sj-CPT.php:264
+msgid "Links archive"
+msgstr "Archivo de enlaces"
+
+#: sj-CPT.php:265
+msgid "Link attribute"
+msgstr "atributo de enlace"
+
+#: sj-CPT.php:266
+msgid "Parent Link:"
+msgstr "Enlace padre:"
+
+#: sj-CPT.php:267
+msgid "All Links"
+msgstr "Todos los enlaces"
+
+#: sj-CPT.php:268
+msgid "Add new Link"
+msgstr "Añadir nuevo enlace"
+
+#: sj-CPT.php:270
+msgid "New Link"
+msgstr "Nuevo enlace"
+
+#: sj-CPT.php:271
+msgid "Edit Link"
+msgstr "Editar enlace"
+
+#: sj-CPT.php:272
+msgid "Update Link"
+msgstr "Actualizar enlace"
+
+#: sj-CPT.php:273
+msgid "View Link"
+msgstr "Ver enlace"
+
+#: sj-CPT.php:274
+msgid "View Links"
+msgstr "Ver enlaces"
+
+#: sj-CPT.php:275
+msgid "Search Link"
+msgstr "Buscar enlace"
+
+#: sj-CPT.php:308
+msgid "Link category"
+msgstr "Categoría de enlace"
+
+#: sj-CPT.php:309
+msgid "Links categories"
+msgstr "Categorías de enlaces"
+
+#. Plugin Name of the plugin/theme
+msgid "sj-CPT"
+msgstr "SJ-CPT"
+
+#. Description of the plugin/theme
+msgid "CPT para sj"
+msgstr "CPT para SJ"
+
+#. Author of the plugin/theme
+msgid "Aitor Méndez"
+msgstr "Aitor Méndez"
+
+#. Author URI of the plugin/theme
+msgid "https://e451.net"
+msgstr "https://e451.net"
