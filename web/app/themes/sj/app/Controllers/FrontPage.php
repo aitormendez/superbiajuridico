@@ -44,15 +44,9 @@ class FrontPage extends Controller
         $args_article = [
         	'post_type'             => ['text'],
         	'post_status'           => ['publish'],
-            'posts_per_page'        => 4,
+            'posts_per_page'        => 12,
             'tax_query'             => [
                 'relation' => 'AND',
-                [
-                    'taxonomy' => 'article-type',
-                        'field'    => 'slug',
-                        'terms'    => ['articulo'],
-                        'operator' => 'IN',
-                ],
                 [
                     'taxonomy' => 'despacho',
                     'field'    => 'slug',
@@ -62,32 +56,6 @@ class FrontPage extends Controller
             ]
         ];
         return $args_article;
-    }
-
-    public function argsComment()
-    {
-        $despacho = get_field('despacho', 'option');
-
-        $args_comment = array(
-        	'post_type'             => ['text'],
-        	'post_status'           => 'publish',
-            'posts_per_page'         => 4,
-            'tax_query'             => [
-                [
-                    'taxonomy' => 'article-type',
-                        'field'    => 'slug',
-                        'terms'    => ['comentario'],
-                    'operator' => 'IN',
-                    ],
-                    [
-                        'taxonomy' => 'despacho',
-                        'field'    => 'slug',
-                        'terms'    => $despacho,
-                        'operator' => 'IN',
-                    ]
-                ]
-        );
-        return $args_comment;
     }
 
     public function argsAbstract()

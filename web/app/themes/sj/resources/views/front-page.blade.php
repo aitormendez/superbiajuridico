@@ -59,33 +59,7 @@
         </div>
       </section>
 
-      <section class="articulos">
-        <div class="header">
-          <h1>{{ __('Últimas sentencias comentadas', 'sage') }}</h1>
-          <a class="enlace" href="{{ $site_url }}/text-type/comentario/">{{ __('Ver todas', 'sage') }}</a>
-        </div>
 
-        <div class="contenido">
-          @query($args_comment)
-          @posts
-            @include('partials.content-owl')
-          @endposts
-        </div>
-      </section>
-
-      <section class="articulos">
-        <div class="header">
-          <h1>{{ __('Últimos resúmenes de sentencias', 'sage') }}</h1>
-          <a class="enlace" href="{{ $site_url }}/text-type/resumen/">{{ __('ver todos', 'sage') }}</a>
-        </div>
-
-        <div class="contenido">
-          @query($args_abstract)
-          @posts
-            @include('partials.content-owl')
-          @endposts
-        </div>
-      </section>
     </div>
   </div>
 </section>

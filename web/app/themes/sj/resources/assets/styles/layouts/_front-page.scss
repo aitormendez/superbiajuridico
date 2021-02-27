@@ -13,8 +13,33 @@
         display: flex;
 
         .articulos {
-          padding: $pad;
-          max-width: 33%;
+          width: 100%;
+
+          .contenido {
+            display: flex;
+            flex-wrap: wrap;
+
+            article {
+              width: 33.3%;
+              padding: 0;
+              padding-right: 2rem;
+
+              &:nth-child(3n) {
+                padding-right: 0;
+              }
+
+              .autores {
+                margin-bottom: 0.5em;
+              }
+
+              .author {
+                margin-bottom: 0;
+                font-family: $ff-sans;
+                font-size: 0.7rem;
+                font-weight: 700;
+              }
+            }
+          }
         }
       }
     }
