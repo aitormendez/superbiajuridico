@@ -43,6 +43,17 @@
           @endif
         </div>
         </div>
+
+        @if ($post->post_type == 'text')
+          @php
+              $autores = ArchiveText::losAutoresLoop();
+          @endphp
+          @foreach ($autores as $autor)
+              <p class="byline author vcard fn" rel="author">
+                {{ $autor['nombre'] }}
+              </p>
+          @endforeach
+        @endif
       </div>
 
     @if (has_post_thumbnail())

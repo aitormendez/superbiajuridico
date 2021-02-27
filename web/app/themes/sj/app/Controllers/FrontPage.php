@@ -7,6 +7,7 @@ use Sober\Controller\Controller;
 
 class FrontPage extends Controller
 {
+    use Partials\AutoresLoop;
 
     public function heroTxtSj() {
         return wpautop(get_field('hero_txt', 'option'), false);

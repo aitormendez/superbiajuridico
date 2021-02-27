@@ -40,6 +40,11 @@ $se: $glide-element-separator;
             margin-bottom: 0;
           }
         }
+
+        p.author {
+          margin-bottom: 0;
+          font-family: $ff-sans;
+        }
       }
 
       & .rincon .seccion {
