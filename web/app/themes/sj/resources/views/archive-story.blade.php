@@ -7,7 +7,7 @@
     </div>
   </div>
 
-<div class="container">
+<div class="container-fluid d-flex justify-content-center">
   <div class="row mx-1 mx-md-4">
     <div class="infinite-scroll-container">
       @while (have_posts()) @php the_post() @endphp

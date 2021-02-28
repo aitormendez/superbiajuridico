@@ -9,7 +9,7 @@
     @include('partials.content-page-contact')
   @endwhile
 
-  <div class="container">
+  <div class="container-fluid d-flex justify-content-center">
     <div class="row py-3 mx-1 mx-md-4">
       @if ( have_rows('locations') )
         <div class="ubicaciones flex-column align-items-center">
