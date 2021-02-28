@@ -3,8 +3,7 @@
     @if (! is_tax())
       <div class="tipo-de-texto">
         @php
-        $terms = get_the_terms($post->ID, 'article-type');
-
+        $terms = get_the_terms(get_the_id(), 'article-type');
         $output = '';
         $text_type_url = get_bloginfo('url') . '/text-type/';
         foreach ($terms as $term) {
