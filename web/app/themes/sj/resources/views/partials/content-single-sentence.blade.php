@@ -30,8 +30,6 @@
 
 
     </ul>
-    @php
 
-    @endphp
   </div>
 </article>
