@@ -75,6 +75,14 @@
     .sentencias {
       ul {
         li {
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          border-bottom: 1px dotted #000;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
           strong {
             width: 8rem;
             flex-shrink: 0;
@@ -82,8 +90,27 @@
           }
 
           .der {
+            display: flex;
             flex-shrink: 1;
             flex-grow: 1;
+
+            a {
+              display: block;
+              padding-left: $pad;
+              padding-right: $pad;
+
+              &.nombre {
+                width: 60%;
+              }
+
+              &.pdf {
+                width: 15%;
+              }
+
+              &.cendoj {
+                width: 20%;
+              }
+            }
           }
         }
       }

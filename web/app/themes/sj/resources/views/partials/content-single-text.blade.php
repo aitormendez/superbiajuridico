@@ -46,13 +46,13 @@
                 <div class="identificador"><strong>{{ $tribunal . '-' . $identificador }}.</strong></div>
 
                 <div class="der">
-                  <a href="{{ get_permalink($sentencia->ID) }}"> {{ $nombre }} </a>
+                  <a href="{{ get_permalink($sentencia->ID) }}" class="nombre"> {{ $nombre }} </a>
                   @if ($pdf)
-                    | <a href="{{ $pdf['url'] }}" target="_blank" alt="{{ $pdf['title'] }}">
+                    | <a href="{{ $pdf['url'] }}" target="_blank" alt="{{ $pdf['title'] }}" class="pdf">
                       PDF</a>
                   @endif
                   @if ($url_externa)
-                  |<a href="{{ $url_externa }}" target="_blank"> Ver en Cendoj</a>
+                  |<a href="{{ $url_externa }}" target="_blank" class="cendoj"> Ver en Cendoj</a>
                   @endif
                 </div>
 
