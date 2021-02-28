@@ -3,8 +3,14 @@
     padding-top: 2rem;
   }
 
-  header {
-    margin-bottom: 2rem;
+  article header {
+    background-color: #fff;
+    padding: $pad;
+
+    h1 {
+      font-family: $ff-sans;
+      font-size: 1.5rem;
+    }
   }
 
   .entry-content {
@@ -19,19 +25,25 @@
         padding-bottom: 5px;
         border-bottom: 1px solid #000;
 
+        &:last-child {
+          border-bottom: none;
+        }
+
         > ul {
           margin-top: $pad;
-          padding-left: $pad;
+          padding-left: 0;
           list-style-type: none;
 
           > li {
-            margin-bottom: 10px;
+            padding: $pad;
             font-size: 1rem;
-          }
-        }
+            line-height: 1.2em;
+            border-bottom: 1px dotted #000;
 
-        &:last-child {
-          border-bottom: none;
+            &:last-child {
+              border-bottom: none;
+            }
+          }
         }
       }
     }
