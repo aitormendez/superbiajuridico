@@ -10,7 +10,7 @@
     {!! get_search_form(false) !!}
   @endif
 
-  <div class="container">
+  <div class="container-fluid d-flex justify-content-center">
     <div class="row mx-1 mx-md-4">
       <div class="infinite-scroll-container mx-4 mx-md-0 mb-5">
         @while(have_posts()) @php the_post() @endphp
