@@ -30,8 +30,11 @@
   }
 
   .sentencias {
+    margin-top: $pad;
+    background-color: #fff;
     font-family: $ff-sans;
     border-bottom: 2px solid theme-color("principal");
+    border-top: 2px solid theme-color("principal");
 
     > *:last-child {
       margin-bottom: 0;
@@ -45,6 +48,15 @@
         strong {
           display: block;
           font-size: 0.8rem;
+        }
+
+        .identificador,
+        .der {
+          line-height: 1.2rem;
+        }
+
+        a {
+          line-height: 1.2rem;
         }
       }
     }

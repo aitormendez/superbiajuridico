@@ -43,7 +43,7 @@
                   @endphp
                 @endif
 
-                <strong>{{ $tribunal . '-' . $identificador }}.</strong>
+                <div class="identificador"><strong>{{ $tribunal . '-' . $identificador }}.</strong></div>
 
                 <div class="der">
                   <a href="{{ get_permalink($sentencia->ID) }}"> {{ $nombre }} </a>
