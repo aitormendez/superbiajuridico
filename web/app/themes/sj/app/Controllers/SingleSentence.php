@@ -25,11 +25,11 @@ class SingleSentence extends Controller
     public function articles()
     {
         $artic = get_posts([
-            'post_type'  => 'article',
+            'post_type'  => 'text',
             'meta_query' => [
                 [
                     'key' => 'sentencias_asociadas',
-                    'value' => '"'. get_the_ID() . '"',
+                    'value' => '"' . get_the_ID() . '"',
                     'compare' => 'LIKE'
                 ]
             ]
