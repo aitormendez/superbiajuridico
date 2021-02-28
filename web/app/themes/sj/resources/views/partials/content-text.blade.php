@@ -3,11 +3,14 @@
     @if (! is_tax())
       <div class="tipo-de-texto">
         @php
-        $terms = get_the_terms(get_the_ID(), 'article-type');
+        $terms = get_the_terms($post->ID, 'article-type');
+
         $output = '';
         $text_type_url = get_bloginfo('url') . '/text-type/';
         foreach ($terms as $term) {
-            $output .= '<a href="' . $text_type_url . $term->slug . '">' . $term->name . '</a>';
+          $current_ID = apply_filters( 'wpml_object_id', $term->term_id, 'article-type' );
+          $term = get_term($current_ID);
+          $output .= '<a href="' . $text_type_url . $term->slug . '">' . $term->name . '</a>';
         }
         @endphp
         {!! $output !!}

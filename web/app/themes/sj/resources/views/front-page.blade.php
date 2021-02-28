@@ -48,7 +48,7 @@
       <section class="articulos">
         <div class="header">
           <h1>{{ __('Últimos artículos', 'sage') }}</h1>
-          <a class="enlace" href="{{ $site_url }}/text-type/articulo/">{{ __('Ver todos', 'sage') }}</a>
+          <a class="enlace" href="{{ $site_url }}/texts/">{{ __('Ver todos', 'sage') }}</a>
         </div>
 
         <div class="contenido">
