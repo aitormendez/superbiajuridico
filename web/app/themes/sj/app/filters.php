@@ -139,3 +139,5 @@ add_action("tema_edit_form_fields", function($term, $taxonomy) {
     </tr>
     <?php
 }, 10, 2);
+
+
