@@ -33,7 +33,7 @@
 
           <div class="glide__bullets d-none d-sm-block" data-glide-el="controls[nav]">
             @for ($i = 0; $i < $count; $i++)
-          <button class="glide__bullet" data-glide-dir="={{ $i }}"></button>
+              <button class="glide__bullet" data-glide-dir="={{ $i }}"></button>
             @endfor
           </div>
 
