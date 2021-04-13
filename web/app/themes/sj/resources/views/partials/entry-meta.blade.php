@@ -35,7 +35,7 @@
         @endforeach
       </div>
     @elseif (is_post_type_archive('text') || is_tax() )
-      @if (!is_tax('news-category'))
+      @if (!is_tax('news-category') && !is_tax('tema', 'redes'))
         @php
             $autores = ArchiveText::losAutoresLoop();
         @endphp

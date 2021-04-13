@@ -328,6 +328,10 @@
         li {
           display: inline-block;
 
+          &.min-100px {
+            min-width: 5em;
+          }
+
           a {
             color: $color-blanco-alfa;
           }

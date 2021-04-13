@@ -24,6 +24,7 @@ import {
   faCreditCard,
   faHome,
   faChartLine,
+  faShareAlt,
 } from '@fortawesome/free-solid-svg-icons';
 
 var faArrowAltDown = {
@@ -98,7 +99,7 @@ var faPlataforma = {
   ],
 }
 
-library.add(faComment, faNewspaper, faGavel, faGraduationCap, faArrowAltDown, faPenFancy, faArrowRight, faArrowLeft, faBuscar, faQuercus, faCruz, faArrowCircleDown, faTwitter, faInstagram, faFacebook, faEnvelopeOpenText, faSuperbia, faCreditCard, faHome, faChartLine, faPlataforma);
+library.add(faComment, faNewspaper, faGavel, faGraduationCap, faArrowAltDown, faPenFancy, faArrowRight, faArrowLeft, faBuscar, faQuercus, faCruz, faArrowCircleDown, faTwitter, faInstagram, faFacebook, faEnvelopeOpenText, faSuperbia, faCreditCard, faHome, faChartLine, faPlataforma, faShareAlt);
 
 dom.watch();
 

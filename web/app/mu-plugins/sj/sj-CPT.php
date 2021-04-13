@@ -106,6 +106,7 @@ add_action( 'init', function() {
       'admin_cols'   => $cols_texto,
       'admin_filters'=> $filters_texto,
       'supports'     => $supports_texto,
+      'taxonomies' => ['post_tag'],
     ]
   );
 
@@ -321,7 +322,7 @@ add_action( 'init', function() {
       'supports'     => $supports_story,
     ],
     [
-      		'slug'     => 'stories'
+      'slug'     => 'stories'
     ]
   );
 
@@ -455,5 +456,6 @@ add_action( 'init', function() {
       'slug'     => 'despacho',
     ]
   );
+
 
 }, 0 );
