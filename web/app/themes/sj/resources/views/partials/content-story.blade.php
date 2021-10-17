@@ -2,25 +2,26 @@
   <header>
     @if (ArchiveStory::setClassNews() == 'infinite-scroll-item sj my-3')
 
+    
+
       @if (isset($datos))
           @if (in_array($datos['this_trid'], $datos['trids']))
-            @if ($despacho == 'superbia')
-
+            @if ($despacho == 'superbia' && !is_tax('newsletter-category', 'publicar'))
               <a href="{{ get_bloginfo( 'url' ) . '/news-category/quercus-juridico/'}}" class="marca marca-qj">
                 @svg('qj-logo-anagrama')
               </a>
-            @elseif($despacho == 'quercus')
+            @elseif($despacho == 'quercus' && !is_tax('newsletter-category', 'publicar'))
               <a href="{{ get_bloginfo( 'url' ) . '/news-category/superbia-juridico/'}}" class="marca marca-sj">
                 @svg('sj-logo-anagrama')
               </a>
             @endif
           @endif
-        @else
-        @if ($despacho == 'superbia')
+      @else
+        @if ($despacho == 'superbia' && !is_tax('newsletter-category', 'publicar'))
           <a href="{{ get_bloginfo( 'url' ) . '/news-category/superbia-juridico/'}}" class="marca marca-sj">
             @svg('sj-logo-anagrama')
           </a>
-        @elseif($despacho == 'quercus')
+        @elseif($despacho == 'quercus' && !is_tax('newsletter-category', 'publicar'))
           <a href="{{ get_bloginfo( 'url' ) . '/news-category/quercus-juridico/'}}" class="marca marca-qj">
             @svg('qj-logo-anagrama')
           </a>
