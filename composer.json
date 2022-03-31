@@ -125,6 +125,7 @@
     "wpackagist-plugin/google-sitemap-generator": "*",
     "wpackagist-plugin/updraftplus": "*",
     "wpackagist-plugin/mailchimp-for-wp": "*",
+    "wpackagist-plugin/instant-images": "*",
     "johnbillion/extended-cpts": "^4.2"
   },
   "require-dev": {
@@ -133,7 +134,12 @@
   },
   "config": {
     "optimize-autoloader": true,
-    "preferred-install": "dist"
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "composer/installers": true,
+      "roots/wordpress-core-installer": true,
+      "ffraenz/private-composer-installer": true
+    }
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
