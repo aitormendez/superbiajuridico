@@ -176,6 +176,10 @@ add_action( 'init', function() {
       'title'    => 'Cat sentencia',
       'taxonomy' => 'sentence-category',
     ],
+    'last_modified' => array(
+      'title'      => 'Last Modified',
+      'post_field' => 'post_modified',
+    ),
   ];
 
   $filters_sentence = [
@@ -196,6 +200,8 @@ add_action( 'init', function() {
   $supports_sentence = [
     'title',
     'excerpt',
+    'thumbnail',
+    'editor',
   ];
 
   register_extended_post_type( 'sentence',

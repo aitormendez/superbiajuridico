@@ -31,5 +31,9 @@
 
     </ul>
 
+    <div class="contenido-editor">
+      @php the_content() @endphp
+    </div>
+
   </div>
 </article>
