@@ -17,9 +17,12 @@
 @endif
 
 @if ($datos['clase'] == 'sentence')
-  @php $referencia = get_field('tribunal') . '' . get_field('sentencia_no') . ' ' . get_field('fecha')  @endphp
+  @php
+    $unixtimestamp = strtotime( get_field('fecha') );
+    $mes_traducido = date_i18n("F", $unixtimestamp);
+    $referencia =  $datos['sentencia'];
+  @endphp
 @endif
-
 
 <li class="glide__slide">
     <a href="{{ $enlace }}" class="{{ $datos['clase'] }} {{ $class_img ?? '' }} d-sm-flex">

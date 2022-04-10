@@ -5,6 +5,7 @@ namespace App\Controllers;
 use WP_Query;
 use Sober\Controller\Controller;
 
+
 class FrontPage extends Controller
 {
     use Partials\AutoresLoop;
@@ -206,13 +207,36 @@ class FrontPage extends Controller
         if ($post_type == 'sentence') {
             $icono = '<i class="fas fa-gavel"></i>';
             $seccion = 'Sentencia';
+            $post_id = get_the_ID();
+
+            $sentencia_no = get_field('sentencia_no', $post_id);
+            $tribunal = get_field('tribunal', $post_id);
+            $provincia = get_field('provincia', $post_id);
+            $tipo_de_resolucion = get_field('tipo_resolucion', $post_id);
+
+            $fecha = get_field('fecha', $post_id, false);
+            $unixtimestamp = strtotime( get_field('fecha') );
+            $mes_traducido = date_i18n("F", $unixtimestamp);
+            $fecha_datetime = new \DateTime($fecha);
+            $anio = $fecha_datetime->format('Y');
+            $dia = $fecha_datetime->format('j');
         }
 
         $output = [
             'clase'   => $clase,
             'seccion' => $seccion,
             'icono'   => $icono,
+            
         ];
+
+        if ($post_type == 'sentence') {
+            if ($tribunal == 'AP') {
+                $output['sentencia'] = $tipo_de_resolucion . $tribunal . ' ' . $provincia . ' ' . $sentencia_no . '/' . $anio . ' de ' . $dia  . ' de ' . $mes_traducido;
+            } else {
+                $output['sentencia'] = $tipo_de_resolucion . $tribunal . ' ' . $sentencia_no . '/' . $anio . ' de ' . $dia  . ' de ' . $mes_traducido;
+            }
+            
+        }
 
         return $output;
     }
