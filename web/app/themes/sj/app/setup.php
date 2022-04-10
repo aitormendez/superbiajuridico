@@ -175,18 +175,24 @@ function actualizar_titulo_sentencia($post_id) {
         $nombre = get_field('nombre', $post_id);
         $sentencia_no = get_field('sentencia_no', $post_id);
         $tribunal = get_field('tribunal', $post_id);
+        $provincia = get_field('provincia', $post_id);
+        $tipo_de_resolucion = get_field('tipo_resolucion', $post_id);
         $fecha = get_field('fecha', $post_id, false);
+        $unixtimestamp = strtotime( get_field('fecha') );
+        $mes_traducido = date_i18n("F", $unixtimestamp);
         $fecha_datetime = new \DateTime($fecha);
         $anio = $fecha_datetime->format('Y');
-        $fecha_titulo =  $fecha_datetime->format('j-n-Y');
+        $dia = $fecha_datetime->format('j');
+        $fecha_titulo =  $fecha_datetime->format('Y, de j de F');
 
         if ($sentencia_no == '') {
-            $new = $tribunal . ' ' . $fecha_titulo;
+            $new = $tipo_de_resolucion . $tribunal . ' ' . $provincia. ' ' . '/' . $anio . ', de ' . $dia. ' de ' . $mes_traducido ;
         } else {
-            $new = $tribunal . ' ' . $sentencia_no . '/' . $anio;
+            $new = $tipo_de_resolucion . $tribunal . ' ' . $provincia. ' ' . $sentencia_no . '/' . $anio . ', de ' . $dia. ' de ' . $mes_traducido ;
         }
+
         if (!'' == $nombre) {
-            $new = $new . ' ' . $nombre;
+            $new = $new . ' - ' . $nombre;
         }
 
         $my_post = array(
